@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Résumé
-permalink: /cv
+permalink: /resume
 ---
 <p align="center">
 <img src="{{ site.url }}/assets/img/android-chrome-192x192.png"
