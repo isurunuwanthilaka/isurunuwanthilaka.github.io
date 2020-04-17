@@ -20,9 +20,9 @@ minima:
     stackoverflow : isurunuwanthilaka
     linkedin : isurunuwanthilaka
 
-    youtube: isurunuwanthilaka
     youtube_channel: UCWT6lIKNUN-1F-WxIov4NUQ
     youtube_channel_name: Isuru Nuwanthilaka
+    
 # Build settings
 theme: minima
 plugins:
