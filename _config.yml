@@ -28,9 +28,6 @@ theme: minima
 plugins:
   - jekyll-feed
 
-minima:
-  skin: dark
-
 # Disqus Comments
 disqus:
     shortname: https-isurunuwanthilaka-github-io
