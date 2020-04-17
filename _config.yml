@@ -3,7 +3,7 @@ email: isurunuwanthilaka@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   I talk about technologies, life and buddhism.
   This site consists of my own thoughts and this doesn't represent views of company I represent.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://isurunuwanthilaka.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  isurunuwnathilaka
 
