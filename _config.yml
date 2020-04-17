@@ -13,8 +13,9 @@ author:
   email: isurunuwanthilaka@gmail.com
 
 #Social Media
-social:
-  facebook: isurunuwanthilaka
+minima:
+  social_links:
+    facebook: isurunuwanthilaka
 
 # Build settings
 theme: minima
