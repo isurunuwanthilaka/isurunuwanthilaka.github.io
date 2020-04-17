@@ -3,9 +3,11 @@ layout: page
 title: CV
 permalink: /cv
 ---
-<img src="{{ site.url }}/assets/img/android-chrome-512x512.png"
+<p align="center">
+<img src="{{ site.url }}/assets/img/android-chrome-192x192.png"
      alt="Profile image"
      style="float: center; border-radius: 50%;" />
+</p>
 
 Isuru Nuwanthilaka
 ==================
