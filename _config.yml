@@ -22,7 +22,8 @@ plugins:
   - jekyll-feed
 
 # Disqus Comments
-disqus_short_name: Isuru
+comment : true
+disqus_short_name: https-isurunuwanthilaka-github-io
 disqus_show_comment_count: true
 
 # Google Analytics
