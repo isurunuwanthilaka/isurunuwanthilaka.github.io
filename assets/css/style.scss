@@ -5,10 +5,3 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
-
-  .footer-copy {
-    margin-bottom: $spacing-unit / 2;
-    text-align: center;
-    @include relative-font-size(0.5);
-    font-weight: 80;
-  }
