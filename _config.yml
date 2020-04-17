@@ -23,8 +23,9 @@ plugins:
 
 # Disqus Comments
 comment : true
-disqus_short_name: https-isurunuwanthilaka-github-io
-disqus_show_comment_count: true
+disqus:
+    shortname: https-isurunuwanthilaka-github-io
+
 
 # Google Analytics
 google_analytics: G-13KD5X904R
