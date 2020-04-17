@@ -181,6 +181,7 @@
   }
 
   .footer-col {
+    text-align: justify;
     width: calc(100% - (#{$spacing-unit} / 2));
     padding: 0 ($spacing-unit / 2);
 
