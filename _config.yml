@@ -22,7 +22,7 @@ minima:
 
     youtube_channel: UCWT6lIKNUN-1F-WxIov4NUQ
     youtube_channel_name: Isuru Nuwanthilaka
-    
+
 # Build settings
 theme: minima
 plugins:
@@ -34,4 +34,6 @@ disqus:
 
 # Google Analytics
 google_analytics: G-13KD5X904R
+
+show_excerpts: true
 
