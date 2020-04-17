@@ -3,9 +3,12 @@ layout: page
 title: CV
 permalink: /cv
 ---
+<img src="{{ site.url }}/assets/img/android-chrome-512x512.png"
+     alt="Profile image"
+     style="float: center; border-radius: 50%;" />
 
-Isuma Coder
-============
+Isuru Nuwanthilaka
+==================
 
 ----
 
