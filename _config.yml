@@ -29,7 +29,7 @@ plugins:
   - jekyll-feed
 
 minima:
-  skin: solarized
+  skin: dark
 
 # Disqus Comments
 disqus:
