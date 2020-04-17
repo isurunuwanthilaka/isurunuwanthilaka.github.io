@@ -20,3 +20,13 @@ social:
 theme: minima
 plugins:
   - jekyll-feed
+
+# Disqus Comments
+disqus_short_name: Isuru
+disqus_show_comment_count: true
+
+# Google Analytics
+google_analytics_tracking_id:
+
+# Facebook Like
+facebook_like: false
