@@ -14,26 +14,22 @@ Isuru Nuwanthilaka
 
 ----
 
->  In this style, the resume starts with a blockquote, where
->  you can briefly list your specialties, or include a salient
->  quote. Ending a line with a backslash forces a line break.
+> Loves problem solving. Interested in the field of Data Analytics, Machine Learning, AI, IoT and Software Development.
 
 ----
 
 Education
 ---------
 
-2010-2014 (expected)
-:   **PhD, Computer Science**; Awesome University (MyTown)
+2015-2019
+:   **BSc(Hons), Electronics and Telecommunication Engineering** ;University of Moratuwa (Sri Lanka)
 
-    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
-     Estimation Problem*
+    *Second Class Upper Division*
 
-2007-2010
-:   **BSc, Computer Science and Electrical Engineering**; University of
-    HomeTown (HomeTown)
+2006-2014
+:   **Secondary Education**; Ananda College (COlombo)
 
-    *Minor: Awesomeology*
+    *AL : Physical Science Section*
 
 Experience
 ----------
@@ -107,5 +103,4 @@ Extra Section, Call it Whatever You Want
 
 ----
 
-> <email@example.com> • +00 (0)00 000 0000 • XX years old\
-> address - Mytown, Mycountry
+> • +94 (0)77 387 1605 • 25 years old
