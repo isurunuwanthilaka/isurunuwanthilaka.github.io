@@ -71,22 +71,20 @@ Cool Side Projects
 **MyGPA - Android App**
 :   For university students to calculate their GPAs.
 
-
 [Live APP](https://play.google.com/store/apps/details?id=com.isumalab.gpa)
 
 Programming Languages
 --------------------
 
-:   **Java:** For developing Microservices
+**Java:** For developing Microservices
 
-:   **Python:** For developing algorithms, testing new technologies,machine learning projects and for fast protyping  
+**Python:** For developing algorithms, testing new technologies,machine learning projects and for fast protyping  
 
-:   **GoLang** For Rest APIs
+**GoLang:** For Rest APIs
 
-:   **React.JS and HTML** For developing frontends
+**React.JS and HTML:** For developing frontends
 
-:   Basic knowledge of **C**, **Arduino**, **Perl**,**Verilog**
-
+Basic knowledge of **C**, **Arduino**, **Perl**,**Verilog**
 
 Other
 ----------------------------------------
