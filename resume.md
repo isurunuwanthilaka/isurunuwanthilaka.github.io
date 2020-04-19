@@ -100,6 +100,9 @@ Other
 
 * I love my mom!
 
+
+Download [Resume](https://isurunuwanthilaka.github.io/downloads/Resume.pdf)
+
 ----
 
 > • +94 (0)77 387 1605 • 25 years old
