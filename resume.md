@@ -31,75 +31,74 @@ Education
 
     *AL : Physical Science Section*
 
-Experience
+Work Experience
 ----------
 
-**Your Most Recent Work Experience:**
+2020 March - Present
+:   **Fullstack Software Engineer** ;Millennium I.T.E.S.P. (Sri Lanka)
 
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
+At work my responisibilities include developing microservices for enterprise applications, design and implementation, maintaining source code clean and handy,also continuous deployments.
 
-* First item
+I work with following technologies
 
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
+* Java 11 - SpringBoot
 
-**That Other Job You Had**
+* React
 
-Also with a short description.
+* Docker 
 
-Technical Experience
+* PostgreSQL
+
+* Python for Machine Learning and algorithms
+
+2018 June - 2018 December
+:   **Software Engineering Intern** ;Millennium I.T.E.S.P. (Sri Lanka)
+
+I am a huge self learning, therefore when I have a free time I do MOOCS.
+
+Courses
 --------------------
 
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
+**Deep Learning Nanodegree**
 
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
+This nanodegree incudes NN,CNN,RNN,GAN and hands-on AWS SageMaker deployment.
 
-Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
+Completion ID : [434M3LSP](https://confirm.udacity.com/434M3LSP)
+
+Cool Side Projects
+---------------------
+
+**MyGPA - Android App**
+:   For university students to calculate their GPAs.
+
+
+[Live APP](https://play.google.com/store/apps/details?id=com.isumalab.gpa)
 
 Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
+--------------------
 
-:   **second-lang:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file). 
+:   **Java:** For developing Microservices
 
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
+:   **Python:** For developing algorithms, testing new technologies,machine learning projects and for fast protyping  
 
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
+:   **GoLang** For Rest APIs
 
-[ref]: https://github.com/githubuser/superlongprojectname
+:   **React.JS and HTML** For developing frontends
 
-Extra Section, Call it Whatever You Want
+:   Basic knowledge of **C**, **Arduino**, **Perl**,**Verilog**
+
+
+Other
 ----------------------------------------
 
-* Human Languages:
+* Languages:
 
-     * English (native speaker)
-     * ???
-     * This is what a nested list looks like.
+     * Sinhala (native speaker)
+     * English
 
-* Random tidbit
+* When I am not stick to a screen I read books, metitate or blogging.
 
-* Other sort of impressive-sounding thing you did
+* I love my mom!
 
 ----
 
