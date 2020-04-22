@@ -5,12 +5,18 @@ categories: engineering
 author : Isuru Nuwanthilaka
 ---
 
+<p align="center">
+<img src="{{ site.url }}/assets/img/post-2.png"
+     alt="Patterns Image"
+     style="float: center;" />
+</p>
+
 <div align='justify'>
-Software engineer is no other than civil engineer, but with a different context. Both build structures may be small scale and large scale. Therefore, software engineers need careful design both conceptual and technical before jumping into coding phase. Over the course of software engineering career, we can see same engineering problem patterns appearing again and again. So how about we implementing a template for solving that particular issue re-occurring. That is hoe the design patterns enter to the software world. So, with design patterns we can come up with flexible, re-usable and easy to maintain solutions to our software problems.
+Software engineer is no other than civil engineer, but with a different context. Both build structures may be small scale and large scale. Therefore, software engineers need careful design both conceptual and technical before jumping into coding phase. Over the course of software engineering career, we can see same engineering problem patterns appearing again and again. So how about we implementing a template for solving that particular issue re-occurring. That is how the design patterns enter to the software world. So, with design patterns we can come up with flexible, re-usable and easy to maintain solutions to our software problems.
 </div>
 <br/>
 <div align='justify'>
-There are many design patterns exist. And there is not a obvious guide line to what to use and when to use. It all comes with experience you gather while the journey. There are 23 design patterns discussed in Gang Of Four (GOF) famous book Design Patterns: Elements of Reusable Object-Oriented Software. All patterns are categorized into three main areas; creational, structural and behavioral. We use this GOF design pattern catalog as a guide to produce this blog series. And this series will cover all the design patterns with UML, example implementations and the concepts (SOLID etc.) behind.
+There are many design patterns exist. And there is not a obvious guide line to what to use and when to use. It all comes with experience you gather during the journey. There are 23 design patterns discussed in Gang Of Four (GOF) famous book Design Patterns: Elements of Reusable Object-Oriented Software. All patterns are categorized into three main areas; creational, structural and behavioral. We use this GOF design pattern catalog as a guide to produce this blog series. And this series will cover all the design patterns with UML, example implementations and the concepts (SOLID etc.) behind.
 </div>
 <br/>
 <div>Let us start learning basic things first. Buckle up!</div>
@@ -18,7 +24,8 @@ There are many design patterns exist. And there is not a obvious guide line to w
 <h3>Pattern Language</h3>
 <br/>
 <div align='justify' style = "font-style:italic;">
-A pattern language is an organized and coherent set of patterns, each of which describes a problem and the core of a solution that can be used in many ways within a specific field of expertise. The term was coined by architect Christopher Alexander and popularized by his 1977 book A Pattern Language. – Wikipedia
+A pattern language is an organized and coherent set of patterns, each of which describes a problem and the core of a solution that can be used in many ways within a specific field of expertise. The term was coined by architect Christopher Alexander and popularized by his 1977 book A Pattern Language. 
+– Wikipedia
 </div>
 <br/>
 <div align='justify'>
