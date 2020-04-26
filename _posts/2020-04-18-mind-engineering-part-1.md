@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mind Engineering for Professionals|1
+title: Mind Engineering for Professionals.| Part 1
 categories: mind
 author : Isuru Nuwanthilaka
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why Design Patterns?|1
+title: Why Design Patterns?
 categories: engineering
 author : Isuru Nuwanthilaka
 ---

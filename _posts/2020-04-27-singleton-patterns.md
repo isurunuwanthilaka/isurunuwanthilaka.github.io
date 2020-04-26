@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Singleton Pattern|2
+title: Singleton Pattern
 categories: engineering
 author : Isuru Nuwanthilaka
 ---
