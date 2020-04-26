@@ -15,8 +15,9 @@ author : Isuru Nuwanthilaka
 <br/>
 <div align='justify' style = "font-style:italic;">
 The singleton pattern ensures a class has only one instance, and provides global point of access to it.
-Let’s discuss.
 </div>
+<br>
+<h5>Let’s discuss.</h5>
 <br/>
 <div align='justify'>
 Singleton is a creational design pattern. It is simple but very powerful design pattern. Why we need this pattern? Let us say, you need a class object is created only once and reuse it in entire application. This way you can give global access to the object. This helps to prevent memory leakages. If you are the only programmer working in the project, then you can have a rule in the mind not to create two objects of that same class within the application. But what about there are many programmers? you can have a comment and mention that not to instantiate two objects of that same class. Do you think this works when the application is growing and becoming complex? No, it is obvious some may forget this rule. So, we need to limit this behavior in the implementation level. 
@@ -95,7 +96,7 @@ public class SafeSingleton {
 </pre>
 <br/>
 <div align='justify'>
-Now singleton is thread safe, but remember synchronization is expensive. Therefore we have to first consider whether we really need these behaviors to our application.
+Now singleton is thread safe, but remember synchronization is expensive. Therefore we have to first consider whether we really need these behaviors to our application.Synchronization can reduce the performance of the application by factor of 100. FYI.
 </div>
 <br/>
 <div align='justify'>
