@@ -94,7 +94,7 @@ Other
      * Sinhala (native speaker)
      * English
 
-* When I am not stick to a screen I read books, metitate or blogging.
+* When I am not stick to a screen I read books, meditate or blogging.
 
 * I love my mom!
 
