@@ -13,21 +13,21 @@ author : Isuru Nuwanthilaka
 
 # Motivation
 
-We are software engineers. Nowadays, the definition of SE is not limited just wring codes. Sometimes we have to set the applications up and running and give it to QA for testing. Doing continuous deployments (CD) being in the agile environment is tough and time consuming. What if there is a way to automate the deployments and pay less supervision to CI/CD/CD. So we can save time to write codes while a bot handling devops. It is good for atleast setting up testing environment.
+We are software engineers. Nowadays, the definition of SE is not limited to just writing codes. Sometimes, we have to set the applications up and running and give it to QA for testing. Doing continuous deployments (CD) being in the agile environment is tough and time consuming. What if there is a way to automate the deployments ??? and pay less supervision to CI/CD/CD. So we can save time to write codes while a bot handling devops. It is good for atleast setting up the testing environment.
 
-Jenkins enters here to the development tool kit.
+Jenkins enters here to the development tool kit.Buckle up.
 
 # Configuration
 
-There are many ways to use Jenkins. I am not going to talk about all the scenario. I am just trying to give you a simple idea and give a push to get going. So I take the easy path.
+There are many ways to use Jenkins. I am not going to talk about all the scenarios. I am just trying to give you a simple idea and give a push to get going. So I take the easy path - a happy path.
 
 # Set up with Docker
 
 1. Jenkins can be set up with Docker DinD (docker in docker), so docker images can be build and push to registry without the support of docker machine in the host machine.
 
-2. There is an otherway also for setting up jenkings with host machine docker engine. I prefer this method, so I can build images and spin up the containers.Lets try this jenkins pipeline with this setup.
+2. There is an otherway also for setting up jenkings with host machine docker engine. I prefer this method, so I can build images and spin up the containers.Lets try this jenkins pipeline.
 
-# installng jenking
+# Installng Jenkins
 
 If you want to do with docker dind , follow : https://www.jenkins.io/doc/book/installing
 
@@ -51,7 +51,7 @@ services:
 
 And after setting up create a user in the jenkins UI at :8081 (according to this configuration)
 
-# Jenking Pipeline
+# Jenkins Pipeline
 
 Next crete a jenkins pipeling project and include following pipeline script.
 
@@ -128,7 +128,7 @@ There are different ways to trigger building this pipeline.
 
 # The End
 
-This is very simple but will ease your life a lot. Hope you enjoyed.
+This is very simple , but, will ease your life a lot. Hope you enjoyed.
 
 Happy Coding!
 
