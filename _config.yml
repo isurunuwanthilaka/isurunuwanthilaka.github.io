@@ -35,5 +35,9 @@ disqus:
 # Google Analytics
 google_analytics: G-13KD5X904R
 
-paginate : 4
+gems:
+  - jekyll-paginate
+
+paginate: 3
+paginate_path: posts/page:num/
 
