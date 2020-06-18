@@ -27,7 +27,7 @@ There are many ways to use Jenkins. I am not going to talk about all the scenari
 
 2. There is an otherway also for setting up jenkings with host machine docker engine. I prefer this method, so I can build images and spin up the containers.Lets try this jenkins pipeline.
 
-# Installng Jenkins
+# Installing Jenkins
 
 If you want to do with docker dind , follow : https://www.jenkins.io/doc/book/installing
 
