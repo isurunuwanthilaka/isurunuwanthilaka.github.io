@@ -27,9 +27,9 @@ Education
     *Second Class Upper Division*
 
 2006-2014
-:   **Secondary Education**; Ananda College (COlombo)
+:   **Secondary Education**; Ananda College (Colombo)
 
-    *AL : Physical Science Section*
+    *AL : Physical Science Section : Island Rank 36 Colombo District Rank 11*
 
 Work Experience
 ----------
@@ -37,24 +37,24 @@ Work Experience
 2020 March - Present
 :   **Fullstack Software Engineer** ;Millennium I.T.E.S.P. (Sri Lanka)
 
-At work my responisibilities include developing microservices for enterprise applications, design and implementation, maintaining source code clean and handy,also continuous deployments.
+At work, my responisibilities include developing microservices for enterprise applications, design and implement, maintain source code clean and handy,and also continuous deployments.
 
 I work with following technologies
 
-* Java 11 - SpringBoot
+* Java 8/11 - Spring Boot Stack
 
-* React
+* ReactJS
 
 * Docker 
 
 * PostgreSQL
 
-* Python for Machine Learning and algorithms
+* Python for algorithms
 
 2018 June - 2018 December
 :   **Software Engineering Intern** ;Millennium I.T.E.S.P. (Sri Lanka)
 
-I am a huge self learning, therefore when I have a free time I do MOOCS.
+I am a huge self learning enthusiast, therefore when I have a free time I do MOOCS.
 
 Courses
 --------------------
@@ -82,7 +82,7 @@ Programming Languages
 
 **GoLang:** For Rest APIs
 
-**React.JS and HTML:** For developing frontends
+**ReactJS and HTML:** For developing frontends
 
 Basic knowledge of **C**, **Arduino**, **Perl**,**Verilog**
 
