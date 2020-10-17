@@ -16,13 +16,17 @@ permalink: /content
 <details>
   <summary>Ballerina</summary>
 
-  <a href="https://isurunuwanthilaka.github.io/engineering/2020/05/15/ballerina-medium-connector">Ballerina connector for Medium</a>
+  <ol>
+  <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/05/15/ballerina-medium-connector">Ballerina connector for Medium</a></li>
+  </ol>
 
 </details>
 
 <details>
   <summary>Mind</summary>
 
-  <a href="https://isurunuwanthilaka.github.io/mind/2020/04/18/mind-engineering-part-1">Mind Engineering for Professionals | Part 1</a>
+  <ol>
+  <li><a href="https://isurunuwanthilaka.github.io/mind/2020/04/18/mind-engineering-part-1">Mind Engineering for Professionals | Part 1</a></li>
+  </ol>
 
 </details>
