@@ -7,7 +7,7 @@ permalink: /content
 <details>
   <summary>Design Patterns</summary>
 
-[Singleton Pattern](https://isurunuwanthilaka.github.io/engineering/2020/04/27/singleton-patterns)
+  <a href="https://isurunuwanthilaka.github.io/engineering/2020/04/27/singleton-patterns">Singleton Pattern</a>
 
 </details>
 
