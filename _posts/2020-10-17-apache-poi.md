@@ -23,6 +23,6 @@ So I am going to talk about those issues and how I could handle them with code. 
 
 <p align="center">
 <img src="{{ site.url }}/assets/img/apache-poi.png"
-     alt="Compiler"
+     alt="Apache POI Logo"
      style="float: center;" />
 </p>
