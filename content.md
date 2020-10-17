@@ -14,7 +14,7 @@ permalink: /content
 <details>
   <summary>Ballerina</summary>
 
-[Ballerina connector for Medium](https://isurunuwanthilaka.github.io/engineering/2020/05/15/ballerina-medium-connector)
+  <a href="https://isurunuwanthilaka.github.io/engineering/2020/05/15/ballerina-medium-connector">Ballerina connector for Medium</a>
 
 </details>
 
