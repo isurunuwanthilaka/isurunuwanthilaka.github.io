@@ -14,6 +14,29 @@ permalink: /content
 </details>
 
 <details>
+  <summary>Architectural Patterns</summary>
+  
+</details>
+
+<details>
+  <summary>Mixed Topics</summary>
+  <ol>
+  <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/06/24/compiler-scratch">
+  Compilers from scratch</a></li>
+  <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/10/17/apache-poi">
+  Lets play with Apache POI</a></li>
+  </ol>
+</details>
+
+<details>
+  <summary>CI & CD</summary>
+  <ol>
+  <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/06/18/jenkins-beginner">
+  Jenkins Beginner Guide</a></li>
+  </ol>
+</details>
+
+<details>
   <summary>Ballerina</summary>
 
   <ol>
@@ -23,7 +46,7 @@ permalink: /content
 </details>
 
 <details>
-  <summary>Mind</summary>
+  <summary>Profession</summary>
 
   <ol>
   <li><a href="https://isurunuwanthilaka.github.io/mind/2020/04/18/mind-engineering-part-1">Mind Engineering for Professionals | Part 1</a></li>
