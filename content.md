@@ -37,6 +37,8 @@ permalink: /content
   Jenkins Beginner Guide</a></li>
   <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/10/19/docker-zero-to-hero">
   Docker Beginner Guide</a></li>
+  <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/10/20/docker-image-to-dockerhub-from-bitbucket">
+  Deploying docker images from Bitbucket to Docker Hub</a></li>
   </ol>
 </details>
 
