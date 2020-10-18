@@ -39,7 +39,6 @@ permalink: /content
   Docker Beginner Guide</a></li>
   <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/10/20/docker-image-to-dockerhub-from-bitbucket">
   Deploying docker images from Bitbucket to Docker Hub</a></li>
-  </ol>
   <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/10/21/docker-image-for-go-app">
   Building Docker image for GO application</a></li>
   </ol>
