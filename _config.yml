@@ -1,8 +1,8 @@
 title: Isuru Nuwanthilaka's Blog
 email: isurunuwanthilaka@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I talk about technologies, life and buddhism.
-  This site consists of my own thoughts and this doesn't represent views of company I represent.
+  I talk about different technologies and journey of life.
+  This site consists of my own thoughts and this doesn't represent the views of company I work for.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://isurunuwanthilaka.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  isurunuwnathilaka

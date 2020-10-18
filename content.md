@@ -19,7 +19,7 @@ permalink: /content
 </details>
 
 <details>
-  <summary>Mixed Topics</summary>
+  <summary>Miscellaneous</summary>
   <ol>
   <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/06/24/compiler-scratch">
   Compilers from scratch</a></li>
