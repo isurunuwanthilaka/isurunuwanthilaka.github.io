@@ -21,6 +21,8 @@ permalink: /content
 <details>
   <summary>Miscellaneous</summary>
   <ol>
+  <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/10/25/oauth2-jwt-hybrid-architecture">
+  OAuth2 + JWT Hybrid Architecture</a></li>
   <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/06/24/compiler-scratch">
   Compilers from scratch</a></li>
   <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/10/17/apache-poi">
