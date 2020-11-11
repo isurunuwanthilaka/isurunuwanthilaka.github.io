@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Who am I ?
-permalink: /about
+title: Bio
+permalink: /bio
 ---
 
 ## Hi there 👋
