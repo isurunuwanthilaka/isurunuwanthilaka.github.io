@@ -9,7 +9,10 @@ permalink: /content
   <ol>
   <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/04/22/design-patterns-intro">Introduction</a></li>
 
-  <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/04/27/singleton-patterns">Singleton Pattern</a></li>
+  <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/04/27/singleton-pattern">Singleton Pattern</a></li>
+
+  <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/11/15/strategy-pattern">Strategy Pattern</a></li>
+  
   </ol>
 </details>
 
