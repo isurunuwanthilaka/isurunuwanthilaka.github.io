@@ -4,6 +4,10 @@ title: Content
 permalink: /content
 ---
 
+[![Visits Badge](https://badges.pufler.dev/visits/isurunuwanthilaka/isurunuwanthilaka.github.io)](https://badges.pufler.dev)
+[![Created Badge](https://badges.pufler.dev/created/isurunuwanthilaka/isurunuwanthilaka.github.io)](https://badges.pufler.dev)
+[![Updated Badge](https://badges.pufler.dev/updated/isurunuwanthilaka/isurunuwanthilaka.github.io)](https://badges.pufler.dev)
+
 <details>
   <summary>Design Patterns</summary>
   <ol>
