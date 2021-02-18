@@ -307,3 +307,135 @@ pipeline {
 ```
 
 Other files are same.
+
+#### Create a generic service deployment pipeline
+
+In previous scenarios everything bound with one service `Hello service`, now we want to create a generic docker container deployment. We only need to create a new pipeline , other files are same.
+
+### Step 3.1 generic deployment pipeline
+
+```
+pipeline {
+    agent any
+    
+    parameters { 
+        string(name: 'SERVICE', defaultValue: 'all', description: 'Service name')
+        string(name: 'DEPLOY_TO', defaultValue: 'dev3', description: 'Docker container deployment environment')
+        string(name: 'TAG', defaultValue: 'dev', description: 'Docker image tag')
+    }
+
+    stages {
+        
+        stage('Deploy Docker Container') {
+            steps {
+                ansiblePlaybook credentialsId: 'dev-server', disableHostKeyChecking: true, extras: "-e TAG=${params.TAG} -e ENV=${params.DEPLOY_TO} --tags ${params.SERVICE}", installation: 'ansible', inventory: '/home/src/ansible-scripts/inventory.inv', playbook: '/home/src/ansible-scripts/docker-deployment.yml'
+            }
+        }
+    }
+}
+```
+
+we can run this deployment separately if the docker image is already pushed to registry.
+
+#### Create a generic service build pipeline
+
+### Step 4.1 generic build pipeline
+
+```
+def source = "default"
+
+pipeline {
+    agent any
+    
+    tools{
+        maven 'maven'
+    }
+    
+    parameters { 
+        choice(name: 'SERVICE', choices: ['hello1', 'hello2'], description: 'Service name') 
+        string(name: 'BRANCH', defaultValue: 'main', description: 'Source code branch')
+        string(name: 'TAG', defaultValue: 'dev', description: 'Docker image tag')
+        choice(name: 'DEPLOY_TO', choices: ['dev1', 'dev2'], description: 'Docker container deployment environment')
+        string(name: 'REGISTRY', defaultValue: '<ip>:5000', description: 'Docker image repository IP:PORT')
+    }
+
+    stages {
+        stage('Clone') {
+            steps {
+                script{
+                    if (params.SERVICE == 'hello1') {
+                        source = "hello-world1"
+                    } else if (params.SERVICE == 'hello2') {
+                        source = "hello-world2"
+                    }else{
+                        source = "hello-world1"
+                    }
+                }
+                git branch: "${params.BRANCH}" , credentialsId: 'bitbucket', url: "https://isurunuwanthilaka@bitbucket.org/isurunuwanthilaka/${source}"
+                
+            }
+        }
+        
+        stage('Maven Build') {
+            steps {
+                sh "mvn clean package"
+                
+            }
+        }
+        
+        stage('Docker Build') {
+            steps {
+                sh "docker build -t ${params.REGISTRY}/${params.SERVICE}:${params.TAG} ./"
+                
+            }
+        }
+        
+        stage('Docker Push') {
+            steps {
+                sh "docker push ${params.REGISTRY}/${params.SERVICE}:${params.TAG}"
+            }
+        }
+        
+        stage('Clean') {
+            steps {
+                sh "docker image rm -f ${params.REGISTRY}/${params.SERVICE}:${params.TAG}"
+                sh "docker system prune -f"
+                
+            }
+        }
+        
+        stage("Trigger Pipelines") {
+            steps {
+                build job: 'Service-Deployment', parameters: [string(name: 'SERVICE', value: "${params.SERVICE}"),string(name: 'TAG', value: "${params.TAG}"),string(name: 'DEPLOY_TO', value: "${params.DEPLOY_TO}")]
+            }
+        }
+    }
+}
+```
+
+Run this by changing configurations dynamically. Notice that in the last `Trigger Pipelines` step it is calling previous `deployment pipeline`. Cool right?
+
+#### Create a parameterized pipeline to clean environments
+
+Finally we need to clean environment, so I have created another parameterized pipeline as follows.
+
+### Step 5.1 Environment cleaning pipeline
+
+```
+pipeline {
+    agent any
+    
+    parameters { 
+        choice(name: 'ENV', choices: ['dev1', 'dev2'], description: 'Environment to be cleaned')
+    }
+
+    stages {
+        
+        stage('Clean') {
+            steps {
+                ansiblePlaybook credentialsId: 'dev-server', disableHostKeyChecking: true, extras: "-e ENV=${params.ENV}", installation: 'ansible', inventory: '/home/src/ansible-scripts/inventory.inv', playbook: '/home/src/ansible-scripts/docker-clean-env.yml'
+            }
+        }
+    }
+}
+```
