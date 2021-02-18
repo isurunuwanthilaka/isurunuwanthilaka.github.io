@@ -161,3 +161,49 @@ pipeline {
     }
 }
 ```
+
+Also create jenkins credentials to access bitbucket with the ID `bitbucket` and create another credential with `SSH username with private key` type for ansible (use the key got with `cat /root/.ssh/id_rsa`)
+
+### Step 1.2 Create ansible playbook
+
+Create directory at `/home/src/ansible-scripts` where we store ansible-playbooks (In future we will store everything in a git repo ao it is easy to version)
+
+Now create `docker-deployment.yml`, this is the ansible playbook for first pipeline
+
+```yml
+---
+- hosts: "{{ENV}}"
+  vars_files:
+    - "/home/src/ansible-scripts/{{ENV}}.yml"
+  become: True
+  tasks:
+    - name: Install python pip
+      yum:
+        name: python-pip
+        state: present
+    - name: Install docker-py python module
+      pip:
+        name: docker-py
+        state: present
+    - name: Start the Hello1 service
+      docker_container:
+        name: hello1
+        image: "<ip>:5000/hello1:{{TAG}}"
+        state: started
+        published_ports:
+          - "0.0.0.0:{{hello1.port}}:{{hello1.port}}"
+      tags: hello1
+    - name: Start the Hello2 service
+      docker_container:
+        name: hello2
+        image: "<ip>:5000/hello2:{{TAG}}"
+        state: started
+        published_ports:
+          - "0.0.0.0:{{hello2.port}}:{{hello2.port}}"
+      tags: hello2
+
+```
+
+### Step 1.3 Lets create ansible inventory
+
+Create another file `inventory.inv` with the IPs to slave nodes.
