@@ -95,7 +95,7 @@ If successful `ansible -i hosts -m ping` should give success response. Here `hos
 
 I have created simple hello world springboot project (https://github.com/isurunuwanthilaka/hello-world), Once we deploy to slave node we should be able to get the response at `http://<ip>:8082/hello`
 
-#### Create a simple pipeline to deploy `Hello Service`
+## Create a simple pipeline to deploy `Hello Service`
 
 ### Step 1.1 - Creating pipeline
 
@@ -239,7 +239,7 @@ hello2:
 
 Cool! Everything done for the first pipeline. Kick BUILD, booooooom! :)
 
-#### Create a parameterized pipeline to deploy `Hello Service`
+## Create a parameterized pipeline to deploy `Hello Service`
 
 Previously we loaded everything from environment block, but we cant always come to pipeline script and change, so we use this parameterized build trigger approach which gives us more controllability over pipe.
 
@@ -308,7 +308,7 @@ pipeline {
 
 Other files are same.
 
-#### Create a generic service deployment pipeline
+## Create a generic service deployment pipeline
 
 In previous scenarios everything bound with one service `Hello service`, now we want to create a generic docker container deployment. We only need to create a new pipeline , other files are same.
 
@@ -337,7 +337,7 @@ pipeline {
 
 we can run this deployment separately if the docker image is already pushed to registry.
 
-#### Create a generic service build pipeline
+## Create a generic service build pipeline
 
 ### Step 4.1 generic build pipeline
 
@@ -415,7 +415,7 @@ pipeline {
 
 Run this by changing configurations dynamically. Notice that in the last `Trigger Pipelines` step it is calling previous `deployment pipeline`. Cool right?
 
-#### Create a parameterized pipeline to clean environments
+## Create a parameterized pipeline to clean environments
 
 Finally we need to clean environment, so I have created another parameterized pipeline as follows.
 
