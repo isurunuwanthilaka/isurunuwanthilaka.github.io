@@ -442,40 +442,15 @@ pipeline {
 
 ### Step 5.2 Environment cleaning ansible-playbook
 
-`docker-clean-env.yml`
 
-```yml
----
-- hosts: "{{ENV}}"
-  gather_facts: false
-  tasks:
-  - name: Get running containers
-    docker_host_info:
-      containers: yes
-    register: docker_info
 
-  - name: Stop running containers
-    docker_container:
-      name: "{{ item }}"
-      state: stopped
-    loop: "{{ docker_info.containers | map(attribute='Id') | list }}"
-  - name: Remove Stopped docker containers
-    shell: |
-       docker rm $(docker ps -a -q);
-    when: docker_info.containers != 0
+Check for [Source Code](https://github.com/isurunuwanthilaka/jenkins-ansible-docker-deployments)
 
-  - name: Get details of all images
-    docker_host_info:
-      images: yes
-      verbose_output: yes
-    register: image_info
-  - name: Remove all images
-    docker_image:
-      name: "{{ item }}"
-      state: absent
-    loop: "{{ image_info.images | map(attribute='Id') | list }}"
-```
+We can add 
 
+* Notifications with slack
+
+* Periodic build triggers (hourly, nightly, daily etc)
 
 Jenkins and Ansible have lot more features , Lets explore in next posts.
 
