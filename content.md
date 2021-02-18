@@ -51,6 +51,8 @@ permalink: /content
   Deploying docker images from Bitbucket to Docker Hub</a></li>
   <li><a href="https://isurunuwanthilaka.github.io/engineering/2020/10/21/docker-image-for-go-app">
   Building Docker image for GO application</a></li>
+  <li><a href="https://isurunuwanthilaka.github.io/engineering/2021/02/18/docker-jenkins-ansible-automation">
+  Docker container deployment with Jenkins and Ansible</a></li>
   </ol>
 </details>
 
@@ -68,6 +70,7 @@ permalink: /content
 
   <ol>
   <li><a href="https://isurunuwanthilaka.github.io/mind/2020/04/18/mind-engineering-part-1">Mind Engineering for Professionals | Part 1</a></li>
+  <li><a href="https://isurunuwanthilaka.github.io/profession/2021/03/02/mit-1-anniversary">Mind Engineering for Professionals | Part 1</a></li>
   </ol>
 
 </details>
