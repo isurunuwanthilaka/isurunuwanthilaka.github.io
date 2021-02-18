@@ -215,3 +215,95 @@ Create another file `inventory.inv` with the IPs to slave nodes.
 [dev2]
 <dev2-ip> ansible_user=root
 ```
+### Step 1.4 Create environment files
+
+These files include properties associated with environments. In my case I have `dev1` and `dev2` in inventory. So I will have two files
+
+`dev1.yml`
+
+```yml
+hello1:
+  port: 8082
+hello2:
+  port: 8083
+```
+
+`dev2.yml`
+
+```yml
+hello1:
+  port: 8082
+hello2:
+  port: 8083
+```
+
+Cool! Everything done for the first pipeline. Kick BUILD, booooooom! :)
+
+#### Create a parameterized pipeline to deploy `Hello Service`
+
+Previously we loaded everything from environment block, but we cant always come to pipeline script and change, so we use this parameterized build trigger approach which gives us more controllability over pipe.
+
+### Step 2.1 - Creating pipeline
+
+```
+pipeline {
+    agent any
+    
+    tools{
+        maven 'maven'
+    }
+    
+    parameters { 
+        choice(name: 'SERVICE', choices: ['hello1', 'hello2'], description: 'Service name') 
+        string(name: 'BRANCH', defaultValue: 'main', description: 'Source code branch')
+        string(name: 'TAG', defaultValue: 'dev', description: 'Docker image tag')
+        choice(name: 'DEPLOY_TO', choices: ['dev1', 'dev2'], description: 'Docker container deployment environment')
+        string(name: 'REGISTRY', defaultValue: '<ip>:5000', description: 'Docker image repository IP:PORT')
+    }
+
+    stages {
+        stage('Clone') {
+            steps {
+                git branch: "${params.BRANCH}" , credentialsId: 'bitbucket', url: 'https://isurunuwanthilaka@bitbucket.org/isurunuwanthilaka/hello-world1'
+                
+            }
+        }
+        
+        stage('Maven Build') {
+            steps {
+                sh "mvn clean package"
+                
+            }
+        }
+        
+        stage('Docker Build') {
+            steps {
+                sh "docker build -t ${params.REGISTRY}/${params.SERVICE}:${params.TAG} ./"
+                
+            }
+        }
+        
+        stage('Docker Push') {
+            steps {
+                sh "docker push ${params.REGISTRY}/${params.SERVICE}:${params.TAG}"
+            }
+        }
+        
+        stage('Deploy Docker Container') {
+            steps {
+                ansiblePlaybook credentialsId: 'dev-server', disableHostKeyChecking: true, extras: "-e TAG=${params.TAG} -e ENV=${params.DEPLOY_TO} --tags {params.SERVICE}", installation: 'ansible', inventory: '/home/src/ansible-scripts/inventory.inv', playbook: '/home/src/ansible-scripts/docker-deployment.yml'
+            }
+        }
+        
+        stage('Clean') {
+            steps {
+                sh "docker image rm -f ${params.REGISTRY}/${params.SERVICE}:${params.TAG}"
+                sh "docker system prune -f"
+                
+            }
+        }
+    }
+}
+```
+
+Other files are same.
