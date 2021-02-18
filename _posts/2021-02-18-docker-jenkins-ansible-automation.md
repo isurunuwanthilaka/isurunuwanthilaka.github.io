@@ -476,13 +476,6 @@ pipeline {
     loop: "{{ image_info.images | map(attribute='Id') | list }}"
 ```
 
-Check for [Source Code](https://github.com/isurunuwanthilaka/jenkins-ansible-docker-deployments)
-
-We can add 
-
-* Notifications with slack
-
-* Periodic build triggers (hourly, nightly, daily etc)
 
 Jenkins and Ansible have lot more features , Lets explore in next posts.
 
