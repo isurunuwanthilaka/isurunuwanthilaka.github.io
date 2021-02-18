@@ -444,7 +444,7 @@ pipeline {
 
 `docker-clean-env.yml`
 
-```yml
+```
 ---
 - hosts: "{{ENV}}"
   gather_facts: false
@@ -453,14 +453,17 @@ pipeline {
     docker_host_info:
       containers: yes
     register: docker_info
+
   - name: Stop running containers
     docker_container:
       name: "{{ item }}"
       state: stopped
     loop: "{{ docker_info.containers | map(attribute='Id') | list }}"
   - name: Remove Stopped docker containers
-    shell: docker rm $(docker ps -a -q)
+    shell: |
+       docker rm $(docker ps -a -q);
     when: docker_info.containers != 0
+
   - name: Get details of all images
     docker_host_info:
       images: yes
