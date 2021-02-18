@@ -70,7 +70,7 @@ permalink: /content
 
   <ol>
   <li><a href="https://isurunuwanthilaka.github.io/mind/2020/04/18/mind-engineering-part-1">Mind Engineering for Professionals | Part 1</a></li>
-  <li><a href="https://isurunuwanthilaka.github.io/profession/2021/03/02/mit-1-anniversary">Mind Engineering for Professionals | Part 1</a></li>
+  <li><a href="https://isurunuwanthilaka.github.io/profession/2021/03/02/mit-1-anniversary">What I learnt in my 1st year as a Software Engineer!</a></li>
   </ol>
 
 </details>
