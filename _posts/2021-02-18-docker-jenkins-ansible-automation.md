@@ -207,3 +207,11 @@ Now create `docker-deployment.yml`, this is the ansible playbook for first pipel
 ### Step 1.3 Lets create ansible inventory
 
 Create another file `inventory.inv` with the IPs to slave nodes.
+
+```text
+[dev1]
+<dev1-ip> ansible_user=root
+
+[dev2]
+<dev2-ip> ansible_user=root
+```
