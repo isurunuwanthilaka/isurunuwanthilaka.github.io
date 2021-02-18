@@ -41,7 +41,7 @@ We are software engineers, we write code. Surely (if you are in a small scale co
 
 5. Create a parameterized pipeline to clean environments
 
-### Tools we need to setup
+<!-- ### Tools we need to setup
 
 * Jenkins server [Installation guide](https://www.jenkins.io/doc/book/installing/linux/#red-hat-centos) - Only on master node
 
@@ -51,7 +51,7 @@ We are software engineers, we write code. Surely (if you are in a small scale co
 
 * Docker private registry [Installation guide](https://docs.docker.com/registry/deploying/) and make it insecure repository for testing purposes [Installation guide]( https://www.linuxtechi.com/setup-docker-private-registry-centos-7-rhel-7/) - Only on master node
 
-* Git/Maven/Java with yum or otherwise and find the paths only on master node
+* Git/Maven/Java with yum or otherwise and find the paths only on master node -->
 
 <!-- ### Evaluation on tools
 
