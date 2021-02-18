@@ -53,7 +53,7 @@ We are software engineers, we write code. Surely (if you are in a small scale co
 
 * Git/Maven/Java with yum or otherwise and find the paths only on master node
 
-### Evaluation on tools
+<!-- ### Evaluation on tools
 
 1. Jenkins - Powerful CI/CD tool used to automate build pipelines
 
@@ -62,7 +62,6 @@ We are software engineers, we write code. Surely (if you are in a small scale co
      * Similar products - chef, puppet, saltstack (mostly push configurations)
 	
 3. Jenkins vs Ansible : https://www.javatpoint.com/jenkins-vs-ansible
-
 
 ### Basic tutorials
 
@@ -103,7 +102,6 @@ I have created simple hello world springboot project (https://github.com/isurunu
 Login into Jenkins server and start a `pipeline` type project and write the following declarative pipeline.
 
 ```
-
 pipeline {
     agent any
     
@@ -489,4 +487,4 @@ We can add
 
 Jenkins and Ansible have lot more features , Lets explore in next posts.
 
-Happy Coding!
+Happy Coding! -->
