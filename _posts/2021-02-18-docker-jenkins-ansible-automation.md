@@ -40,3 +40,16 @@ We are software engineers, we write code. Surely (if you are in a small scale co
 4. Create a generic service build pipeline
 
 5. Create a parameterized pipeline to clean environments
+
+### Tools we need to setup
+
+* Jenkins server [Installation guide](https://www.jenkins.io/doc/book/installing/linux/#red-hat-centos) - Only on master node
+
+* Ansible server [Installation guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-rhel-centos-or-fedora) - Only on master node
+
+* Docker Engine [Installation guide](https://docs.docker.com/engine/install/centos/) - All nodes (With ansible, we can install docker but here I am having docker pre-installed to all slave nodes)
+
+* Docker private registry [Installation guide](https://docs.docker.com/registry/deploying/) and make it insecure repository for testing purposes [Installation guide]( https://www.linuxtechi.com/setup-docker-private-registry-centos-7-rhel-7/) - Only on master node
+
+* Git/Maven/Java with yum or otherwise and find the paths only on master node
+
