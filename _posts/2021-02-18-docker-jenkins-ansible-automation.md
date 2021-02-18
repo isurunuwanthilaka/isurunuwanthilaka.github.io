@@ -5,7 +5,7 @@ categories: engineering
 author : Isuru Nuwanthilaka
 ---
 
-We are software engineers, we write code. Surely (if you are in a small scale company without DevOps engineers) we have to setup the applications and release for Dev,QA and UAT environments. That is lots of work, out of scope. So how about having all those automated and we don't need to worry about CI/CD at all? Ehhhh interesting! 
+We are software engineers, we write code. Surely (if you are in a small scale company) we have to setup the applications and release for Dev,QA and UAT environments. That is lots of work, out of scope. So how about having all those automated and we don't need to worry about CI/CD at all? Ehhhh interesting! 
 
 ### Why we need this setup?
 
