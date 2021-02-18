@@ -94,3 +94,70 @@ If successful `ansible -i hosts -m ping` should give success response. Here `hos
 ### Step 0.2 - Create a simple webservice to deploy
 
 I have created simple hello world springboot project (https://github.com/isurunuwanthilaka/hello-world), Once we deploy to slave node we should be able to get the response at `http://<ip>:8082/hello`
+
+#### Create a simple pipeline to deploy `Hello Service`
+
+### Step 1.1 - Creating pipeline
+
+Login into Jenkins server and start a `pipeline` type project and write the following declarative pipeline.
+
+```
+pipeline {
+    agent any
+    
+    tools{
+        maven 'maven'
+    }
+    
+    environment{
+        BRANCH = 'main'
+        TAG = 'dev'
+        REGISTRY = '<ip>:5000'
+        DEPLOY_TO = 'dev2'
+    }
+
+    stages {
+        stage('Clone') {
+            steps {
+                git branch: "${BRANCH}" , credentialsId: 'bitbucket', url: 'https://isurunuwanthilaka@bitbucket.org/isurunuwanthilaka/hello-world1'
+                
+            }
+        }
+        
+        stage('Maven Build') {
+            steps {
+                sh "mvn clean package"
+                
+            }
+        }
+        
+        stage('Docker Build') {
+            steps {
+                sh "docker build -t ${REGISTRY}/hello1:${TAG} ./"
+                
+            }
+        }
+        
+        stage('Docker Push') {
+            steps {
+                sh "docker push ${REGISTRY}/hello1:${TAG}"
+                
+            }
+        }
+        
+        stage('Deploy Docker Container') {
+            steps {
+                ansiblePlaybook credentialsId: 'dev-server', disableHostKeyChecking: true, extras: '-e TAG=${TAG} -e ENV=${DEPLOY_TO} --tags hello1', installation: 'ansible', inventory: '/home/src/ansible-scripts/inventory.inv', playbook: '/home/src/ansible-scripts/docker-deployment.yml'
+            }
+        }
+        
+        stage('Clean') {
+            steps {
+                sh "docker image rm -f ${REGISTRY}/hello1:${TAG}"
+                sh "docker system prune -f"
+                
+            }
+        }
+    }
+}
+```
