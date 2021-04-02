@@ -24,7 +24,7 @@ minima:
     youtube_channel_name: Isuru Nuwanthilaka
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: minima
 plugins:
   - jekyll-feed
 
