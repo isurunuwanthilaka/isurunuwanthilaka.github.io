@@ -3,17 +3,16 @@ layout: post
 title: Medium Connector for Ballerina
 categories: engineering
 author : Isuru Nuwanthilaka
+last_modified_at: '2021-04-11 21:05:20'
+tags: [Ballerina]
 ---
 
+I was thinking to learn Ballerina for a long time. So I thought to develop something and learn by doing. First I went through the list of modules developed by other ballerina developers. It is interesting that ballerina had already covered many areas, also I was reading some ballerina posts on Medium platform. So I got an idea what if I could write a connector for medium with ballerina. No one had tried for that. Therefore I started developing this `isurun/medium` module. There was a cool article about twitter module development in medium, so I refered it as the guide for this development.
 <p align="center">
 <img src="{{ site.url }}/assets/img/bal+medium.jpg"
      alt="Medium Ballerina Image"
      style="float: center;" />
 </p>
-
-# Motivation
-
-I was thinking to learn Ballerina for a long time. So I thought to develop something and learn by doing. First I went through the list of modules developed by other ballerina developers. It is interesting that ballerina had already covered many areas, also I was reading some ballerina posts on Medium platform. So I got an idea what if I could write a connector for medium with ballerina. No one had tried for that. Therefore I started developing this `isurun/medium` module. There was a cool article about twitter module development in medium, so I refered it as the guide for this development.
 
 # Ballerina Medium Connector
 

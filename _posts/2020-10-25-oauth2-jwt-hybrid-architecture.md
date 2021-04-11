@@ -3,17 +3,20 @@ layout: post
 title: OAuth2 + JWT Hybrid Architecture  
 categories: engineering
 author : Isuru Nuwanthilaka
+last_modified_at: '2021-04-11 21:05:20'
+tags: [Architecture]
 ---
+
+
+*This is a design overview not a how-to guide!*
+
+When it comes to software engineering , one of the greatest nightmares is `Authentication and Authorization`. It is a huge area of knowledge and hard time on implementation. Also it is evolving, even making it is more complex!
 
 <p align="center">
 <img src="{{ site.url }}/assets/img/oauth2.png"
      alt="oauth2-logo"
      style="float: center;" />
 </p>
-
-*This is a design overview not a how-to guide!*
-
-When it comes to software engineering , one of the greatest nightmares is `Authentication and Authorization`. It is a huge area of knowledge and hard time on implementation. Also it is evolving, even making it is more complex!
 
 For the past few weeks , I have been working with AA solution for Spring Boot application. After reading lots of documentations, finally I came up with this [OAuth2.0](https://oauth.net/2/) JWT Hybrid solution which is a merger of standard OAuth2.0 Authentication and JWT Authentication.
 

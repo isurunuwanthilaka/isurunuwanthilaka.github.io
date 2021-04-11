@@ -3,9 +3,9 @@ layout: post
 title: Understanding Compilers from scratch 
 categories: engineering
 author : Isuru Nuwanthilaka
+last_modified_at: '2021-04-11 21:05:20'
+tags: [Misc]
 ---
-
-# Motivation
 
 Technologies are evolving so fast. New programming languages rising up while legacy programming languages are improving and going deeper. Last year I came across with new language — Ballerina, a open source programming language — which grabbed my attention in the first sight. After testing few sample code I wanted to learn how it is built, so as the first step I tried learning its compiler design.
 

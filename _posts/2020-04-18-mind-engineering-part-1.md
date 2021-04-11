@@ -3,6 +3,8 @@ layout: post
 title: Mind Engineering for Professionals | Part 1
 categories: mind
 author : Isuru Nuwanthilaka
+last_modified_at: '2021-04-11 21:05:20'
+tags: [Career]
 ---
 
 <div align='justify'>

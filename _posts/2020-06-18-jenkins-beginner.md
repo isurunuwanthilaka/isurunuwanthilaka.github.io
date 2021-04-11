@@ -3,17 +3,17 @@ layout: post
 title: Jenkins - Zero to Somewhere 
 categories: engineering
 author : Isuru Nuwanthilaka
+last_modified_at: '2021-04-11 21:05:20'
+tags: [CI&CD]
 ---
+
+We are software engineers. Nowadays, the definition of SE is not limited to just writing codes. Sometimes, we have to set the applications up and running and give it to QA for testing. Doing continuous deployments (CD) being in the agile environment is tough and time consuming. What if there is a way to automate the deployments ??? and pay less supervision to CI/CD/CD. So we can save time to write codes while a bot handling devops. It is good for at least setting up the testing environment.
 
 <p align="center">
 <img src="{{ site.url }}/assets/img/jenkins-docker.png"
      alt="Jenkins"
      style="float: center;" />
 </p>
-
-# Motivation
-
-We are software engineers. Nowadays, the definition of SE is not limited to just writing codes. Sometimes, we have to set the applications up and running and give it to QA for testing. Doing continuous deployments (CD) being in the agile environment is tough and time consuming. What if there is a way to automate the deployments ??? and pay less supervision to CI/CD/CD. So we can save time to write codes while a bot handling devops. It is good for atleast setting up the testing environment.
 
 Jenkins enters here to the development tool kit.Buckle up.
 

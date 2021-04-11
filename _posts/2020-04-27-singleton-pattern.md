@@ -3,19 +3,18 @@ layout: post
 title: Singleton Pattern
 categories: engineering
 author : Isuru Nuwanthilaka
+last_modified_at: '2021-04-11 21:05:20'
+tags: [Design Patterns]
 ---
 
+<div align='justify' style = "font-style:italic;">
+The singleton pattern ensures a class has only one instance, and provides global point of access to it.
+</div>
 <p align="center">
 <img src="{{ site.url }}/assets/img/singleton.png"
      alt="Patterns Image"
      style="float: center;" />
 </p>
-
-<h4>Definition</h4>
-<br/>
-<div align='justify' style = "font-style:italic;">
-The singleton pattern ensures a class has only one instance, and provides global point of access to it.
-</div>
 <br>
 <h5>Let’s discuss.</h5>
 <br/>

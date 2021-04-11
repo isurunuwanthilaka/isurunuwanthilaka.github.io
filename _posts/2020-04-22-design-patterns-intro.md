@@ -3,7 +3,14 @@ layout: post
 title: Why Design Patterns?
 categories: engineering
 author : Isuru Nuwanthilaka
+last_modified_at: '2021-04-11 21:05:20'
+tags: [Design Patterns]
 ---
+
+
+<div align='justify'>
+Software engineer is no other than civil engineer, but with a different context. Both build structures may be small scale and large scale. Therefore, software engineers need careful design both conceptual and technical before jumping into coding phase. Over the course of software engineering career, we can see same engineering problem patterns appearing again and again. So how about we implementing a template for solving that particular issue re-occurring. That is how the design patterns enter to the software world. So, with design patterns we can come up with flexible, re-usable and easy to maintain solutions to our software problems.
+</div>
 
 <p align="center">
 <img src="{{ site.url }}/assets/img/post-2.png"
@@ -11,9 +18,6 @@ author : Isuru Nuwanthilaka
      style="float: center;" />
 </p>
 
-<div align='justify'>
-Software engineer is no other than civil engineer, but with a different context. Both build structures may be small scale and large scale. Therefore, software engineers need careful design both conceptual and technical before jumping into coding phase. Over the course of software engineering career, we can see same engineering problem patterns appearing again and again. So how about we implementing a template for solving that particular issue re-occurring. That is how the design patterns enter to the software world. So, with design patterns we can come up with flexible, re-usable and easy to maintain solutions to our software problems.
-</div>
 <br/>
 <div align='justify'>
 There are many design patterns exist. And there is not a obvious guide line to what to use and when to use. It all comes with experience you gather during the journey. There are 23 design patterns discussed in Gang Of Four (GOF) famous book Design Patterns: Elements of Reusable Object-Oriented Software. All patterns are categorized into three main areas; creational, structural and behavioral. We use this GOF design pattern catalog as a guide to produce this blog series. And this series will cover all the design patterns with UML, example implementations and the concepts (SOLID etc.) behind.

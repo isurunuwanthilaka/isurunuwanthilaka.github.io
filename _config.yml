@@ -28,6 +28,9 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jemoji
 
 
 # Google Analytics
@@ -41,4 +44,3 @@ paginate_path: posts/page:num/
 
 published: true
 future: true
-

@@ -3,14 +3,17 @@ layout: post
 title: Deploying docker images from Bitbucket to Docker Hub  
 categories: engineering
 author : Isuru Nuwanthilaka
+last_modified_at: '2021-04-11 21:05:20'
+tags: [CI&CD]
 ---
+
+Well, now a days, the programmers’ life is getting easier with the improvement of the services available in the software industry. Normally we use github or bitbucket to maintain our code base. In bitbucket we can use pipelines to auto build images and deploy to a docker container registry where we can pull back from anywhere in the world, anytime. Cool right? 
+
 <p align="center">
 <img src="{{ site.url }}/assets/img/docker-image-to-docker-hub.png"
      alt="docker-image-to-docker-hub"
      style="float: center;" />
 </p>
-
-Well, now a days, the programmers’ life is getting easier with the improvement of the services available in the software industry. Normally we use github or bitbucket to maintain our code base. In bitbucket we can use pipelines to auto build images and deploy to a docker container registry where we can pull back from anywhere in the world, anytime. Cool right? 
 
 It saves lots of time for improving code.
 

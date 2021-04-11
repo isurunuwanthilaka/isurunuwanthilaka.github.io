@@ -20,42 +20,57 @@ I am an engineer, I build software to ease the life of humans. I love solving co
 Education
 ---------
 
-2015-2019
-:   **BSc(Hons), Electronics and Telecommunication Engineering** ;University of Moratuwa (Sri Lanka)
+2021-2023
+:   **MSc in CS, Software Architecture**
+:   *University of Moratuwa (Sri Lanka)*
 
-    *Second Class Upper Division*
+<br/>
+
+2015-2019
+:   **BSc(Hons), Electronics and Telecommunication Engineering**
+:   *University of Moratuwa (Sri Lanka)*
+:   *Second Class Upper Division*
+
+<br/>
 
 2006-2014
-:   **Secondary Education**; Ananda College (Colombo)
-
-    *AL : Physical Science Section : Island Rank 36 Colombo District Rank 11*
+:   **Secondary Education**
+:   *Ananda College (Colombo, Sri Lanka)*
+:   *Advanced Level : Physical Science Section : Island Rank 36 Colombo District Rank 11*
 
 ---------------
 
-Work Experience
+Experience
 ----------
 
 2020 March - Present
-:   **Software Engineer** ;Millennium I.T.E.S.P. (Sri Lanka)
+:   **Software Engineer**
+:   *Millennium IT ESP(Sri Lanka)*
 
-At work, my responsibilities include developing microservices for enterprise applications, design and implement, maintain source code clean and handy,and also continuous deployments.
+>At work, my responsibilities include developing microservices for enterprise applications, design
+>and implement, maintain source code clean and handy,and also continuous deployments.
+>
+>I work with following technologies
+>
+>* Java - Spring Boot Stack
+>
+>* Docker/Jenkins/Ansible
+>
+>* PostgreSQL/Firebase
+>
+>* Python for Algorithms,Machine Learning
+>
+>* AWS - EMR (MapReduce), DynamoDB, Spark, Hadoop, Mahout, S3, Cloud9
+>
+>* Jira (Agile)
 
-I work with following technologies
-
-* Java 8/11 - Spring Boot Stack
-
-* ReactJS
-
-* Docker 
-
-* PostgreSQL
-
-* Python for algorithms
+<br/>
 
 2018 June - 2018 December
-:   **Software Engineering Intern** ;Millennium I.T.E.S.P. (Sri Lanka)
+:   **Software Engineering Intern**
+:   *Millennium IT ESP(Sri Lanka)*
 
-I am a huge self learning enthusiast, therefore when I have a free time I do MOOCS.
+>I am a huge self learning enthusiast, therefore when I have a free time I do MOOCS.
 
 --------
 

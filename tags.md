@@ -1,0 +1,28 @@
+---
+layout: tab
+title: Tags
+description: Posts indexed by tags
+permalink: /tags
+---
+
+<div id="tags">
+{% assign sorted_tags = site.tags | sort %}
+    <h2>Tags</h2>
+        <p>
+        {% for tag in sorted_tags %}
+            <a class="post-tag" href="{{ site.baseurl }}/tags/#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+        {% endfor %}
+        </p>
+    {% for tag in sorted_tags %}
+        <div id="{{ tag[0] | slugify }}">
+            <h3>{{ tag[0] }}</h3>
+            {% for post in tag[1] %}
+                <ul>
+                    <p>
+                        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                    </p>
+                </ul>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
