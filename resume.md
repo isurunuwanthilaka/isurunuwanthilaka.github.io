@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Résumé
+layout: tab
+title: Resume
 permalink: /resume
 ---
 <p align="center">
@@ -9,12 +9,11 @@ permalink: /resume
      style="float: center; border-radius: 50%;" />
 </p>
 
-Isuru Nuwanthilaka
-==================
+<p style="text-align: center;font-size: 50px"> Isuru Nuwanthilaka </p>
 
 ----
 
-> Loves problem solving. Interested in the field of Data Analytics, Machine Learning, AI, IoT and Software Development.
+I am an engineer, I build software to ease the life of humans. I love solving complex problems, designing architectures and Software Development.
 
 ----
 
@@ -31,13 +30,15 @@ Education
 
     *AL : Physical Science Section : Island Rank 36 Colombo District Rank 11*
 
+---------------
+
 Work Experience
 ----------
 
 2020 March - Present
-:   **Fullstack Software Engineer** ;Millennium I.T.E.S.P. (Sri Lanka)
+:   **Software Engineer** ;Millennium I.T.E.S.P. (Sri Lanka)
 
-At work, my responisibilities include developing microservices for enterprise applications, design and implement, maintain source code clean and handy,and also continuous deployments.
+At work, my responsibilities include developing microservices for enterprise applications, design and implement, maintain source code clean and handy,and also continuous deployments.
 
 I work with following technologies
 
@@ -56,6 +57,8 @@ I work with following technologies
 
 I am a huge self learning enthusiast, therefore when I have a free time I do MOOCS.
 
+--------
+
 Courses
 --------------------
 
@@ -65,6 +68,8 @@ This nanodegree incudes NN,CNN,RNN,GAN and hands-on AWS SageMaker deployment.
 
 Completion ID : [434M3LSP](https://confirm.udacity.com/434M3LSP)
 
+--------------
+
 Cool Side Projects
 ---------------------
 
@@ -72,6 +77,8 @@ Cool Side Projects
 :   For university students to calculate their GPAs.
 
 [Live APP](https://play.google.com/store/apps/details?id=com.isumalab.gpa)
+
+----------------
 
 Programming Languages
 --------------------
@@ -85,6 +92,8 @@ Programming Languages
 **ReactJS and HTML:** For developing frontends
 
 Basic knowledge of **C**, **Arduino**, **Perl**,**Verilog**
+
+-------------
 
 Other
 ----------------------------------------
@@ -102,5 +111,4 @@ Other
 Download [Resume](https://isurunuwanthilaka.github.io/downloads/Resume.pdf)
 
 ----
-
-> • +94 (0)77 387 1605 • 25 years old
+• +94 (0)77 387 1605

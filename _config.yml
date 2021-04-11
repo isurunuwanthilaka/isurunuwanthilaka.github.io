@@ -1,4 +1,4 @@
-title: Isuru Nuwanthilaka's Blog
+title: Isuru Nuwanthilaka
 email: isurunuwanthilaka@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   I talk about different technologies and journey of life.
@@ -27,10 +27,8 @@ minima:
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
-# Disqus Comments
-disqus:
-    shortname: https-isurunuwanthilaka-github-io
 
 # Google Analytics
 google_analytics: G-13KD5X904R
@@ -40,4 +38,7 @@ gems:
 
 paginate: 5
 paginate_path: posts/page:num/
+
+published: true
+future: true
 
