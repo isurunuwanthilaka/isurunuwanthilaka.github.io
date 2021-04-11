@@ -24,6 +24,7 @@ minima:
     youtube_channel_name: Isuru Nuwanthilaka
 
 # Build settings
+markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
