@@ -31,3 +31,10 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 gem 'jekyll-paginate'
 
 gem "jemoji"
+
+gem "sass", "~> 3.7.4"
+gem "github-pages", group: :jekyll_plugins
+
+gem "html-proofer"
+
+gem "nokogiri", "~> 1.10.7"
