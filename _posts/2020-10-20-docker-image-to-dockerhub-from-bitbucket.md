@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deploying docker images from Bitbucket to Docker Hub  
-categories: engineering
+categories: Software-Engineering
 author : Isuru Nuwanthilaka
 last_modified_at: '2021-04-11 21:05:20'
 tags: [CI&CD]
