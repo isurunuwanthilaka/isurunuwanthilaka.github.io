@@ -2,7 +2,7 @@
 layout: tab
 title: Tags
 description: Posts indexed by tags
-permalink: /tags
+permalink: /tags/
 ---
 
 
@@ -22,7 +22,7 @@ permalink: /tags
             <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
                 <li>
                     {{ post.title }}
-                    <small class="post-date">{{ post.date | date_to_string }}</small>
+                    <small class="post-date">({{ post.date | date_to_string }})</small>
                 </li>
             </a>
             {% endfor %}
