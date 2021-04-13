@@ -13,19 +13,22 @@
 }
 
 .share-page {
-  text-align: left;
-  padding: 8px 15px;
-  border-radius: 5px;
-  margin: 1.5 * $spacing-unit 0;
-
-  a {
-    color: #000;
-    margin-left: 10px;
-
-    &:hover {
-      border-bottom: 1px dashed #000;
+    display: inline-block;
+    background: rgb(192,192,192);
+    padding: 0 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 4px;
+    color: $text-color;
+    font-size: 90%;
+    &:before {
+      content: "\f14d";
+      font-family: FontAwesome;
+      padding-right: 0.5em;
     }
-  }
+    &:hover {
+      text-decoration: none;
+      background: rgb(155, 155, 155);
+    }
 }
 
 .post-tag {
@@ -51,5 +54,14 @@
 .post-link {
   display: block;
   @include relative-font-size(1.125);
+}
+
+.email-subscription{
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  background: #70878a;
 }
 
