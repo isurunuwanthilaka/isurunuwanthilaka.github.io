@@ -65,3 +65,23 @@
   background: #70878a;
 }
 
+figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+  align:center;
+}
+
+figcaption {
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
+.fig-img{
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
