@@ -11,6 +11,10 @@ Becoming a software engineer is an exciting journey. It has made me fascinated a
 lots of things to learn yet, but I thought it is worth noting some facts I have found at the end of the first year into
 software engineering.
 
+<p align="center">
+  <img src="{{ site.url }}/assets/img/first-day-job.jpg" alt="first-day-job" style="float: center;" />
+</p>
+
 ## Some self-talk
 
 I know It is just a one year, no big deal. Still I am motivated and in a rapid learning phase. So I have challenging 
@@ -47,4 +51,8 @@ CICD pipelines. In this stage, I think it is a rare opportunity to involve in th
 
 #### 2. Less is more. Done is 'done done', not almost done.
 
+#### 3. Automate repetitive tasks.
 
+#### 4. Write clean code.
+
+#### 5. Learn. Learn. Learn.
