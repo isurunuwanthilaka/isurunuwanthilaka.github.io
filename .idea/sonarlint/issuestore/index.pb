@@ -1,0 +1,29 @@
+
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+E
+_includes/footer.html,7\b\7bafeea8911e2ce671479ece265a20c5eb026da8
+I
+_sass/minima/_layout.scss,b\7\b7a46777dde913bbd610957ce858269bf83de90b
+O
+_sass/minima/custom-styles.scss,9\f\9f0f55a0256aaa630f896d9f69fc43e419e2472d
+Z
+*_posts/2020-04-22-design-patterns-intro.md,a\7\a7ba3f3720fa67392d3fd37537e7e805cba57049
+f
+6_posts/2021-02-18-docker-jenkins-ansible-automation.md,8\e\8e5932b127da577a9467bcf6e0e5604e63940950
+S
+#_posts/2021-04-12-1st-year-as-se.md,8\6\8683a661f0c704232f070e4032fbabda29d48035
+9
+	tags.html,2\5\25bd21eb6e90d8c54629756b85e31dee7409341f
+B
+_layouts/post.html,e\7\e767dacdd408265f818281195cc74a31191ab7cd
+?
+categories.html,9\b\9be45f8e34d9077078b63a530e3c866add45c28e
+E
+_includes/header.html,4\b\4b76f423d99efef5ab275ff40ac08f0c2df2c7f9
+C
+_includes/head.html,c\5\c58923d48aa9504a82e1a3191cf50bb8c51ad4de
+;
+_config.yml,c\d\cd089ae45ce870c45e434019e8f1ed4f066cd425
+R
+"_posts/2021-05-01-avg-mapreduce.md,6\4\6403f240e27d15bb2f99263d652f69e35c54efb0
