@@ -18,7 +18,7 @@ I am an engineer, I build software to ease the life of humans. I love solving co
 ----
 
 Education
----------
+----
 
 2021-2023
 :   **MSc in CS, Software Architecture**
@@ -38,10 +38,10 @@ Education
 :   *Ananda College (Colombo, Sri Lanka)*
 :   *Advanced Level : Physical Science Section : Island Rank 36 Colombo District Rank 11*
 
----------------
+----
 
 Experience
-----------
+----
 
 2020 March - Present
 :   **Software Engineer**
@@ -63,6 +63,10 @@ Experience
 >* AWS - EMR (MapReduce), DynamoDB, Spark, Hadoop, Mahout, S3, Cloud9
 >
 >* Jira (Agile)
+> 
+> * VCS - Git,Github,Bitbucket
+> 
+> * Go Lang
 
 <br/>
 
@@ -70,60 +74,123 @@ Experience
 :   **Software Engineering Intern**
 :   *Millennium IT ESP(Sri Lanka)*
 
->I am a huge self learning enthusiast, therefore when I have a free time I do MOOCS.
+>I have worked with few projects on following technologies.
+> 
+> * Java 8
+> 
+> * Go Lang
+> 
+> * Scala
+> 
+> * PostgreSQL
+> 
+> * AAA Radiator Server
 
---------
+----
 
 Courses
---------------------
+----
 
-**Deep Learning Nanodegree**
+* **Deep Learning Nanodegree**
+: This nanodegree incudes NN,CNN,RNN,GAN and hands-on AWS SageMaker deployment.
+: Completion ID : [434M3LSP](https://confirm.udacity.com/434M3LSP)
 
-This nanodegree incudes NN,CNN,RNN,GAN and hands-on AWS SageMaker deployment.
+* **Cloud Computing 101-Amazon Web Services (AWS)**
+: Issued : 2021 February
+: [Certification](https://drive.google.com/file/d/1fzoq76h1CsPOZbKim4qHksv4WWbTzHoH/view?usp=sharing)
 
-Completion ID : [434M3LSP](https://confirm.udacity.com/434M3LSP)
+* **Data Analytics Fundamentals-Amazon Web Services (AWS)**
+: Issued : 2021 February
+: [Certification](https://drive.google.com/file/d/1TsAo-yg3kKlkCPsc_O2XDHiuCI4ut1tw/view?usp=sharing)
 
---------------
+* **Convolutional Neural Networks-Coursera**
+: Issued : 2019 August
+: Completion ID : [CK6PDQEX3S2M](https://www.coursera.org/account/accomplishments/verify/CK6PDQEX3S2M)
 
-Cool Side Projects
----------------------
+* **Convolutional Neural Networks in TensorFlow-Coursera**
+: Issued : 2019 June
+: Completion ID : [WEF2K8GWC9L2](https://www.coursera.org/account/accomplishments/verify/WEF2K8GWC9L2)
 
-**MyGPA - Android App**
-:   For university students to calculate their GPAs.
+* **Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning-Coursera**
+: Issued : 2019 June
+: Completion ID : [CE6HB5U75FRA](https://www.coursera.org/account/accomplishments/verify/CE6HB5U75FRA)
+  
+* **Improving Deep Neural Networks- Hyperparameter tuning, Regularization and Optimization-Coursera**
+: Issued : 2019 May
+: Completion ID : [LXNDZB6DPLX7](https://www.coursera.org/account/accomplishments/verify/LXNDZB6DPLX7)
+  
+* **Structuring Machine Learning Projects-Coursera**
+: Issued : 2019 May
+: Completion ID : [K74VMVUSRQP7](https://www.coursera.org/account/accomplishments/verify/K74VMVUSRQP7)
 
-[Live APP](https://play.google.com/store/apps/details?id=com.isumalab.gpa)
+* **AI For Everyone-Coursera**
+: Issued : 2019 March
+: Completion ID : [YETW7WJZ7SKG](https://www.coursera.org/account/accomplishments/verify/YETW7WJZ7SKG)
 
-----------------
+* **Industrial IoT on Google Cloud Platform-Coursera**
+: Issued : 2019 February
+: Completion ID : [UWHPHJFZ68NX](https://www.coursera.org/account/accomplishments/verify/UWHPHJFZ68NX)
 
-Programming Languages
---------------------
+* **Core Database Concepts-Coursera**
+: Issued : 2019 January
+: Completion ID : [CUGAGTPYMYCC](https://www.coursera.org/account/accomplishments/verify/CUGAGTPYMYCC)
+  
+* **Version Control with Git-Coursera**
+: Issued : 2018 December
+: Completion ID : [TVGB8YZ8WWYB](https://www.coursera.org/account/accomplishments/verify/TVGB8YZ8WWYB)
+  
+* **Machine Learning-Coursera**
+: Issued : 2018 May
+: Completion ID : [LYJZCS8BPSLD](https://www.coursera.org/account/accomplishments/verify/LYJZCS8BPSLD)
+  
+* **Introduction to IoT-Cisco**
+: Issued : 2017 June
+: Networking Academy ID : 48154230
 
-**Java:** For developing Microservices
+----
 
-**Python:** For developing algorithms, testing new technologies,machine learning projects and for fast protyping  
+Projects
+----
 
-**GoLang:** For Rest APIs
+* **MyGPA - Android App**
+: For university students to calculate their GPAs.
+: [Live APP](https://play.google.com/store/apps/details?id=com.isumalab.gpa)
 
-**ReactJS and HTML:** For developing frontends
+----
 
-Basic knowledge of **C**, **Arduino**, **Perl**,**Verilog**
+Skills
+----
 
--------------
+<p class="skill-text">Java</p>
+<div class="skill-container">
+  <div class="skills" style="width:90%;background-color: #808080;">90%</div>
+</div>
 
-Other
-----------------------------------------
+<p class="skill-text">Python</p>
+<div class="skill-container">
+  <div class="skills" style="width:80%;background-color: #808080;">80%</div>
+</div>
+
+----
+
+Language Proficiency
+----
 
 * Languages:
+    * Sinhala (native)
+    * English
 
-     * Sinhala (native speaker)
-     * English
+Fun Facts
+----
 
 * When I am not stick to a screen I read books, meditate or blogging.
 
-* I love my mom!
+* [I love my mom!](/assets/img/amma.jpg)
+
+* [My bucket list](/docs/bucket-list.md)
 
 
-Download [Resume](https://isurunuwanthilaka.github.io/downloads/Resume.pdf)
+I am open for exciting opportunities, [here is my resume](/downloads/resume.pdf).
 
 ----
 • +94 (0)77 387 1605
