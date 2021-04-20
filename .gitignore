@@ -23,3 +23,12 @@ Thumbs.db
 
 *.sh
 .idea
+*.aux
+*.fdb_latexmk
+*.log
+*.gz
+*.cls
+*.fls
+*.pb
+*.synctex(busy)
+*.out

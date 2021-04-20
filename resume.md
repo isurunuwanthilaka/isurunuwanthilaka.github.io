@@ -190,7 +190,7 @@ Fun Facts
 * [My bucket list](/docs/bucket-list.md)
 
 
-I am open for exciting opportunities, [here is my resume](/downloads/resume.pdf).
+I am open for exciting opportunities, [here is my resume](/docs/cv/resume.pdf).
 
 ----
 • +94 (0)77 387 1605

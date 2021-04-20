@@ -25,5 +25,3 @@ C
 _includes/head.html,c\5\c58923d48aa9504a82e1a3191cf50bb8c51ad4de
 ;
 _config.yml,c\d\cd089ae45ce870c45e434019e8f1ed4f066cd425
-R
-"_posts/2021-05-01-avg-mapreduce.md,6\4\6403f240e27d15bb2f99263d652f69e35c54efb0
