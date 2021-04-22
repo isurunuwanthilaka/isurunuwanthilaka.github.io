@@ -152,16 +152,52 @@ Courses
 Projects
 ----
 
+* **Active contributor of PeoTVGo OTT Solution**
+: Project work at MillenniumIT ESP (2020-2021)
+: Tech stack : Java11 (SpringBoot), Python, Postgres, Linux, Jenkins, Ansible, Docker, Git, POSTman
+: Participated in designing and implementation.
+
 * **MyGPA - Android App**
 : For university students to calculate their GPAs.
 : [Live APP](https://play.google.com/store/apps/details?id=com.isumalab.gpa)
+
+* **Wifi QMS Solution**
+: This project carried out during the internship period along with a team of 3.Technologies used: Springboot, Docker for containerization and testing, GO, Radius for communication between ISG and Radiator AAA server, Perl for adding features to Radiator AAA, Postgresql Database.
+
+* **CRAN based D2D Communication (Final Year Project)**
+: Development for wifi direct D2D communication link over smart devices with the support of cloud assisted controller. Technology stack used : SDR USRP N210, Android, Firebase - auth,realtime db, cloud functions, Wifi/Wifi Direct.
+: [See project here!](https://github.com/isurunuwanthilaka/d2d-app-android)
+: Other collaborators - [Lochana Chathura](https://www.linkedin.com/in/lochana-chathura) , [Dileepa Sandaruwan](https://www.linkedin.com/in/dileepa-sandaruwan/) , [Dinuka Kavinda](https://www.linkedin.com/in/dinuka-kavinda-866459150/)
+
+* **Ballerina Medium Connector (Open Source)**
+: As a contribution to Open Source , developed Medium connector for Ballerina. V1.0.0 is Live!. Ballerina is developed by WSO2.
+: Contribute to : [https://github.com/isurunuwanthilaka/ballerina-medium-connector](https://github.com/isurunuwanthilaka/ballerina-medium-connector)
+: Learn by examples : [https://github.com/isurunuwanthilaka/ballerina-medium-connector-example](https://github.com/isurunuwanthilaka/ballerina-medium-connector-example)
+: [Package on Ballerina Central](https://central.ballerina.io/isurun/medium)
+
+* **IsumaSchool  - Android App**
+: This project is to enable all Sri Lanakans to learn freely online in sinhala on their smartphones. This is carried out as a non-profit project.
+: Tech stack : Android, Firebase, Room Database, Deploy on Playstore, Integration with Youtube. 
+: [Live APP](https://play.google.com/store/apps/details?id=com.isumalab.learn)
+
+* **Water Level Indicator and Water Pump Controller - Atmega 328P Microcontroller Programming**
+: Programming Atmega328P microcontroller in C programming language to controlling the household water pump. 
+: [See project here!](https://github.com/IsuruNuwanthilaka/Atmega328p-with-I2C-RTC-DS1307)
+
+* **IoT Edge BackEnd Solution for Azure IoT Hub**
+: Developed IoT Edge solution for collecting data from several sensors and circulated to Azure IoT Hub after performing several tasks like data aggregation,writing to database, expose API to front end for IoT dashboard. Technologies used : Java(SpringBoot Framework), PostgreSQL, Docker for Containerization, MQTT protocol, JasperReport API, Azure IoT Hub
 
 ----
 
 Skills
 ----
 
-<p class="skill-text">Java</p>
+<p class="skill-text">Java - SpringBoot</p>
+<div class="skill-container">
+  <div class="skills" style="width:90%;background-color: #808080;">90%</div>
+</div>
+
+<p class="skill-text">PostgreSQL</p>
 <div class="skill-container">
   <div class="skills" style="width:90%;background-color: #808080;">90%</div>
 </div>
@@ -169,6 +205,36 @@ Skills
 <p class="skill-text">Python</p>
 <div class="skill-container">
   <div class="skills" style="width:80%;background-color: #808080;">80%</div>
+</div>
+
+<p class="skill-text">Jenkins [CI/CD]</p>
+<div class="skill-container">
+  <div class="skills" style="width:80%;background-color: #808080;">80%</div>
+</div>
+
+<p class="skill-text">Git [VCS]</p>
+<div class="skill-container">
+  <div class="skills" style="width:80%;background-color: #808080;">80%</div>
+</div>
+
+<p class="skill-text">Microservices</p>
+<div class="skill-container">
+  <div class="skills" style="width:80%;background-color: #808080;">80%</div>
+</div>
+
+<p class="skill-text">Algorithms and Data Structures</p>
+<div class="skill-container">
+  <div class="skills" style="width:70%;background-color: #808080;">70%</div>
+</div>
+
+<p class="skill-text">Go</p>
+<div class="skill-container">
+  <div class="skills" style="width:60%;background-color: #808080;">60%</div>
+</div>
+
+<p class="skill-text">AWS [EMR,S3,Hadoop,Spark,Mahout,DynamoDB,EC2]</p>
+<div class="skill-container">
+  <div class="skills" style="width:60%;background-color: #808080;">60%</div>
 </div>
 
 ----
