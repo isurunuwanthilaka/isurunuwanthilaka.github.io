@@ -5,8 +5,6 @@ E
 _includes/footer.html,7\b\7bafeea8911e2ce671479ece265a20c5eb026da8
 I
 _sass/minima/_layout.scss,b\7\b7a46777dde913bbd610957ce858269bf83de90b
-O
-_sass/minima/custom-styles.scss,9\f\9f0f55a0256aaa630f896d9f69fc43e419e2472d
 Z
 *_posts/2020-04-22-design-patterns-intro.md,a\7\a7ba3f3720fa67392d3fd37537e7e805cba57049
 f
@@ -19,9 +17,15 @@ B
 _layouts/post.html,e\7\e767dacdd408265f818281195cc74a31191ab7cd
 ?
 categories.html,9\b\9be45f8e34d9077078b63a530e3c866add45c28e
-E
-_includes/header.html,4\b\4b76f423d99efef5ab275ff40ac08f0c2df2c7f9
 C
 _includes/head.html,c\5\c58923d48aa9504a82e1a3191cf50bb8c51ad4de
 ;
 _config.yml,c\d\cd089ae45ce870c45e434019e8f1ed4f066cd425
+E
+_includes/header.html,4\b\4b76f423d99efef5ab275ff40ac08f0c2df2c7f9
+O
+_sass/minima/custom-styles.scss,9\f\9f0f55a0256aaa630f896d9f69fc43e419e2472d
+9
+	resume.md,2\1\219102facdf7eb5262453fd82b6bf04c2fdfa52a
+X
+(_posts/2021-04-24-spark-product-count.md,9\6\96685707b29ca7d37996d5510459874796307253
