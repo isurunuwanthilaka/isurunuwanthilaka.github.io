@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I completed my first year as a Software Engineer! *Self Note*
-categories: Profession
+categories: Life
 author : Isuru Nuwanthilaka
 last_modified_at: '2021-04-11 21:05:20'
 tags: [Career]
