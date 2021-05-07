@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learn to learn
+title: Web-socket with React
 categories: Software-Engineering
 author : Isuru Nuwanthilaka
 last_modified_at: 2021-05-06 00:00:00
