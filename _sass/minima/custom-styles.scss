@@ -31,6 +31,25 @@
     }
 }
 
+.post-comment {
+    display: inline-block;
+    background: rgb(192,192,192);
+    padding: 0 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 4px;
+    color: $text-color;
+    font-size: 90%;
+    &:before {
+        content: "\f086";
+      font-family: FontAwesome;
+      padding-right: 0.5em;
+    }
+    &:hover {
+      text-decoration: none;
+      background: rgb(155, 155, 155);
+    }
+}
+
 .post-tag {
   display: inline-block;
   background: rgb(196, 195, 195);
