@@ -7,7 +7,7 @@ discussion_id: 14
 tags: [Misc]
 ---
 
-TLDR : **CODE is a POEM** written with passion and loads of love. Friends, If you don't agree, this post is for you and better to read.
+**TLDR : CODE is a POEM written with passion and loads of love.** Friends, If you don't agree, this post is for you and better to read.
 Or else, we both are in the same page.
 
 Early days of programming was composing 1s and 0s somehow to tell the machines a computational task. But now it has evolved
