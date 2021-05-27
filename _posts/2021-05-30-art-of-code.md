@@ -22,7 +22,7 @@ coding has become an art.
 
 What is an art in a general way?
 
-**Poetry is a peace of art.**
+**Poem is a peace of art.**
 : *It is written with care*
 : *well thought*
 : *elegant language used*
