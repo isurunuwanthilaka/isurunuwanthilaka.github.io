@@ -12,8 +12,8 @@ Or else, we both are in the same page.
 
 Early days of programming was composing 1s and 0s somehow to tell the machines a computational task. But now it has evolved
 to a point that it is no longer a 1s and 0s solo dance. Now project teams are huge and lots of programmers working on same code base.
-*So these days what matters most is how to write a code readable and surely someone would fix it to work on a machine.* Therefore,
-coding has become an art.
+*So these days what matters most is how to write a code for readers and surely someone would fix it to work on a machine.* Therefore,
+coding has become an art, not like old days.
 
 <figure>
   <img src="{{ site.url }}/assets/img/codeisart.png" alt="codeisart" class="fig-img"/>
