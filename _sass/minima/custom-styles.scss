@@ -13,41 +13,41 @@
 }
 
 .share-page {
-    display: inline-block;
-    background: rgb(192,192,192);
-    padding: 0 0.5rem;
-    margin-right: 0.5rem;
-    border-radius: 4px;
-    color: $text-color;
-    font-size: 90%;
-    &:before {
-      content: "\f14d";
-      font-family: FontAwesome;
-      padding-right: 0.5em;
-    }
-    &:hover {
-      text-decoration: none;
-      background: rgb(155, 155, 155);
-    }
+  display: inline-block;
+  background: rgb(192, 192, 192);
+  padding: 0 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  color: $text-color;
+  font-size: 90%;
+  &:before {
+    content: "\f14d";
+    font-family: FontAwesome;
+    padding-right: 0.5em;
+  }
+  &:hover {
+    text-decoration: none;
+    background: rgb(155, 155, 155);
+  }
 }
 
 .post-comment {
-    display: inline-block;
-    background: rgb(192,192,192);
-    padding: 0 0.5rem;
-    margin-right: 0.5rem;
-    border-radius: 4px;
-    color: $text-color;
-    font-size: 90%;
-    &:before {
-        content: "\f086";
-      font-family: FontAwesome;
-      padding-right: 0.5em;
-    }
-    &:hover {
-      text-decoration: none;
-      background: rgb(155, 155, 155);
-    }
+  display: inline-block;
+  background: rgb(192, 192, 192);
+  padding: 0 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  color: $text-color;
+  font-size: 90%;
+  &:before {
+    content: "\f086";
+    font-family: FontAwesome;
+    padding-right: 0.5em;
+  }
+  &:hover {
+    text-decoration: none;
+    background: rgb(155, 155, 155);
+  }
 }
 
 .post-tag {
@@ -78,7 +78,7 @@
 figure {
   padding: 4px;
   margin: auto;
-  align:center;
+  align: center;
 }
 
 figcaption {
@@ -87,7 +87,7 @@ figcaption {
   text-align: center;
 }
 
-.fig-img{
+.fig-img {
   display: block;
   width: 80%;
   margin-left: auto;
@@ -95,16 +95,16 @@ figcaption {
 }
 
 .skill-container {
-  margin:0px;
+  margin: 0px;
   width: 100%;
   background-color: #ddd;
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
 
 .skill-text {
-  padding:0px;
+  padding: 0px;
   font-weight: bold;
-  margin-bottom:0px;
+  margin-bottom: 0px;
 }
 
 .skills {
@@ -112,3 +112,10 @@ figcaption {
   color: white;
 }
 
+.stat-box {
+  border-radius: 15px;
+  background: rgb(155, 155, 155);
+  padding: 5px;
+  width: auto;
+  height: auto;
+}
