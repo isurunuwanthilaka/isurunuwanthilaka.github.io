@@ -5,20 +5,20 @@ description: >- # this means to ignore newlines until "baseurl:"
   This site consists of my own thoughts and this doesn't represent the views of company I work for.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://isurunuwanthilaka.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  isurunuwnathilaka
+github_username: isurunuwnathilaka
 
 #Author
 author:
-  name : Isuru Nuwanthilaka
+  name: Isuru Nuwanthilaka
   email: isurunuwanthilaka@gmail.com
 
 #Social Media
 minima:
   social_links:
     facebook: isurunuwanthilaka
-    github : isurunuwanthilaka
-    stackoverflow : "9559501"
-    linkedin : isurunuwanthilaka
+    github: isurunuwanthilaka
+    stackoverflow: "9559501"
+    linkedin: isurunuwanthilaka
 
     youtube_channel: UCWT6lIKNUN-1F-WxIov4NUQ
     youtube_channel_name: Isuru Nuwanthilaka
@@ -33,7 +33,6 @@ plugins:
   - jekyll-seo-tag
   - jemoji
 
-
 # Google Analytics
 google_analytics: G-13KD5X904R
 
@@ -46,4 +45,4 @@ exclude:
   - vendor
   - README.md
 
-future: true
+future: false
