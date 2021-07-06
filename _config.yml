@@ -43,5 +43,3 @@ exclude:
   - Gemfile.lock
   - vendor
   - README.md
-
-future: false
