@@ -4,9 +4,9 @@ title: Resume
 permalink: /resume
 ---
 <p align="center">
-<img src="{{ site.url }}/assets/img/android-chrome-192x192.png"
+<img src="{{ site.url }}/assets/img/profile-pic.png"
      alt="Profile image"
-     style="float: center; border-radius: 50%;" />
+     style="float: center; border-radius: 50%; height : 256px; width: 256px" />
 </p>
 
 <p style="text-align: center;font-size: 50px"> Isuru Nuwanthilaka </p>
