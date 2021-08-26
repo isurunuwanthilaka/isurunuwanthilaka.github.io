@@ -44,7 +44,7 @@ I am an engineer, I build software to ease the life of humans. I love solving co
 
 2021 October - Present
 : **Software Engineer II**
-: _Codify Inc | cutanddry.com_
+: _Codify Inc-cutanddry.com_
 
 > Here we are trying to increase the productivity of the food and restuarant supply chain.
 >
@@ -60,7 +60,7 @@ I am an engineer, I build software to ease the life of humans. I love solving co
 
 2021 August - 2021 Sepetember
 : **Consultant - Software Engineering**
-: _Codify Inc | cutanddry.com_
+: _Codify Inc-cutanddry.com_
 
 >
 
