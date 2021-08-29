@@ -8,7 +8,7 @@ permalink: /intro
 
 I am an Engineer (from 🇱🇰), I build Software. Simple.
 
-When I am not sticking to a screen , I might be reading, meditating or day-dreaming of her 👩‍🦱.
+When I am not sticking to a screen , I might be reading, meditating or day-dreaming.
 
 All the thoughts are my very own!
 
