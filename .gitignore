@@ -27,7 +27,6 @@ Thumbs.db
 *.fdb_latexmk
 *.log
 *.gz
-*.cls
 *.fls
 *.pb
 *.synctex(busy)
