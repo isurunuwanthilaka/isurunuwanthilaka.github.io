@@ -621,6 +621,18 @@
 	\end{sidebar}
 }
 
+\newcommand{\makelastbacksidebar}{%
+	\begin{sidebar}
+		% begin with name instead of picture
+
+		% make sure there is no space at top, but after cvjob
+		\setlength{\parskip}{1ex}
+
+		% user definitions
+		% \lastbacksidebar
+	\end{sidebar}
+}
+
 
 %-------------------------------------------------------------------------------
 %                              LIST ENVIRONMENTS
