@@ -20,7 +20,7 @@ I am an engineer, I build software to ease the life of humans. I love solving co
 
 ## Education
 
-2021-2023
+2021-2022
 : **MSc in CS, Software Architecture**
 : _University of Moratuwa (Sri Lanka)_
 
@@ -206,6 +206,16 @@ I am an engineer, I build software to ease the life of humans. I love solving co
 ## Skills
 
 <p class="skill-text">Java - SpringBoot</p>
+<div class="skill-container">
+  <div class="skills" style="width:90%;background-color: #808080;">90%</div>
+</div>
+
+<p class="skill-text">React JavaScript/TypeScript</p>
+<div class="skill-container">
+  <div class="skills" style="width:90%;background-color: #808080;">90%</div>
+</div>
+
+<p class="skill-text">PHP 8</p>
 <div class="skill-container">
   <div class="skills" style="width:90%;background-color: #808080;">90%</div>
 </div>
