@@ -58,7 +58,7 @@ I am an engineer, I build software to ease the life of humans. I love solving co
 >
 > - Python for Algorithms,Machine Learning
 
-2021 August - 2021 Sepetember
+2021 August - 2021 September
 : **Consultant - Software Engineering**
 : _Codify Inc-cutanddry.com_
 
