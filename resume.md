@@ -48,13 +48,13 @@ I am an engineer, I build software to ease the life of humans. I love solving co
 
 > Here we are trying to increase the productivity of the food and restuarant supply chain.
 >
-> I got the opportunity to working in new latest full stack technologies.
+> I got the opportunity to work in full stack technologies.
 >
 > - React JS for front end and PHP for backend
 >
-> - AWS as the infrastructure
+> - AWS as the infrastructure (IAAS)
 >
-> - GraphQL for API, data management
+> - GraphQL for APIs, data management
 >
 > - Python for Algorithms,Machine Learning
 
