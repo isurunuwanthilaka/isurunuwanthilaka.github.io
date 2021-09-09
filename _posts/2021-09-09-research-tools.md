@@ -7,13 +7,13 @@ discussion_id: 19
 tags: [Research]
 ---
 
-Yeah, I am bit excited about this `research` thing as this is the first time I am doing an academic research alone. The better part is my supervisor guiding me through to simplify the things which I am not supposed to spend hours struggling.
+Yeah, I am bit excited about this `research thing` as this is the first time I am doing an academic research alone. The best part is my supervisor guiding me through to simplify the things which I am not supposed to spend hours struggling.
 
-so in this post I will be showing my tool setup for research stuff and will be adding things later to keep this stack updated.
+So in this post I will be showing my tool setup for research stuffs and will be adding more things later to keep this stack updated.
 
 ### Tools
 
-1. Mendley
+1. Mendeley
 
 2. $$\LaTeX$$ - MacTex and Overleaf
 
