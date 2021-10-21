@@ -1,4 +1,3 @@
-
 #### The only rule : I can add things but cannot remove.
 
-* Play a music instrument
+- :white_check_mark: Play a music instrument
