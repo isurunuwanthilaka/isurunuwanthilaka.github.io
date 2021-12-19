@@ -10,6 +10,11 @@ tags: [Misc]
 > “Only those who dare to fail greatly can ever achieve greatly.”
 > ― Robert F. Kennedy
 
+<figure>
+  <img src="{{ site.url }}/assets/img/Full-Stack-Developer.jpeg" alt="full-stack-dev" class="fig-img"/>
+  <figcaption>image <a href="https://blog.eduonix.com/web-programming-tutorials/guide-become-full-stack-developer/">blog.eduonix.com</a></figcaption>
+</figure>
+
 I made a decision - _a critical one in my career_ - to jump straight to full-stack software engineering. I spent almost 2 years in backend development and in some projects I had to closely work with front end engineers, so I was curious how frond end works and what skills required. So I decided to jump start full stack not knowing whether I am gonna fit it or not.Lol.
 
 ### Why I wanted to start fullstack?
