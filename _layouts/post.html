@@ -6,7 +6,12 @@ layout: default
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
+      {% if page.author %}
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author
+          }}</span></span>
+      {% endif %}
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        |
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         {{ page.date | date: date_format }}
       </time>
@@ -15,7 +20,7 @@ layout: default
       <!--number_of_word for cjk requires jekyll v4.1.0-->
       {% assign word_count = content | number_of_words %}
       {% if word_count > 180 %}
-      | ~ {{ word_count | divided_by: 150 }} minutes read
+      | {{ word_count | divided_by: 150 }} minutes read
       {% endif %}
       {% endif %}
 
@@ -24,10 +29,7 @@ layout: default
       <a class="post-tag" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
       {% endfor %}
       {% endif %}
-      {% if page.author %}
-      | <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author
-          }}</span></span>
-      {% endif %}
+      
     </p>
   </header>
 

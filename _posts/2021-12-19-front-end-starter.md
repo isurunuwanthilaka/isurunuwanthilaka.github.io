@@ -4,7 +4,8 @@ title: Thoughts After 3 Months Into Full-Stack Engineering
 categories: Software-Engineering
 author: Isuru Nuwanthilaka
 discussion_id: 20
-tags: [Misc]
+tags: [Career]
+thumbnail: "/assets/img/Full-Stack-Developer.jpeg"
 ---
 
 > “Only those who dare to fail greatly can ever achieve greatly.”
