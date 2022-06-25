@@ -3,10 +3,6 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="stat-box" rel="author" href="{{ "/" | relative_url }}"> {{'Home'}}</a>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span id="busuanzi_container_site_pv" class="stat-box">Site views: <span id="busuanzi_value_site_pv"></span></span>
-
     {%- if titles_size > 0 -%}
     <nav class="site-nav">
       <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
@@ -20,10 +16,11 @@
       </label>
 
       <div class="trigger">
+        <a class="page-link" href="/">{{'Notes' }}</a>
         {%- for path in page_paths -%}
         {%- assign my_page = site.pages | where: "path", path | first -%}
         {%- if my_page.title -%}
-        <a class="page-link stat-box" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
         {%- endif -%}
         {%- endfor -%}
       </div>

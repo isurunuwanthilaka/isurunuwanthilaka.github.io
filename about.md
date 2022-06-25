@@ -1,7 +1,7 @@
 ---
-layout: tab
-title: Intro
-permalink: /intro
+layout: default
+title: About
+permalink: /about
 ---
 
 ## Hello World! 🌎

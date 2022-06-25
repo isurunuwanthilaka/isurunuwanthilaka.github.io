@@ -8,70 +8,9 @@
   font-weight: 80;
 }
 
-.custom-post-body {
-  text-align: justify;
-}
-
-.share-page {
-  display: inline-block;
-  background: rgb(192, 192, 192);
-  padding: 0 0.5rem;
-  margin-right: 0.5rem;
-  border-radius: 4px;
-  color: $text-color;
-  font-size: 90%;
-  &:before {
-    content: "\f14d";
-    font-family: FontAwesome;
-    padding-right: 0.5em;
-  }
-  &:hover {
-    text-decoration: none;
-    background: rgb(155, 155, 155);
-  }
-}
-
-.post-comment {
-  display: inline-block;
-  background: rgb(192, 192, 192);
-  padding: 0 0.5rem;
-  margin-right: 0.5rem;
-  border-radius: 4px;
-  color: $text-color;
-  font-size: 90%;
-  &:before {
-    content: "\f086";
-    font-family: FontAwesome;
-    padding-right: 0.5em;
-  }
-  &:hover {
-    text-decoration: none;
-    background: rgb(155, 155, 155);
-  }
-}
-
-.post-tag {
-  display: inline-block;
-  background: rgb(196, 195, 195);
-  padding: 0 0.5rem;
-  margin-right: 0.5rem;
-  border-radius: 4px;
-  color: $text-color;
-  font-size: 90%;
-  &:before {
-    content: "\f02b";
-    font-family: FontAwesome;
-    padding-right: 0.5em;
-  }
-  &:hover {
-    text-decoration: none;
-    background: rgb(155, 155, 155);
-    color: rgb(196, 195, 195);
-  }
-}
-
 .post-link {
   display: block;
+  text-decoration: none !important;
   @include relative-font-size(1.125);
 }
 
@@ -89,33 +28,7 @@ figcaption {
 
 .fig-img {
   display: block;
-  width: 80%;
+  width: 400px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.skill-container {
-  margin: 0px;
-  width: 100%;
-  background-color: #ddd;
-  margin-bottom: 5px;
-}
-
-.skill-text {
-  padding: 0px;
-  font-weight: bold;
-  margin-bottom: 0px;
-}
-
-.skills {
-  text-align: right;
-  color: white;
-}
-
-.stat-box {
-  border-radius: 5px;
-  background: rgb(192, 192, 192);
-  padding: 10px;
-  width: auto;
-  height: auto;
 }

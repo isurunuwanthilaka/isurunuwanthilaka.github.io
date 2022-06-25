@@ -2,7 +2,6 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $border-color-03;
   border-bottom: 1px solid $border-color-01;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
@@ -35,14 +34,14 @@
   background-color: $background-color;
   border: 1px solid $border-color-01;
   border-radius: 5px;
-  text-align: right;
+  text-align: left;
 
   .nav-trigger {
     display: none;
   }
 
   .menu-icon {
-    float: right;
+    float: left;
     width: 36px;
     height: 26px;
     line-height: 0;
@@ -56,7 +55,7 @@
 
   label[for="nav-trigger"] {
     display: block;
-    float: right;
+    float: left;
     width: 36px;
     height: 36px;
     z-index: 2;
@@ -74,10 +73,13 @@
   }
 
   .page-link {
+    text-decoration: none;
     color: $text-color;
     line-height: $base-line-height;
     display: block;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -88,7 +90,7 @@
 
   @media screen and (min-width: $on-medium) {
     position: static;
-    float: right;
+    float: left;
     border: none;
     background-color: inherit;
 
@@ -106,7 +108,9 @@
 
     .page-link {
       display: inline;
-      padding: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 10px;
 
       &:not(:last-child) {
         margin-right: 5px;
@@ -237,13 +241,13 @@
 }
 
 .post-title,
-.post-content h1 {
-  @include relative-font-size(2.625);
+.post-content h3 {
+  @include relative-font-size(2);
   letter-spacing: -1px;
   line-height: 1.15;
 
   @media screen and (min-width: $on-large) {
-    @include relative-font-size(2.625);
+    @include relative-font-size(2);
   }
 }
 
