@@ -46,10 +46,3 @@ If you are this kind of person you are LUCKY, because you can be happy every sec
 First we need to find out the who I am. Then we can re-engineer our mind to boost happiness.
 This series will focus on Inside-Out approach, we call it Meditation for Professionals.
 </div>
-<br/>
-<p>
-To be continued … Part 2
-</p>
-<p style = "font-style:italic;">
-This artical is inspired by Eng.Kithsiri Samarasinghe.
-</p>

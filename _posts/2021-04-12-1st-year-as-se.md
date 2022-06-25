@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I completed my first year as a Software Engineer! *Self Note*
+title: I completed my first year as a Software Engineer!
 ---
 
 Becoming a software engineer is an exciting journey. It has made me fascinated about the world. Talking truth, I have

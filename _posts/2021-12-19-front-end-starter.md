@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Thoughts After 3 Months Into Full-Stack Engineering
+title: Thoughts after 3 months into full-Stack engineering
 ---
 
 > “Only those who dare to fail greatly can ever achieve greatly.”
@@ -11,9 +11,9 @@ title: Thoughts After 3 Months Into Full-Stack Engineering
   <figcaption>image <a href="https://blog.eduonix.com/web-programming-tutorials/guide-become-full-stack-developer/">blog.eduonix.com</a></figcaption>
 </figure>
 
-I made a decision - _a critical one in my career_ - to jump straight to full-stack software engineering. I spent almost 2 years in backend development and in some projects I had to closely work with front end engineers, so I was curious how frond end works and what skills required. So I decided to jump start full stack not knowing whether I am gonna fit it or not.Lol.
+I made a decision - _a critical one in my career_ - to jump straight to full-stack software engineering. I spent almost 2 years in backend development and in some projects I had to closely work with front end engineers, so I was curious how front end works and what skills required. So I decided to jump start full-stack ,not knowing whether I am gonna fit it or not. Lol.
 
-### Why I wanted to start fullstack?
+### Why I wanted to start full-stack?
 
 As I told earlier I always like new challenges. After about 2 years with Java back end development I was pretty comfortabble about the development tasks. I felt like I was starting to freeze my learning curve as I alwas was developing some REST Apis for various projects. Same flow and nothing much new. Doing same things for all day. For some small POC projects It was needed to develop pretty simple frontends uis but I had no skills. So I decided to try some ReactJS stuffs here and there.
 
