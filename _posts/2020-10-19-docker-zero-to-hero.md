@@ -1,10 +1,6 @@
 ---
 layout: post
-title: Docker - Zero to Hero (with SpringBoot + PostgreSQL)  
-categories: Software-Engineering
-author : Isuru Nuwanthilaka
-last_modified_at: '2021-04-11 21:05:20'
-tags: [CI&CD]
+title: Docker - Zero to Hero (with SpringBoot + PostgreSQL)
 ---
 
 Nowadays,we hear the word docker everywhere in the software development industry. I first heard about docker at the tech event TensorFlow Dev Summit Colombo in 2018. I still hear it almost every tech event I go. Therefore I thought to share some facts about docker here.
@@ -69,6 +65,7 @@ To see running containers, run
 ```cmd
 docker container list -a
 ```
+
 or
 
 ```cmd
@@ -115,6 +112,7 @@ CREATE SEQUENCE hibernate_sequence START 1;
 SELECT setval('hibernate_sequence', (SELECT max(id) FROM public.books));
 
 ```
+
 okay, now you have a complete database up and running.
 
 To stop container ,run
@@ -297,7 +295,7 @@ public class DemoApplication {
 
 ```
 
-Now build the app and create the .jar and check whether it is correctly placed inside ./target/*.jar
+Now build the app and create the .jar and check whether it is correctly placed inside ./target/\*.jar
 
 Lets build the docker image and run the container for our app.
 
@@ -320,6 +318,7 @@ Now goto powershell cd into project folder nd run,
 ```cmd
 docker build ./ -t springbootapp
 ```
+
 -t for tagging the image with given name.
 
 Now again check your images.
@@ -406,6 +405,7 @@ now move these .tar and load
 docker load -i ./springbootapp.tar
 docker load -i ./postgres.tar
 ```
+
 with `.yml` file run the containers again.
 
 To copy the files inside the docker container to the local machine,
@@ -421,9 +421,9 @@ docker cp springbootapp:./ ./
 1. Docker doesn’t run if the Hyper-V feature is not ticked on windows
 
 2. If required ports are not released, run
-`netstat -ano`
-and find process id (PID) and kill it on Administrator powershell
-`taskkill /PID xxxx /F`
+   `netstat -ano`
+   and find process id (PID) and kill it on Administrator powershell
+   `taskkill /PID xxxx /F`
 
 3. Alpine has some missing features. Therefore sometimes we can test our app on machine but on docker it crashes. You can change to `openjdk:8-jre` (image size may large)
 

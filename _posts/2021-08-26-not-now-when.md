@@ -1,11 +1,6 @@
 ---
 layout: post
 title: If not now, when?
-categories: Life
-author: Isuru Nuwanthilaka
-discussion_id: 17
-tags: [Misc]
-thumbnail: "/assets/img/mind.jpeg"
 ---
 
 **TLDR : This is the right time to change the perspective of the life.**

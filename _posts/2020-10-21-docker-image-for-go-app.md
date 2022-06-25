@@ -1,10 +1,6 @@
 ---
 layout: post
-title: Building Docker image for GO application  
-categories: Software-Engineering
-author : Isuru Nuwanthilaka
-last_modified_at: '2021-04-11 21:05:20'
-tags: [CI&CD]
+title: Building Docker image for GO application
 ---
 
 In a [previous article](https://isurunuwanthilaka.github.io/engineering/2020/10/19/docker-zero-to-hero) we discussed how to build a docker image and deploy to server — a java application — a hello world program in spring boot. In this article we are going to build a docker image for a small-scale GO application. And this is going to be very short and straight to the point. Lets start.

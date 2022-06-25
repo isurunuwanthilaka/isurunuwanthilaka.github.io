@@ -1,11 +1,6 @@
 ---
 layout: post
 title: Thoughts After 3 Months Into Full-Stack Engineering
-categories: Software-Engineering
-author: Isuru Nuwanthilaka
-discussion_id: 20
-tags: [Career]
-thumbnail: "/assets/img/Full-Stack-Developer.jpeg"
 ---
 
 > “Only those who dare to fail greatly can ever achieve greatly.”
@@ -28,7 +23,7 @@ Front end is a diffrent paradigm (I have learnt it after three months). It requi
 
 So learning a full-stack specially stepping into front end requires lot of changes in way of thinking. And I thought it is valuable in the long run. I am enjoying it now.
 
-### How to ramp up quickly int fullstack space?
+### How to ramp up quickly into fullstack space?
 
 I believe in 20 hour rule. If you want to learn something new and perform a task, you can come up to a competent level by spending 20 hours on the material. So in the first few weeks I spent many hours watching tutorials, reading documentations and talking to people about different things. I learnt PHP,React JS and GraphQL queickly so I can learn rest of the things on the go.
 

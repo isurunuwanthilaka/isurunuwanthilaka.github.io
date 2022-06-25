@@ -1,13 +1,9 @@
 ---
 layout: post
-title: Deploying docker images from Bitbucket to Docker Hub  
-categories: Software-Engineering
-author : Isuru Nuwanthilaka
-last_modified_at: '2021-04-11 21:05:20'
-tags: [CI&CD]
+title: Deploying docker images from Bitbucket to Docker Hub
 ---
 
-Well, now a days, the programmers’ life is getting easier with the improvement of the services available in the software industry. Normally we use github or bitbucket to maintain our code base. In bitbucket we can use pipelines to auto build images and deploy to a docker container registry where we can pull back from anywhere in the world, anytime. Cool right? 
+Well, now a days, the programmers’ life is getting easier with the improvement of the services available in the software industry. Normally we use github or bitbucket to maintain our code base. In bitbucket we can use pipelines to auto build images and deploy to a docker container registry where we can pull back from anywhere in the world, anytime. Cool right?
 
 <p align="center">
 <img src="{{ site.url }}/assets/img/docker-image-to-docker-hub.png"
@@ -30,10 +26,10 @@ I use a simple spring boot demo application with few lines of code.
      style="float: center;" />
 </p>
 
-
 ### Step 2
 
 Add Dockerfile to the project.
+
 ```docker
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
@@ -45,6 +41,7 @@ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Dspring.profiles.
 ### Step 3
 
 Add `bitbucket-pipelines.yml` file. This is the entry point for building and deploying docker images.
+
 ```docker
 image: openjdk:8-jdk-alpine
 pipelines:
@@ -58,7 +55,7 @@ options:
   docker: true
 ```
 
-### Explanation 
+### Explanation
 
 ```cmd
 docker build -t isurunuwanthilaka/say-hello:latest .
@@ -80,6 +77,7 @@ Create Bitbucket repository and push codes and enable pipeline for auto build.
 ### Step 5
 
 Create `docker-compose.yml` and up the containers with it. It will pull images from the docker hub to the local machine.
+
 ```docker
 version: "3"
 services:

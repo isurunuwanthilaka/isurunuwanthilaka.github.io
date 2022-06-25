@@ -1,11 +1,6 @@
 ---
 layout: post
 title: Tool setup for research
-categories: Software-Engineering
-author: Isuru Nuwanthilaka
-discussion_id: 19
-tags: [Research]
-thumbnail: "/assets/img/research.jpeg"
 ---
 
 Yeah, I am bit excited about this `research thing` as this is the first time I am doing an academic research alone. The best part is my supervisor guiding me through to simplify the things which I am not supposed to spend hours struggling.

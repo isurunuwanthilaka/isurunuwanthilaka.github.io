@@ -1,15 +1,11 @@
 ---
 layout: post
 title: Web-socket with React
-categories: Software-Engineering
-author : Isuru Nuwanthilaka
-last_modified_at: 2021-05-06 00:00:00
-tags: [Misc]
 ---
 
 In this post we are going to talk about how to implement `websocket` with `react` client. REST is mostly used nowadays.
-But, how websocket differs from REST?. Websocket is stateful connections which means both client and server keeps the 
-connection alive until one party initiate the termination whereas REST is stateless communication. Both has the HTTP initiation but 
+But, how websocket differs from REST?. Websocket is stateful connections which means both client and server keeps the
+connection alive until one party initiate the termination whereas REST is stateless communication. Both has the HTTP initiation but
 websocket later upgrade to WS or WSS connection.
 
 <figure>
@@ -44,10 +40,11 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 }
 ```
 
-The websocket connection is at `ws://localhost:8080/notification` whereas `/app` is the path prefix for sending messages and `/topic` for subscribing 
+The websocket connection is at `ws://localhost:8080/notification` whereas `/app` is the path prefix for sending messages and `/topic` for subscribing
 messages on relevant topic.
 
 Lets communicate on duplex websocket.
+
 ```java
 @MessageMapping("/general") //STOPM client uses this path to send messages to relevant topic
 @SendTo(Topic.GENERAL_MESSAGE)// topic is /topic/general
@@ -55,7 +52,8 @@ public TextMessageDto broadcastGeneralMessage(@Payload TextMessageDto textMessag
     return textMessageDto;
 }
 ```
- To send a message to `/app/general` we need a websocket client. For javascript implementation, there is a folder `client`. You can read `Help.md`
+
+To send a message to `/app/general` we need a websocket client. For javascript implementation, there is a folder `client`. You can read `Help.md`
 and up the react frontend client to send and receive messages.
 
 Next we need to send messages over rest api to websocket.
@@ -69,6 +67,3 @@ public ResponseEntity sendGeneralMessage(@RequestBody TextMessageDto textMessage
 ```
 
 SimpleMessagingTemplate instance (i.e template) will convert the message and send to websocket. Run `curl --location --request POST http://localhost:8080/send --header "Content-Type: application/json" --data-raw "{"""message""":"""Test"""}"` in cmd (on Windows) to send message to topic as REST.
-
-
- 

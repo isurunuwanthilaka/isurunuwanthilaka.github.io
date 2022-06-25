@@ -1,10 +1,6 @@
 ---
 layout: post
 title: Identification of Memory Leaks
-categories: Software-Engineering
-author : Isuru Nuwanthilaka
-last_modified_at: '2021-04-11 21:05:20'
-tags: [Misc]
 ---
 
 Memory leaks are real headaches. As long as product is in development, everything is cool and smooth. Once we roll it to production we see the real face of the devil. With sufficient load testing or with a potion of actual traffic, we can identify this issues beforehand. So here I am going to talk about how to find memory leaks in `Java` applications - might be deployed in a VM or in a docker container.
@@ -54,7 +50,7 @@ If there is a growing heap , now you can identify it.
 
 If you are working with spring boot application then there is another workaround inside the framework. It is `Spring Actuator`
 
-Jou can just add the actuator dependency to the `pom.xml` and remove security from actuator endpoints by configuring `WebSecurityConfigurationAdaptor` . 
+Jou can just add the actuator dependency to the `pom.xml` and remove security from actuator endpoints by configuring `WebSecurityConfigurationAdaptor` .
 
 ```xml
 <dependency>

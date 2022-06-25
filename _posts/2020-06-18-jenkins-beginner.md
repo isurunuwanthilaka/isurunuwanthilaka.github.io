@@ -1,10 +1,6 @@
 ---
 layout: post
-title: Jenkins - Zero to Somewhere 
-categories: Software-Engineering
-author : Isuru Nuwanthilaka
-last_modified_at: '2021-04-11 21:05:20'
-tags: [CI&CD]
+title: Jenkins - Zero to Somewhere
 ---
 
 We are software engineers. Nowadays, the definition of SE is not limited to just writing codes. Sometimes, we have to set the applications up and running and give it to QA for testing. Doing continuous deployments (CD) being in the agile environment is tough and time consuming. What if there is a way to automate the deployments ??? and pay less supervision to CI/CD/CD. So we can save time to write codes while a bot handling devops. It is good for at least setting up the testing environment.
@@ -58,7 +54,7 @@ Next crete a jenkins pipeling project and include following pipeline script.
 ```bash
 pipeline {
     agent any
-    
+
     stages {
         stage('frontend') {
             agent any
@@ -70,16 +66,16 @@ pipeline {
                         docker rm -f appweb
                         docker run -p 80:80 --restart=unless-stopped --network backend_default  --link app --name appweb -d appweb:latest
                        """
-                    
+
                 }
             }
             post{
                 success{
                     slackSend message:"Build status(appweb) : success "
-                } 
+                }
                 failure{
                     slackSend message:"Build status(appweb) : failure "
-                } 
+                }
             }
         }
         stage('backend') {
@@ -97,13 +93,13 @@ pipeline {
             post{
                 success{
                     slackSend message:"Build status(app) : success "
-                } 
+                }
                 failure{
                     slackSend message:"Build status(app) : failure "
-                } 
+                }
             }
         }
-        
+
     }
 }
 ```
@@ -131,4 +127,3 @@ There are different ways to trigger building this pipeline.
 This is very simple , but, will ease your life a lot. Hope you enjoyed.
 
 Happy Coding!
-

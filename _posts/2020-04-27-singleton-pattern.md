@@ -1,10 +1,6 @@
 ---
 layout: post
 title: Singleton Pattern
-categories: Software-Engineering
-author : Isuru Nuwanthilaka
-last_modified_at: '2021-04-11 21:05:20'
-tags: [Design Patterns]
 ---
 
 <div align='justify' style = "font-style:italic;">
@@ -119,4 +115,3 @@ Now we have a deep understanding about singleton pattern. Lets apply it to your 
 <p>Happy Coding.</p>
 
 Reference : GOF
-

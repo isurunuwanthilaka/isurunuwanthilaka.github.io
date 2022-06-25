@@ -1,10 +1,6 @@
 ---
 layout: post
-title: Understanding Compilers from scratch 
-categories: Software-Engineering
-author : Isuru Nuwanthilaka
-last_modified_at: '2021-04-11 21:05:20'
-tags: [Misc]
+title: Understanding Compilers from scratch
 ---
 
 Technologies are evolving so fast. New programming languages rising up while legacy programming languages are improving and going deeper. Last year I came across with new language — Ballerina, a open source programming language — which grabbed my attention in the first sight. After testing few sample code I wanted to learn how it is built, so as the first step I tried learning its compiler design.
@@ -60,7 +56,7 @@ Above illustration shows the whole work done in a compiler.Lets break into small
 
 ## Scanner
 
-This component scans the source code and generate tokens. Its main responsibility is to read character by character and load it to token buffer and generate tokens according to the lexical rules. Lexical rules are the criterion about how the language is declared. For a example variable names should not start with a underscore (like _var is illegal). Scanner will work on Maximum Length algorithm so it will tokenize a maximum length word. Then this tokens will be sen to Parser. Lexical rules are defined using Regular expressions which we are not going to talk about here.
+This component scans the source code and generate tokens. Its main responsibility is to read character by character and load it to token buffer and generate tokens according to the lexical rules. Lexical rules are the criterion about how the language is declared. For a example variable names should not start with a underscore (like \_var is illegal). Scanner will work on Maximum Length algorithm so it will tokenize a maximum length word. Then this tokens will be sen to Parser. Lexical rules are defined using Regular expressions which we are not going to talk about here.
 
 ## Parser
 
@@ -126,10 +122,11 @@ MOVB:R5,R2
 
 COMOs
 ```
+
 Assembler coded in python.
 
 ```python
-##compiler for custom ISA 
+##compiler for custom ISA
 
 #define input and output files
 inputfile='add.txt'
@@ -275,9 +272,9 @@ Usage of the programming language.
 |----------------------------------------------------------------------------|
 |STORED NUMBERS                                                              |
 |----------------------------------------------------------------------------|
-|R13 has number 0                                                            | 
+|R13 has number 0                                                            |
 |R14 has number 1                                                            |
-|R15 has number 255                                                          | 
+|R15 has number 255                                                          |
 |R16 has number 4                                                            |
 |R17 has number 8                                                            |
 |R18 has number 16                                                           |

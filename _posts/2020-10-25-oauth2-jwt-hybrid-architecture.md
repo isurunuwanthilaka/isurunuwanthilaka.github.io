@@ -1,14 +1,9 @@
 ---
 layout: post
-title: OAuth2 + JWT Hybrid Architecture  
-categories: Software-Engineering
-author : Isuru Nuwanthilaka
-last_modified_at: '2021-04-11 21:05:20'
-tags: [Architecture]
+title: OAuth2 + JWT Hybrid Architecture
 ---
 
-
-*This is a design overview not a how-to guide!*
+_This is a design overview not a how-to guide!_
 
 When it comes to software engineering , one of the greatest nightmares is `Authentication and Authorization`. It is a huge area of knowledge and hard time on implementation. Also it is evolving, even making it is more complex!
 

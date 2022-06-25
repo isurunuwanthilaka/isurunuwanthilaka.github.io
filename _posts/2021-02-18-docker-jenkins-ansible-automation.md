@@ -1,27 +1,23 @@
 ---
 layout: post
 title: Docker container deployment with Jenkins and Ansible
-categories: Software-Engineering
-author : Isuru Nuwanthilaka
-last_modified_at: '2021-04-11 21:05:20'
-tags: [CI&CD]
 ---
 
-We are software engineers, we write code. Surely (if you are in a small scale company) we have to setup the applications and release for Dev,QA and UAT environments. That is lots of work, out of scope. So how about having all those automated and we don't need to worry about CI/CD at all? Ehhhh interesting! 
+We are software engineers, we write code. Surely (if you are in a small scale company) we have to setup the applications and release for Dev,QA and UAT environments. That is lots of work, out of scope. So how about having all those automated and we don't need to worry about CI/CD at all? Ehhhh interesting!
 
 ### Why we need this setup?
 
-* Single point of deployment
+- Single point of deployment
 
-* Less time to deployments and focus more on development
+- Less time to deployments and focus more on development
 
-* No need to SSH to different servers time to time (loosely couple slave nodes from master)
+- No need to SSH to different servers time to time (loosely couple slave nodes from master)
 
-* Easy replication of environments i.e. identical nodes
+- Easy replication of environments i.e. identical nodes
 
-* Binding multiple phases i.e. testing phase
+- Binding multiple phases i.e. testing phase
 
-* Flexible configuration of pipelines
+- Flexible configuration of pipelines
 
 ### Deployment Architecture
 
@@ -45,31 +41,31 @@ We are software engineers, we write code. Surely (if you are in a small scale co
 
 ### Tools we need to setup
 
-* Jenkins server [Installation guide](https://www.jenkins.io/doc/book/installing/linux/#red-hat-centos) - Only on master node
+- Jenkins server [Installation guide](https://www.jenkins.io/doc/book/installing/linux/#red-hat-centos) - Only on master node
 
-* Ansible server [Installation guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-rhel-centos-or-fedora) - Only on master node
+- Ansible server [Installation guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-rhel-centos-or-fedora) - Only on master node
 
-* Docker Engine [Installation guide](https://docs.docker.com/engine/install/centos/) - All nodes (With ansible, we can install docker but here I am having docker pre-installed to all slave nodes)
+- Docker Engine [Installation guide](https://docs.docker.com/engine/install/centos/) - All nodes (With ansible, we can install docker but here I am having docker pre-installed to all slave nodes)
 
-* Docker private registry [Installation guide](https://docs.docker.com/registry/deploying/) and make it insecure repository for testing purposes [Installation guide]( https://www.linuxtechi.com/setup-docker-private-registry-centos-7-rhel-7/) - Only on master node
+- Docker private registry [Installation guide](https://docs.docker.com/registry/deploying/) and make it insecure repository for testing purposes [Installation guide](https://www.linuxtechi.com/setup-docker-private-registry-centos-7-rhel-7/) - Only on master node
 
-* Git/Maven/Java with yum or otherwise and find the paths only on master node
+- Git/Maven/Java with yum or otherwise and find the paths only on master node
 
 ### Evaluation on tools
 
 1. Jenkins - Powerful CI/CD tool used to automate build pipelines
 
 2. Ansible - Powerful IT automation tool which is heavily used to configuration management, automate deployments, consumes pull configurations
-	
-     * Similar products - chef, puppet, saltstack (mostly push configurations)
-	
+
+   - Similar products - chef, puppet, saltstack (mostly push configurations)
+
 3. Jenkins vs Ansible : https://www.javatpoint.com/jenkins-vs-ansible
 
 ### Basic tutorials
 
-* [Tutorial 1](https://www.youtube.com/watch?v=13FpCxCClLY)
+- [Tutorial 1](https://www.youtube.com/watch?v=13FpCxCClLY)
 
-* [Tutorial 2](https://www.youtube.com/watch?v=65XXE0DMxcU)
+- [Tutorial 2](https://www.youtube.com/watch?v=65XXE0DMxcU)
 
 ### Step 0 - Configuring SSH connection b/w master and slaves
 
@@ -77,7 +73,7 @@ There are several methods to create a secure connection between master and the r
 
 We need to create public/private keys in master.
 
-Run `ssh-keygen` on master and `cat /root/.ssh/id_rsa` to get the private key which we need to add to ansible-playbook script as mentioned in tutorial[1]  
+Run `ssh-keygen` on master and `cat /root/.ssh/id_rsa` to get the private key which we need to add to ansible-playbook script as mentioned in tutorial[1]
 
 Next we need to push public keys to slave nodes, run `ssh-copy-id <slave-ip>`. Do this for all the node group you need to access with this certificate. You can have multiple certificates for group-wise ; app-servers, db-servers etc.
 
@@ -87,11 +83,11 @@ If successful `ansible -i hosts -m ping` should give success response. Here `hos
 
 ### Step 0.1 - Add following plugins to jenkins server
 
-* Parameterized build trigger plugin
+- Parameterized build trigger plugin
 
-* Bitbucket plugin
+- Bitbucket plugin
 
-* Ansible plugin
+- Ansible plugin
 
 ### Step 0.2 - Create a simple webservice to deploy
 
@@ -106,11 +102,11 @@ Login into Jenkins server and start a `pipeline` type project and write the foll
 ```
 pipeline {
     agent any
-    
+
     tools{
         maven 'maven'
     }
-    
+
     environment{
         BRANCH = 'main'
         TAG = 'dev'
@@ -122,42 +118,42 @@ pipeline {
         stage('Clone') {
             steps {
                 git branch: "${BRANCH}" , credentialsId: 'bitbucket', url: 'https://isurunuwanthilaka@bitbucket.org/isurunuwanthilaka/hello-world1'
-                
+
             }
         }
-        
+
         stage('Maven Build') {
             steps {
                 sh "mvn clean package"
-                
+
             }
         }
-        
+
         stage('Docker Build') {
             steps {
                 sh "docker build -t ${REGISTRY}/hello1:${TAG} ./"
-                
+
             }
         }
-        
+
         stage('Docker Push') {
             steps {
                 sh "docker push ${REGISTRY}/hello1:${TAG}"
-                
+
             }
         }
-        
+
         stage('Deploy Docker Container') {
             steps {
                 ansiblePlaybook credentialsId: 'dev-server', disableHostKeyChecking: true, extras: '-e TAG=${TAG} -e ENV=${DEPLOY_TO} --tags hello1', installation: 'ansible', inventory: '/home/src/ansible-scripts/inventory.inv', playbook: '/home/src/ansible-scripts/docker-deployment.yml'
             }
         }
-        
+
         stage('Clean') {
             steps {
                 sh "docker image rm -f ${REGISTRY}/hello1:${TAG}"
                 sh "docker system prune -f"
-                
+
             }
         }
     }
@@ -203,7 +199,6 @@ Now create `docker-deployment.yml`, this is the ansible playbook for first pipel
         published_ports:
           - "0.0.0.0:{{hello2.port}}:{{hello2.port}}"
       tags: hello2
-
 ```
 
 ### Step 1.3 Lets create ansible inventory
@@ -217,6 +212,7 @@ Create another file `inventory.inv` with the IPs to slave nodes.
 [dev2]
 <dev2-ip> ansible_user=root
 ```
+
 ### Step 1.4 Create environment files
 
 These files include properties associated with environments. In my case I have `dev1` and `dev2` in inventory. So I will have two files
@@ -250,13 +246,13 @@ Previously we loaded everything from environment block, but we cant always come 
 ```
 pipeline {
     agent any
-    
+
     tools{
         maven 'maven'
     }
-    
-    parameters { 
-        choice(name: 'SERVICE', choices: ['hello1', 'hello2'], description: 'Service name') 
+
+    parameters {
+        choice(name: 'SERVICE', choices: ['hello1', 'hello2'], description: 'Service name')
         string(name: 'BRANCH', defaultValue: 'main', description: 'Source code branch')
         string(name: 'TAG', defaultValue: 'dev', description: 'Docker image tag')
         choice(name: 'DEPLOY_TO', choices: ['dev1', 'dev2'], description: 'Docker container deployment environment')
@@ -267,41 +263,41 @@ pipeline {
         stage('Clone') {
             steps {
                 git branch: "${params.BRANCH}" , credentialsId: 'bitbucket', url: 'https://isurunuwanthilaka@bitbucket.org/isurunuwanthilaka/hello-world1'
-                
+
             }
         }
-        
+
         stage('Maven Build') {
             steps {
                 sh "mvn clean package"
-                
+
             }
         }
-        
+
         stage('Docker Build') {
             steps {
                 sh "docker build -t ${params.REGISTRY}/${params.SERVICE}:${params.TAG} ./"
-                
+
             }
         }
-        
+
         stage('Docker Push') {
             steps {
                 sh "docker push ${params.REGISTRY}/${params.SERVICE}:${params.TAG}"
             }
         }
-        
+
         stage('Deploy Docker Container') {
             steps {
                 ansiblePlaybook credentialsId: 'dev-server', disableHostKeyChecking: true, extras: "-e TAG=${params.TAG} -e ENV=${params.DEPLOY_TO} --tags {params.SERVICE}", installation: 'ansible', inventory: '/home/src/ansible-scripts/inventory.inv', playbook: '/home/src/ansible-scripts/docker-deployment.yml'
             }
         }
-        
+
         stage('Clean') {
             steps {
                 sh "docker image rm -f ${params.REGISTRY}/${params.SERVICE}:${params.TAG}"
                 sh "docker system prune -f"
-                
+
             }
         }
     }
@@ -319,15 +315,15 @@ In previous scenarios everything bound with one service `Hello service`, now we 
 ```
 pipeline {
     agent any
-    
-    parameters { 
+
+    parameters {
         string(name: 'SERVICE', defaultValue: 'all', description: 'Service name')
         string(name: 'DEPLOY_TO', defaultValue: 'dev3', description: 'Docker container deployment environment')
         string(name: 'TAG', defaultValue: 'dev', description: 'Docker image tag')
     }
 
     stages {
-        
+
         stage('Deploy Docker Container') {
             steps {
                 ansiblePlaybook credentialsId: 'dev-server', disableHostKeyChecking: true, extras: "-e TAG=${params.TAG} -e ENV=${params.DEPLOY_TO} --tags ${params.SERVICE}", installation: 'ansible', inventory: '/home/src/ansible-scripts/inventory.inv', playbook: '/home/src/ansible-scripts/docker-deployment.yml'
@@ -348,13 +344,13 @@ def source = "default"
 
 pipeline {
     agent any
-    
+
     tools{
         maven 'maven'
     }
-    
-    parameters { 
-        choice(name: 'SERVICE', choices: ['hello1', 'hello2'], description: 'Service name') 
+
+    parameters {
+        choice(name: 'SERVICE', choices: ['hello1', 'hello2'], description: 'Service name')
         string(name: 'BRANCH', defaultValue: 'main', description: 'Source code branch')
         string(name: 'TAG', defaultValue: 'dev', description: 'Docker image tag')
         choice(name: 'DEPLOY_TO', choices: ['dev1', 'dev2'], description: 'Docker container deployment environment')
@@ -374,38 +370,38 @@ pipeline {
                     }
                 }
                 git branch: "${params.BRANCH}" , credentialsId: 'bitbucket', url: "https://isurunuwanthilaka@bitbucket.org/isurunuwanthilaka/${source}"
-                
+
             }
         }
-        
+
         stage('Maven Build') {
             steps {
                 sh "mvn clean package"
-                
+
             }
         }
-        
+
         stage('Docker Build') {
             steps {
                 sh "docker build -t ${params.REGISTRY}/${params.SERVICE}:${params.TAG} ./"
-                
+
             }
         }
-        
+
         stage('Docker Push') {
             steps {
                 sh "docker push ${params.REGISTRY}/${params.SERVICE}:${params.TAG}"
             }
         }
-        
+
         stage('Clean') {
             steps {
                 sh "docker image rm -f ${params.REGISTRY}/${params.SERVICE}:${params.TAG}"
                 sh "docker system prune -f"
-                
+
             }
         }
-        
+
         stage("Trigger Pipelines") {
             steps {
                 build job: 'Service-Deployment', parameters: [string(name: 'SERVICE', value: "${params.SERVICE}"),string(name: 'TAG', value: "${params.TAG}"),string(name: 'DEPLOY_TO', value: "${params.DEPLOY_TO}")]
@@ -426,13 +422,13 @@ Finally we need to clean environment, so I have created another parameterized pi
 ```
 pipeline {
     agent any
-    
-    parameters { 
+
+    parameters {
         choice(name: 'ENV', choices: ['dev1', 'dev2'], description: 'Environment to be cleaned')
     }
 
     stages {
-        
+
         stage('Clean') {
             steps {
                 ansiblePlaybook credentialsId: 'dev-server', disableHostKeyChecking: true, extras: "-e ENV=${params.ENV}", installation: 'ansible', inventory: '/home/src/ansible-scripts/inventory.inv', playbook: '/home/src/ansible-scripts/docker-clean-env.yml'
@@ -448,11 +444,11 @@ pipeline {
 
 Check for [Source Code](https://github.com/isurunuwanthilaka/jenkins-ansible-docker-deployments)
 
-We can add 
+We can add
 
-* Notifications with slack
+- Notifications with slack
 
-* Periodic build triggers (hourly, nightly, daily etc)
+- Periodic build triggers (hourly, nightly, daily etc)
 
 Jenkins and Ansible have lot more features , Lets explore in next posts.
 

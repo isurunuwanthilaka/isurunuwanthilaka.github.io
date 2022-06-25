@@ -1,10 +1,6 @@
 ---
 layout: post
 title: I completed my first year as a Software Engineer! *Self Note*
-categories: Life
-author : Isuru Nuwanthilaka
-last_modified_at: '2021-04-11 21:05:20'
-tags: [Career]
 ---
 
 Becoming a software engineer is an exciting journey. It has made me fascinated about the world. Talking truth, I have
@@ -18,7 +14,7 @@ software engineering.
 
 ## Some self-talk
 
-I know It is just a one year, no big deal. Still I am motivated and in a rapid learning phase. So I have challenging 
+I know It is just a one year, no big deal. Still I am motivated and in a rapid learning phase. So I have challenging
 work every day and feel improving,important and expanding. Comparing to the starting point and the end point of 2020,
 I feel like I have become less passionate (nah, not saying I am completely demotivated) I think it is because I am learning
 the real nature of the corporate world. It is hard to make the `change` in an already fixed systems.
@@ -33,28 +29,27 @@ solid foundation to endure anything coming in the future.
 
 I am lucky I found a good mentor (I think so...), why I say he is good?
 
-* He is updated. He is still learning and has a growth mind set.
+- He is updated. He is still learning and has a growth mind set.
 
-* He knows career growth is also important rather than just finishing the projects.
+- He knows career growth is also important rather than just finishing the projects.
 
-* He gives the directions, but I should find the solutions, fixes and suggestions for enhancing the systems.
+- He gives the directions, but I should find the solutions, fixes and suggestions for enhancing the systems.
 
-* Open for discussions - We talk about technologies, new features and evaluate how those fit to ours and should we use those.
+- Open for discussions - We talk about technologies, new features and evaluate how those fit to ours and should we use those.
 
-* I can do `dumb stuff`, he allows me to do R&D, test and play with servers if I think that technology is important.
+- I can do `dumb stuff`, he allows me to do R&D, test and play with servers if I think that technology is important.
 
-* He provides the support for project work -  (this is what I am paid for.)
+- He provides the support for project work - (this is what I am paid for.)
 
-* Pushing to the next step - In the small projects or POCs, I have involved in the designing of databases, systems or architecting
-CICD pipelines. In this stage, I think it is a rare opportunity to involve in the designing.
-  
-* He is good-tempered even at hard times.
+- Pushing to the next step - In the small projects or POCs, I have involved in the designing of databases, systems or architecting
+  CICD pipelines. In this stage, I think it is a rare opportunity to involve in the designing.
+- He is good-tempered even at hard times.
 
 #### 2. Less is more. Done is 'done done', not almost done.
 
 At work, sometimes we get few projects or tasks to work on. But, more projects does not mean you are good or productive.
 Count doesn't matter. What matters most is whether you push the project to the finish line or not. If you can say the
-project is 'done done' - no more work to do, then you are recognized by the organization. You say a project is 'done', but you also 
+project is 'done done' - no more work to do, then you are recognized by the organization. You say a project is 'done', but you also
 know it needs few more touches to get it to 'done done', so the person who does the final touches may highlighted but not you.
 So it is important to learn that 'Less is more' and you must drag the projects to 'done done' whenever it is possible.
 
@@ -65,15 +60,15 @@ server environments etc. So those can distract you and drain your cognitive powe
 
 Here is what I automated this year.
 
-* Wrote small `shell` scripts to deploy services I work on
+- Wrote small `shell` scripts to deploy services I work on
 
-* Created a full automation to deploy different services to different servers with jenkins
+- Created a full automation to deploy different services to different servers with jenkins
 
-* Created templates for basic SpringBoot service, APIs design documentation
+- Created templates for basic SpringBoot service, APIs design documentation
 
-* Python scripts for customer support task like bulk account deactivation etc.
+- Python scripts for customer support task like bulk account deactivation etc.
 
-* Learnt `POSTman` API request configuration with environments
+- Learnt `POSTman` API request configuration with environments
 
 Those ways I could save good amount of time and keep focus on the things what matter most.
 
@@ -93,7 +88,7 @@ And I could push me to the next step by starting my Masters in CS. I am happy ab
 #### 6. Raise your voice.
 
 Unless you raise your voice you are not heard enough. So in any project or discussion, if you have a good understanding
-raise your concerns. If you are not clear, ask questions, but it is also important to observe the situation and decide 
+raise your concerns. If you are not clear, ask questions, but it is also important to observe the situation and decide
 when to raise voice.
 
 Write a blog about your research work and fixes. Many people will like and benefit from those little helps.
@@ -104,13 +99,13 @@ Do some tutorials, webinars or demos videos and put them to YT.
 We work for organizations, and they are businesses generating money. So even if you are there or not, they can survive.
 It is good if the organization make you feel attached, but your life is yours.
 
-* So in this year, I always tried to do my job with the highest quality I can provide
+- So in this year, I always tried to do my job with the highest quality I can provide
 
-* Did my side projects in my free time to learn new things for myself
+- Did my side projects in my free time to learn new things for myself
 
-* Tried to keep my private space completely undisturbed by the job
+- Tried to keep my private space completely undisturbed by the job
 
-* Made life-long new friends.
+- Made life-long new friends.
 
 I know I just completed the first year in SE and I might still figuring out the big picture of software industry.
 But, I would keep these insights noted for my peers or my future-self.

@@ -1,10 +1,6 @@
 ---
 layout: post
-title: PySpark - Let's count products 
-categories: Software-Engineering
-author : Isuru Nuwanthilaka
-last_modified_at: 2021-04-23 21:05:20
-tags: [Big Data]
+title: PySpark - Let's count products
 ---
 
 Big Data field is growing day by day so as the technologies which supports big data. Spark is another interesting platform to
@@ -59,7 +55,3 @@ video guide on youtube. Check that out if you are interested.
 [![AWS EMR Spark : Hands-on](https://img.youtube.com/vi/Jdy1L7g8N94/0.jpg)](https://www.youtube.com/watch?v=Jdy1L7g8N94)
 
 Be safe and away from Covid-19,Happy Coding!
-
-
-
-

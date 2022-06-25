@@ -6,8 +6,8 @@ layout: default
   <header class="post-header">
     <h3 class="post-title" itemprop="name headline">{{ page.title | escape }}</h3>
     <p class="post-meta">
-      {% if page.author %}
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author
+      {% if site.author.name %}
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.author.name
           }}</span></span>
       {% endif %}
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">

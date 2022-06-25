@@ -1,10 +1,6 @@
 ---
 layout: post
-title: Lets play with Apache POI  
-categories: Software-Engineering
-author : Isuru Nuwanthilaka
-last_modified_at: '2021-04-11 21:05:20'
-tags: [Misc]
+title: Lets play with Apache POI
 ---
 
 Hey guys, hope everyone is safe and happy in this Covid-19 pandemic situation. After few months of silence, I am back with you for tackling some interesting issues we face in reporting software applications. Lets walk through!
@@ -25,10 +21,9 @@ I was developing a reporting module for an application , but this time it was ch
 
 3. Format the document after filling.
 
-4. Finally , I needed to export `docx` to `pdf` and save or return through an API without saving the physical file. 
+4. Finally , I needed to export `docx` to `pdf` and save or return through an API without saving the physical file.
 
 So I am going to talk about those issues and how I could handle them with code. If you are not interested you can drop the article here, but if you are facing these now or have some time for hacking lets have some fun ;) .
-
 
 ### Lets discuss
 
@@ -52,15 +47,15 @@ This is a popular and stable library for working with microsoft docx word files,
 
 2. [Apache POI](http://poi.apache.org/)
 
-This supports office 2013 package and also popular among developers. And it has a good community support. 
+This supports office 2013 package and also popular among developers. And it has a good community support.
 
-[Who use Apache POI ?](https://poi.apache.org/casestudies.html) 
+[Who use Apache POI ?](https://poi.apache.org/casestudies.html)
 
 3. [Document4j](https://github.com/documents4j/documents4j)
 
 Seems not a rich library.
 
-#### Comparison 
+#### Comparison
 
 https://java.libhunt.com/compare-apache-poi-vs-docx4j?rel=cmp-lib
 
@@ -154,7 +149,7 @@ replaceTextFor(doc, map);
 
 ```
 
-### Step 2 
+### Step 2
 
 Now we need to fill tables.
 
@@ -162,7 +157,7 @@ Here we use a small trick to avoid the formatting table rows. What we are going 
 
 ```java
 public void replaceSalaryTable(XWPFDocument doc, List<SalaryRecord> salaryRecordList) {
-        XWPFTable table = doc.getTableArray(0);//get the first table in the template,replace index of the table you need 
+        XWPFTable table = doc.getTableArray(0);//get the first table in the template,replace index of the table you need
         int templateRowId = 1;//this is the template row id
         XWPFTableRow rowTemplate = table.getRow(templateRowId);
 
@@ -213,17 +208,15 @@ Lets talk about how to format the document. As we use the template docx file , w
 
 Adding tables : https://www.javatpoint.com/apache-poi-word-table
 
-Styling : https://www.javatpoint.com/apache-poi-word-style 
+Styling : https://www.javatpoint.com/apache-poi-word-style
 
-Aligning : https://www.javatpoint.com/apache-poi-word-aligning 
+Aligning : https://www.javatpoint.com/apache-poi-word-aligning
 
 Adding image : https://www.skptricks.com/2018/09/add-images-to-word-document-using-apache-poi-in-java.html
-
 
 ### Step 4
 
 After creating the files, now we need to export it to `pdf`. We need to use an out-of-the-box solution to generate pdf from apache poi tool. We have already added `fr.opensagres.poi.xwpf.converter.pdf` artifact to our project. Lets use this.
-
 
 ```java
 private void savePdf(String filePath, XWPFDocument doc) {

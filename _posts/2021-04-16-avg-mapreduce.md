@@ -1,10 +1,6 @@
 ---
 layout: post
-title: MapReduce - Let's average numbers 
-categories: Software-Engineering
-author : Isuru Nuwanthilaka
-last_modified_at: 2021-04-14 21:05:20
-tags: [Big Data]
+title: MapReduce - Let's average numbers
 ---
 
 In the big data context, MapReduce plays a significant role. It is the underlying techniques for most of the big data
@@ -96,7 +92,3 @@ Now chain all the functions as in [Average.java](https://github.com/isurunuwanth
 Once the step is completed successfully check the `/output` folder in S3 for results.
 
 Happy Coding!
-
-
-
-

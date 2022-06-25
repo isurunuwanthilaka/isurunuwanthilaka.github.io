@@ -1,13 +1,10 @@
 ---
 layout: post
 title: Medium Connector for Ballerina
-categories: Software-Engineering
-author : Isuru Nuwanthilaka
-last_modified_at: '2021-04-11 21:05:20'
-tags: [Ballerina]
 ---
 
 I was thinking to learn Ballerina for a long time. So I thought to develop something and learn by doing. First I went through the list of modules developed by other ballerina developers. It is interesting that ballerina had already covered many areas, also I was reading some ballerina posts on Medium platform. So I got an idea what if I could write a connector for medium with ballerina. No one had tried for that. Therefore I started developing this `isurun/medium` module. There was a cool article about twitter module development in medium, so I refered it as the guide for this development.
+
 <p align="center">
 <img src="{{ site.url }}/assets/img/bal+medium.jpg"
      alt="Medium Ballerina Image"
@@ -26,20 +23,19 @@ The `isurun/medium` module contains operations that work with user,publications,
 
 > Medium API Documentation: https://github.com/Medium/medium-api-docs
 
-
 ## Compatibility
 
-|                    | Version                                                          |
-|:------------------:|:----------------------------------------------------------------:|
-| Ballerina Language | 1.2.3                                                            |
-| Medium API         | v1                                                               |
-
+|                    | Version |
+| :----------------: | :-----: |
+| Ballerina Language |  1.2.3  |
+|     Medium API     |   v1    |
 
 ## Getting Started
 
 To work with Medium APIs first you need a `ACCESS_TOKEN`. You can go to settings and get the integration key.
 
 You can now enter the credentials in the `ballerina.conf` file as follows:
+
 ```bash
 ACCESS_TOKEN="<Your Access Token>"
 ```
@@ -126,7 +122,7 @@ if (result5 is medium:PostResponse) {
     io:println("Post Url : ", result5.url);
 } else {
     io:println("Error: ", result5);
-}    
+}
 ```
 
 The `createPostToPublication` API creates a post in publications for the provided `publicationId`. It returns a `medium:PostPublicationResponse` object if successful or an `error` if unsuccessful.
