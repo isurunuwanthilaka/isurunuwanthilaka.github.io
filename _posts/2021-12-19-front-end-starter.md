@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Thoughts after 3 months into full-Stack engineering
+title: Thoughts after 3 months into full-stack engineering
 ---
 
 > “Only those who dare to fail greatly can ever achieve greatly.”

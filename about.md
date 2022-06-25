@@ -6,10 +6,8 @@ permalink: /about
 
 ## Hello World! 🌎
 
-I am an Engineer (from 🇱🇰), I build Software. Simple.
+I am Isuru Nuwanthilaka,a software engineer from Sri Lanka 🇱🇰, I code to ease the life of humans - all day, every day.
 
-When I am not sticking to a screen , I might be reading, meditating or day-dreaming.
-
-All the thoughts are my very own!
+All thoughts are my very own!
 
 Find me at [LinkedIn](https://www.linkedin.com/in/isurunuwanthilaka/)
