@@ -3,3 +3,7 @@
 # isurunuwanthilaka.github.io
 
 Personal Blog
+
+## Commands
+
+`bundle exec jekyll serve`
