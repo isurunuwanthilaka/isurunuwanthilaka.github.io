@@ -1,9 +1,9 @@
 ---
 layout: post
-title: SoftEther on MacOS
+title: SoftEther on macOS
 ---
 
-Recently, I wanted to connect to my university network to do some hacking on a raspberry pi cluster. Therefore I wanted to set up SoftEther on my MacBook. But unfortunately,There was no proper documentation for that rather than conecting through L2TP.I had to spend few days to figure out a way to setup,so just sharing hoping someone would find helpful.😇
+Recently, I wanted to connect to my university network to do some hacking on a raspberry pi cluster. Therefore I wanted to set up SoftEther on my MacBook. But unfortunately,There was no proper documentation for that rather than conecting through L2TP.I had to spend few days to figure out a way to setup,so just sharing hoping someone would find this helpful.😇
 
  This is my personal note.
 
@@ -43,7 +43,7 @@ Recently, I wanted to connect to my university network to do some hacking on a r
 
 - `accountlist`
 
-- `sudo ifconfig` and see virtual netwerk adapter has no ip.
+- `sudo ifconfig` and see virtual network adapter has no ip.
 
 - `sudo ipconfig set tap0 DHCP` to get a ip
 
