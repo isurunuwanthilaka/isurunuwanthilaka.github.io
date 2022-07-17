@@ -1,11 +1,11 @@
 ---
 layout: post
-title: OAuth2 + JWT Hybrid Architecture
+title: OAuth2/JWT/SSO with SpringBoot
 ---
 
 _This is a design overview not a how-to guide!_
 
-When it comes to software engineering , one of the greatest nightmares is `Authentication and Authorization`. It is a huge area of knowledge and hard time on implementation. Also it is evolving, even making it is more complex!
+When it comes to software engineering , one of the greatest nightmares is `Authentication and Authorization`. It is a huge area of knowledge and hard time on implementation. Also it is evolving, even making it - is more complex!
 
 <p align="center">
 <img src="{{ site.url }}/assets/img/oauth2.png"
