@@ -12,7 +12,7 @@ This year was a thriving one, having much experience in both engineering and bus
 
 **What I did in this year?** 🥳
 
-- Got to L4.
+- Got to L4 🏆.
   
 - Completed my first year in Masters Degree 🎓.
   
@@ -51,3 +51,5 @@ With growing responsibilities, now I am staring to thing about work-life balance
 Next year, I want to organize my work more and block more time for my personal things.
 
 Anyhow, still coding makes me happy as of the day 1.
+
+cefe
