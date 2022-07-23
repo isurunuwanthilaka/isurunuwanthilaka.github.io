@@ -11,7 +11,7 @@ Next, I moved to Medium. I still post some of these articles on it.
 
 Then, I thought to write it my own in Github Pages. I found this more simple and easy.
 
-First, I created a jekyll site with minima theme and did some customization. After few month, I found it cluttered by trying to filiing up more on to the site.
+First, I created a Jekyll site with minima theme and did some customization. After few months, I found it cluttered by trying to filiing up more on to the site.
 
 Then, I went to React on Github Pages as it is easy for me to style, but after complete revamp, I found it is hard for me to write articles.
 
