@@ -80,9 +80,9 @@ a quality work. Easy to read, easy to debug and easy to extend.
 #### 5. Learn. Learn. Learn.
 
 For us, software guys learning never ends. New technologies, new features come up every day. So we should keep our eyes open.
-In this year I learnt lots of things - SOA,SpringBoot,Databasing,OAuth2.0,Reporting,CICD etc etc and still learning.
+In this year I learnt lots of things - SOA,SpringBoot, Databasing, OAuth2.0,Reporting,CICD etc etc and still learning.
 
-There are lots of free courses out there on the internet - udemy, coursera,pluralsight, take the advantage of those freeware.
+There are lots of free courses out there on the internet - udemy, coursera, pluralsight, take the advantage of those freeware.
 And I could push me to the next step by starting my Masters in CS. I am happy about that.
 
 #### 6. Raise your voice.

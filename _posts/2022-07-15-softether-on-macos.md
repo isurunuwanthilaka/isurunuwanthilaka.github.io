@@ -3,7 +3,7 @@ layout: post
 title: SoftEther on macOS
 ---
 
-Recently, I wanted to connect to my university network to do some hacking on a raspberry pi cluster. Therefore I wanted to set up SoftEther on my MacBook. But unfortunately,There was no proper documentation for that rather than conecting through L2TP.I had to spend few days to figure out a way to setup,so just sharing hoping someone would find this helpful.😇
+Recently, I wanted to connect to my university network to do some hacking on a raspberry pi cluster. Therefore I wanted to set up SoftEther on my MacBook. But unfortunately,There was no proper documentation for that rather than connecting through L2TP.I had to spend few days to figure out a way to setup,so just sharing hoping someone would find this helpful.😇
 
  This is my personal note.
 

@@ -45,11 +45,11 @@ In the mapper we return `(K,V)` and at the reducer we have `(K, list(V))`. There
 if we get `key:US` and `values:1,1,1,1,...,1` then firstly 1,1 will be parsed to `add` and resulting 2 will be the first value of next iteration. Therefore,
 2,1 will be again parsed to `add` and `3,1`,`4,1`,`5,1` and finally `sum` will be returned as `(US,sum)`.
 
-L26 creates a schema to form a dataframe to save results to file. Here we have two columns with type `StringType()`.
+L26 creates a schema to form a data frame to save results to file. Here we have two columns with type `StringType()`.
 
-L30 write the dataframe to s3 bucket location as a CSV.
+L30 write the data frame to s3 bucket location as a CSV.
 
-This is a very small pyspark job to demonstrate the workflow of how we simply solve a bigdata problem. There are lots of resources out there. I have created a
+This is a very small pyspark job to demonstrate the workflow of how we simply solve a big data problem. There are lots of resources out there. I have created a
 video guide on youtube. Check that out if you are interested.
 
 [![AWS EMR Spark : Hands-on](https://img.youtube.com/vi/Jdy1L7g8N94/0.jpg)](https://www.youtube.com/watch?v=Jdy1L7g8N94)

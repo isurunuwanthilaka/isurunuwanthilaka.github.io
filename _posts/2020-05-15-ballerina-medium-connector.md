@@ -3,7 +3,7 @@ layout: post
 title: Medium Connector for Ballerina
 ---
 
-I was thinking to learn Ballerina for a long time. So I thought to develop something and learn by doing. First I went through the list of modules developed by other ballerina developers. It is interesting that ballerina had already covered many areas, also I was reading some ballerina posts on Medium platform. So I got an idea what if I could write a connector for medium with ballerina. No one had tried for that. Therefore I started developing this `isurun/medium` module. There was a cool article about twitter module development in medium, so I refered it as the guide for this development.
+I was thinking to learn Ballerina for a long time. So I thought to develop something and learn by doing. First I went through the list of modules developed by other ballerina developers. It is interesting that ballerina had already covered many areas, also I was reading some ballerina posts on Medium platform. So I got an idea what if I could write a connector for medium with ballerina. No one had tried for that. Therefore I started developing this `isurun/medium` module. There was a cool article about twitter module development in medium, so I referred it as the guide for this development.
 
 <p align="center">
 <img src="{{ site.url }}/assets/img/bal+medium.jpg"
@@ -15,7 +15,7 @@ I was thinking to learn Ballerina for a long time. So I thought to develop somet
 
 Medium is a blogging platform, with many writers and readers now. This module is created to connect medium platform with ballerina.
 
-This medium connector helps you to retrive data related to user, his publications, publications' contributors , create posts, create posts in publications and also upload images to medium platform using medium REST APIs.
+This medium connector helps you to retrieve data related to user, his publications, publications' contributors , create posts, create posts in publications and also upload images to medium platform using medium REST APIs.
 
 **Operations**
 
@@ -58,7 +58,7 @@ medium:Configuration mediumConfig = {
 medium:Client mediumClient = new (mediumConfig);
 ```
 
-The `myInfo` API provides the info of user athenticated with the integration key. It returns a `medium:User` object or a error.
+The `myInfo` API provides the info of user authenticated with the integration key. It returns a `medium:User` object or a error.
 
 ```ballerina
 var result1 = mediumClient->myInfo();
@@ -85,18 +85,18 @@ The `getUserPublications` API provides give `userID` publications. It returns a 
 ```ballerina
 var result3 = mediumClient->getUserPublications("userID");
 if (result3 is medium:Publication[]) {
-    io:println("User publication->first item name : ", result3[0].name);    //here only showing first publication, retrive as you want.
+    io:println("User publication->first item name : ", result3[0].name);    //here only showing first publication, retrieve as you want.
 } else {
     io:println("Error: ", result3);
 }
 ```
 
-The `getContributors` API returns list of contributer for the given `publicationID`. It returns a `medium:Contributor[]` object if successful or an `error` if unsuccessful.
+The `getContributors` API returns list of contributor for the given `publicationID`. It returns a `medium:Contributor[]` object if successful or an `error` if unsuccessful.
 
 ```ballerina
 var result4 = mediumClient->getContributors("336d898217ee");
 if (result4 is medium:Contributor[]) {
-    io:println("First contributor's role : ", result4[0].role);    //here only showing first publication, retrive as you want.
+    io:println("First contributor's role : ", result4[0].role);    //here only showing first publication, retrieve as you want.
 } else {
     io:println("Error: ", result4);
 }

@@ -65,7 +65,7 @@ Parser will do two main analysis ; Syntactical analysis and Sentiment analysis. 
 ```java
 public class Main {
     public static void main(String[] args) {
-        System.out.println("This will be printed") // should be ; at the end of the stateement
+        System.out.println("This will be printed") // should be ; at the end of the statement
     }
 }
 ```
@@ -87,7 +87,7 @@ public class Main {
 
 Here grammar can be correct but variable c is not defined so it is not available in this context. So this raises a semantic error.
 
-If everything is okay then the healthy code is translated into intermediate representation (not the bytecode) only to support translation. This will a simpler version of the sorce code. Example,
+If everything is okay then the healthy code is translated into intermediate representation (not the bytecode) only to support translation. This will a simpler version of the source code. Example,
 
 ```
 d = a + b + c
@@ -260,14 +260,14 @@ Usage of the programming language.
 |MOVY:(R1/R2),(R3-R10)                                             - 0100    |
 |JMPZ:step1(just a label starting with 'step' )                    - 0101    |
 |JMPNZ:step1                                                       - 0110    |
-|ADD:(R1/R2),(R3-R10)	                                           - 0111    |
-|SUB:(R1/R2),(R3-R10)	                                           - 1000    |
-|INCA:(R11/R12)		                                               - 1001    |
-|MUL:(R1/R2),(R3-R10)	                                           - 1010    |
-|DIV:(R1/R2),(R3-R10)	                                           - 1011    |
-|CLEAR:(R3-R10)		                                               - 1100    |
-|COMI			                                                   - 1101    |
-|COMO			                                                   - 1110    |
+|ADD:(R1/R2),(R3-R10)	                                             - 0111    |
+|SUB:(R1/R2),(R3-R10)	                                             - 1000    |
+|INCA:(R11/R12)		                                                 - 1001    |
+|MUL:(R1/R2),(R3-R10)	                                             - 1010    |
+|DIV:(R1/R2),(R3-R10)	                                             - 1011    |
+|CLEAR:(R3-R10)		                                                 - 1100    |
+|COMI			                                                         - 1101    |
+|COMO			                                                         - 1110    |
 |SWAPA:(R11/R12),(R,R13-R19) //R for R8,R9,R10                     - 1111    |
 |----------------------------------------------------------------------------|
 |STORED NUMBERS                                                              |

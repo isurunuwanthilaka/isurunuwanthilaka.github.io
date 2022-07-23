@@ -49,7 +49,7 @@ And after setting up create a user in the jenkins UI at :8081 (according to this
 
 # Jenkins Pipeline
 
-Next crete a jenkins pipeling project and include following pipeline script.
+Next crete a jenkins pipeline project and include following pipeline script.
 
 ```bash
 pipeline {

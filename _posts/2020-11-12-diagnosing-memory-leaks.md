@@ -71,7 +71,7 @@ Note that you might want to restrict this management port through the proxy so t
 
 Now you are almost done!. you can see all endpoints by hitting `GET http://{ip}:9000/actuator`. There is an endpoint `GET http://{ip}:9000/actuator/metrics` with this you can see the JVM properties also. For an example if we want max heap memory size `GET http://{ip}:9000/actuator/metrics/jvm.memory.max?tag=area:heap`.
 
-After monitoring all these you might come to the point that you need to see what are the growing objects inside the application, so we have to analyse the heap dump. There are two ways with you now to take a heap dump. One is to click the `heap dump` button in the JvisualVM and other one is calling the `GET http://{ip}:9000/actuator/heapdump` endpoint. So the next obvious question is how we analyse that heap dump. Nice.
+After monitoring all these you might come to the point that you need to see what are the growing objects inside the application, so we have to analyze the heap dump. There are two ways with you now to take a heap dump. One is to click the `heap dump` button in the JvisualVM and other one is calling the `GET http://{ip}:9000/actuator/heapdump` endpoint. So the next obvious question is how we analyze that heap dump. Nice.
 
 ### Analyzing heap dump
 

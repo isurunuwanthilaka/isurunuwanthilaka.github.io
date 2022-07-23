@@ -45,7 +45,7 @@ So how we care for a code?
 - Keep the consistency across names. You might name person object as PersonEntity so better to name employee object as EmployeeEntity but not as
   EmployeeObject
 - Method name should describe the single task it is doing. Lets say we have a method for getting user given the user id. So
-  it is better to name the method as getUserById(int id). Therefore reader does not need to read the content to understand the behaviour.
+  it is better to name the method as getUserById(int id). Therefore reader does not need to read the content to understand the behavior.
 
 If we carefully observe a poetry, we can see there is no clutter - only the things needed to convey the idea clearly. With code also,
 we don't need unnecessary clutter. In our old days we are told to use comments as much as possible. But is it really worthy?

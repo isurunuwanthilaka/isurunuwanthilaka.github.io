@@ -42,7 +42,7 @@ Creational patterns deal with creating and cloning new objects. This will vary w
 <h3>Structural Patterns</h3>
 <br/>
 <div align='justify'>
-This pattern category describes how the objects are connected to each other and what are the relationship they are having. Principles related to composition, generalization, inheritance and polymorphism are occupied in these patterns. These structures define how data flows in the application. To implement this pattern classes and interfaces are used greatly. In the coming blog posts, you can learn how the classes, sub-classing used to realize these patterns. One great idea behind these patterns is code to interface not to implementations. Decoupling is very helpful when we maintain code and extend. For examples proxy, adapter, façade, decorator etc. can be taken.
+This pattern category describes how the objects are connected to each other and what are the relationship they are having. Principles related to composition, generalization, inheritance and polymorphism are occupied in these patterns. These structures define how data flows in the application. To implement this pattern classes and interfaces are used greatly. In the coming blog posts, you can learn how the classes, sub-classing used to realize these patterns. One great idea behind these patterns is code to interface not to implementations. Decoupling is very helpful when we maintain code and extend. For examples proxy, adapter, facade, decorator etc. can be taken.
 </div>
 <h3>Behavioral Patterns</h3>
 <br/>

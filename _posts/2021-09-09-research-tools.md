@@ -29,7 +29,7 @@ So in this post I will be showing my tool setup for research stuffs and will be 
   <figcaption>image <a href="">source</a></figcaption>
 </figure>
 
-Mendeley is a good tool to read the research papers. It allows to have notes while reading so those summaries can be used whle writing the paper and also it helps to understand the context of the paper later.
+Mendeley is a good tool to read the research papers. It allows to have notes while reading so those summaries can be used while writing the paper and also it helps to understand the context of the paper later.
 
 Next thing is it can watch a folder. So once you add a paper to a folder like `research-papers` it will be visible Mendeley application.
 
@@ -38,7 +38,7 @@ Next thing is it can watch a folder. So once you add a paper to a folder like `r
   <figcaption>image <a href="">source</a></figcaption>
 </figure>
 
-Also it can categorize the research papers into seperate folders with just drag and drop. So you can have an organized environment for future work.
+Also it can categorize the research papers into separate folders with just drag and drop. So you can have an organized environment for future work.
 
 <figure>
   <img src="{{ site.url }}/assets/img/mendeley-3.png" alt="mendeley categorize" class="fig-img"/>
