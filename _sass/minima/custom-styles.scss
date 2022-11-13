@@ -10,12 +10,13 @@
 
 .post-link {
   display: block;
-  text-decoration: none !important;
+  text-decoration: underline !important;
   @include relative-font-size(1.125);
 }
 a:link,
 a:visited {
   color: inherit;
+  text-decoration: underline;
 }
 
 figure {
