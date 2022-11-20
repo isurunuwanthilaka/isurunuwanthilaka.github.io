@@ -15,6 +15,6 @@ permalink: /lectures
   <summary>Miscellaneous</summary>
 
   <ul>
-    <li><a href="/docs/lectures/L1-[OOP].pdf">OOP</a></li>
+    <li><a href="/docs/lectures/L1-OOP.pdf">OOP</a></li>
   </ul>
  </details>
