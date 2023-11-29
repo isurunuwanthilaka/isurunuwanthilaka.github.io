@@ -13,12 +13,8 @@ author:
 #Social Media
 minima:
   social_links:
-    facebook: isurunuwanthilaka
     github: isurunuwanthilaka
-    stackoverflow: "9559501"
     linkedin: isurunuwanthilaka
-    youtube_channel: UCWT6lIKNUN-1F-WxIov4NUQ
-    youtube_channel_name: Isuru Nuwanthilaka
 
 # Build settings
 markdown: kramdown
@@ -28,6 +24,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jemoji
+
+minima:
+  skin: solarized-dark
 
 # Google Analytics
 google_analytics: G-13KD5X904R
