@@ -23,23 +23,6 @@ Find me on [LinkedIn](https://www.linkedin.com/in/isurunuwanthilaka/) & [Twitter
 
 ---
 
-## Education
-
-- **MSc in Computer Science (Software Architecture Specialization)**  
-  2021 - 2023  
-  University of Moratuwa
-
-- **BSc(Hons) in Engineering (Electronic and Telecommunication Engineering)**  
-  2015 - 2019  
-  University of Moratuwa
-
-- **GCE Advanced Level**  
-  2014  
-  Ananda College, Colombo 10  
-  Ranked 36th in Sri Lanka, 4 A passes in Combined Mathematics, Physics, Chemistry, General English
-
----
-
 ## Experience
 
 - **Software Engineer II**  
@@ -59,6 +42,23 @@ Find me on [LinkedIn](https://www.linkedin.com/in/isurunuwanthilaka/) & [Twitter
   MillenniumIT ESP, Sri Lanka  
   Implemented and integrated MiWiFi Quota Management System  
   _Technology:_ Java 8, Docker, Postgres, Scala, AAA server - Radiator, Python, Go
+
+---
+
+## Education
+
+- **MSc in Computer Science (Software Architecture Specialization)**  
+  2021 - 2023  
+  University of Moratuwa
+
+- **BSc(Hons) in Engineering (Electronic and Telecommunication Engineering)**  
+  2015 - 2019  
+  University of Moratuwa
+
+- **GCE Advanced Level**  
+  2014  
+  Ananda College, Colombo 10  
+  Ranked 36th in Sri Lanka, 4 A passes in Combined Mathematics, Physics, Chemistry, General English
 
 ---
 
