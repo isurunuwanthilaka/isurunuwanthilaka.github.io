@@ -31,6 +31,8 @@ minima:
 # Google Analytics
 google_analytics: G-13KD5X904R
 
+paginate: 10
+
 exclude:
   - Gemfile
   - Gemfile.lock
