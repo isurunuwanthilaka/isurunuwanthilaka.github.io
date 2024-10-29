@@ -1,34 +1,25 @@
 source "https://rubygems.org"
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-#     bundle exec jekyll serve
-#
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
-#gem "jekyll", "~> 3.8.5"
-
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "~> 2.5.1"
-
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
+# Core Jekyll Setup
+gem "jekyll", "~> 3.9.0"         # Core Jekyll gem
+gem "minima", "~> 2.5"           # Default theme for Jekyll sites
 gem "github-pages", group: :jekyll_plugins
 
-# If you have any plugins, put them here!
+# Jekyll Plugins
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.13"
+  gem "jekyll-feed", "~> 0.12"   # Generates RSS feed for posts
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-#gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# Windows-specific Dependencies
+install_if -> { RUBY_PLATFORM =~ /mingw|mswin|java/ } do
+  gem "tzinfo", "~> 1.2"
+  gem "tzinfo-data"
+  gem "wdm", "~> 0.1.1"          # Boosts directory-watching performance on Windows
+end
 
-gem "sass", "~> 3.7.4"
-
-gem "html-proofer"
-
-gem "nokogiri", "~> 1.10.7"
-
-gem "webrick"
+# Additional Required Gems
+gem "webrick", "~> 1.7"          # Needed for Jekyll server
+gem "csv"                         # CSV handling support
+gem "base64"                      # Base64 encoding
+gem "bigdecimal"                  # High-precision decimal support
+gem "faraday-retry"               # Faraday retry middleware for Faraday v2.0+
