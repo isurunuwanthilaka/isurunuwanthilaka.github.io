@@ -6,7 +6,7 @@ permalink: /about
 
 ## Hello World! 🌎
 
-I am Isuru Nuwanthilaka, a senior software engineer from Sri Lanka 🇱🇰.
+I am Isuru Nuwanthilaka, a senior engineer from Sri Lanka 🇱🇰.
 
 All thoughts are my very own!
 
@@ -23,10 +23,16 @@ Find me on [LinkedIn](https://www.linkedin.com/in/isurunuwanthilaka/) & [Twitter
 
 ## Experience
 
-- **Software Engineer II**  
-  2021 Oct - Present (Remote)  
+- **Technical Lead**  
+  2024 Nov - Present (Remote)  
   Cut+Dry Inc, San Francisco, US  
-  Contribute to Payments, Data projects, and Integrations  
+  Lead the integration hub team  
+  _Technology:_ Java, PHP, React, Springboot, GraphQL
+
+- **Software Engineer II**  
+  2021 Oct - 2024 Oct (Remote)  
+  Cut+Dry Inc, San Francisco, US  
+  Develop and maintain cutanddry.com products - Pay, Integration Hub, Push notifications, and Data Projects  
   _Technology:_ Java, PHP, React, Springboot, GraphQL
 
 - **Software Engineer**  
