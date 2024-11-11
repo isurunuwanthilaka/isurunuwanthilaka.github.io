@@ -24,13 +24,13 @@ Find me on [LinkedIn](https://www.linkedin.com/in/isurunuwanthilaka/) & [Twitter
 ## Experience
 
 - **Technical Lead**  
-  2024 Nov - Present (Remote)  
+  2024 Oct - Present (Remote)  
   Cut+Dry Inc, San Francisco, US  
   Lead the integration hub team  
   _Technology:_ Java, PHP, React, Springboot, GraphQL
 
 - **Software Engineer II**  
-  2021 Oct - 2024 Oct (Remote)  
+  2021 Oct - 2024 Sep (Remote)  
   Cut+Dry Inc, San Francisco, US  
   Develop and maintain cutanddry.com products - Pay, Integration Hub, Push notifications, and Data Projects  
   _Technology:_ Java, PHP, React, Springboot, GraphQL
