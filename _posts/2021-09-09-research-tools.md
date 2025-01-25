@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Tool setup for research
+title: Tool Setup for Research
 ---
 
-Yeah, I am bit excited about this `research thing` as this is the first time I am doing an academic research alone. The best part is my supervisor guiding me through to simplify the things which I am not supposed to spend hours struggling.
+Yeah, I am a bit excited about this `research thing` as this is the first time I am doing academic research alone. The best part is my supervisor guiding me through to simplify the things which I am not supposed to spend hours struggling with.
 
-So in this post I will be showing my tool setup for research stuffs and will be adding more things later to keep this stack updated.
+So in this post, I will be showing my tool setup for research and will be adding more things later to keep this stack updated.
 
 <figure>
   <img src="{{ site.url }}/assets/img/research.jpeg" alt="research" class="fig-img"/>
-  <figcaption>image <a href="">source</a></figcaption>
+  <figcaption>Image source: <a href="https://unsplash.com/s/photos/research">Unsplash</a></figcaption>
 </figure>
 
 ### Tools
@@ -26,30 +26,30 @@ So in this post I will be showing my tool setup for research stuffs and will be 
 
 <figure>
   <img src="{{ site.url }}/assets/img/mendeley-1.png" alt="mendeley logo" class="fig-img"/>
-  <figcaption>image <a href="">source</a></figcaption>
+  <figcaption>Image source: <a href="https://www.mendeley.com/download-reference-manager/">Mendeley</a></figcaption>
 </figure>
 
-Mendeley is a good tool to read the research papers. It allows to have notes while reading so those summaries can be used while writing the paper and also it helps to understand the context of the paper later.
+Mendeley is a good tool to read research papers. It allows you to take notes while reading so those summaries can be used while writing the paper, and it also helps to understand the context of the paper later.
 
 Next thing is it can watch a folder. So once you add a paper to a folder like `research-papers` it will be visible Mendeley application.
 
 <figure>
   <img src="{{ site.url }}/assets/img/mendeley-2.png" alt="mendeley watch" class="fig-img"/>
-  <figcaption>image <a href="">source</a></figcaption>
+  <figcaption>Image source: Mendeley Desktop Application Screenshot</figcaption>
 </figure>
 
 Also it can categorize the research papers into separate folders with just drag and drop. So you can have an organized environment for future work.
 
 <figure>
   <img src="{{ site.url }}/assets/img/mendeley-3.png" alt="mendeley categorize" class="fig-img"/>
-  <figcaption>image <a href="">source</a></figcaption>
+  <figcaption>Image source: Mendeley Desktop Application Screenshot</figcaption>
 </figure>
 
 The most important this is that it can generate `BibTex` for the references. So you do not want to struggle fixing references and it will help you to speed up writing the papers. You can generate `BibTex` for one paper or multiple papers by selecting a group of papers. So all you need is to paste it to .bib file.
 
 <figure>
   <img src="{{ site.url }}/assets/img/mendeley-4.png" alt="bibtex" class="fig-img"/>
-  <figcaption>image <a href="">source</a></figcaption>
+  <figcaption>Image source: Mendeley BibTeX Export Feature</figcaption>
 </figure>
 
 #### 2. Latex
@@ -62,7 +62,7 @@ You can use OverLeaf online free/premium versions and it is good for collaborati
 
 <figure>
   <img src="{{ site.url }}/assets/img/mendeley-5.png" alt="preview" class="fig-img"/>
-  <figcaption>image <a href="">source</a></figcaption>
+  <figcaption>Image source: VS Code LaTeX Preview</figcaption>
 </figure>
 
 #### 3. Google Docs

@@ -1,90 +1,77 @@
 ---
 layout: post
-title: Art of Code
+title: The Art of Code
 ---
 
-**TLDR : CODE is a POEM written with passion and loads of love.** Friends, If you don't agree, this post is for you and better to read.
-Or else, we both are in the same page.
-
-Early days of programming was composing 1s and 0s somehow to tell the machines a computational task. But now it has evolved
-to a point that it is no longer a 1s and 0s solo dance. Now project teams are huge and lots of programmers working on same code base.
-_So these days what matters most is how to write a code for readers and surely someone would fix it to work on a machine._ Therefore,
-coding has become an art, not like old days.
+> **Code is poetry written with passion and love.** If this resonates with you, we're kindred spirits. If not, read on to discover why.
 
 <figure>
-  <img src="{{ site.url }}/assets/img/codeisart.png" alt="codeisart" class="fig-img"/>
-  <figcaption>image <a href="https://jeshield.com/code-is-poetry">source</a></figcaption>
+  <img src="{{ site.url }}/assets/img/codeisart.png" alt="Code is Art" class="fig-img"/>
+  <figcaption>Image source: <a href="https://jeshield.com/code-is-poetry">JeShield</a></figcaption>
 </figure>
 
-What is an art in a general way?
+## The Evolution of Code
+In the early days, programming was simply about composing 1s and 0s to make machines compute. Today, it has evolved into something far more collaborative and nuanced. With large teams working on shared codebases, what matters most is writing code for human readers - the machine execution comes second.
 
-**Poem is a peace of art.**
-: _It is written with care_
-: _well thought_
-: _elegant language used_
-: _idea is clear_
-: _readers feel cared,loved while reading_
-: _no unnecessary words, not even a single one_
-: _written with passion_
+## The Poetry in Code
 
-So as code.
+What makes a poem beautiful?
+- It's written with care
+- It's well thought out
+- It uses elegant language
+- Its ideas are clear
+- It connects with readers
+- Every word has purpose
+- It's crafted with passion
 
-We all have worked in _messy code bases_ and always feel like this code is not cared or loved. Good code should be written for
-readers not for machines. How we identify whether the code is well cared? it can be measured with the _number of wtf moments_
-while trying to understand the code. Or we might need to go here and there in the code to grab what it is doing. Readers get
-exhausted by just few lines of code.
+The same principles apply to code.
 
-So how we care for a code?
+## The Signs of Artful Code
 
-- Use appropriate naming convention for all the variables/classes/interfaces/methods
+We've all worked with messy codebases that feel unloved. Good code can be measured by the "WTF moments" while reading it. If you find yourself jumping between files just to understand what's happening, or if you're exhausted after reading just a few lines - that's not art.
 
-- Classes named as Nouns and methods named as Verbs
+### How to Care for Your Code
 
-- Method is responsible for a well-defined single task
+1. **Thoughtful Naming**
+   - Use clear conventions for variables, classes, and interfaces
+   - Name classes as nouns, methods as verbs
+   - Keep naming consistent (if you have `PersonEntity`, use `EmployeeEntity`, not `EmployeeObject`)
+   - Let method names describe their single responsibility
 
-- Keep the consistency across names. You might name person object as PersonEntity so better to name employee object as EmployeeEntity but not as
-  EmployeeObject
-- Method name should describe the single task it is doing. Lets say we have a method for getting user given the user id. So
-  it is better to name the method as getUserById(int id). Therefore reader does not need to read the content to understand the behavior.
+2. **Elegant Simplicity**
+   Instead of this:
+   ```java
+   public Integer calculation(Integer var1, Integer var2){
+       //adding given two numbers
+       Integer temp = var1 + var2;
+       return temp;
+   }
+   ```
+   Write this:
+   ```java
+   public Integer add(Integer numOne, Integer numTwo){
+       return numOne + numTwo;
+   }
+   ```
 
-If we carefully observe a poetry, we can see there is no clutter - only the things needed to convey the idea clearly. With code also,
-we don't need unnecessary clutter. In our old days we are told to use comments as much as possible. But is it really worthy?
-Having lots of comments may distract reader. Also comments are never cleaned (most of people - other than the original author
-scared to touch comments.) When we go through a poem then we don't need any comment to enjoy it so should be the code. Unless it is
-really needed we should avoid comments. Code itself should act as a comment. How?
+3. **Self-Documenting Code**
+Just as a poem doesn't need explanatory notes, good code often doesn't need comments. The code itself should tell the story. Comments should be used sparingly, only when the code cannot be made clearer.
 
-Let's see this code snippet.
+## The Creative Process
 
-```java
-public Integer calculation(Integer var1,Integer var2){
-    //adding given two numbers
-    Integer temp = var1 + var2;
-    return temp;
-  }
-```
+Like poetry, great code isn't written in a single sitting. It requires:
+- Multiple revisions
+- Hours of refactoring
+- Constructive debates
+- Continuous polishing
 
-In the above code we had to use a comment to inform the reader that this method adds two given numbers. But can't we spread the comment
-on code. Let's try.
+When your code first works, you're not done. That's just the first draft. You need to:
+- Revisit and refactor
+- Clean up the rough edges
+- Make it shine
 
-```java
-public Integer add(Integer numOne,Integer numTwo){
-    Integer total = numOne + numTwo;
-    return total;
-  }
-```
+## The Final Word
 
-Now do you think we need a comment? No right. Code is itself a comment. Method signature is all enough.
+**Code is indeed a poem** - written with passion and loads of love. It's an art form that balances functionality with elegance, clarity with efficiency. Whether you agree or have different thoughts, I'd love to hear your perspective.
 
-Art is well thought. Poet has decided where to have sarcasm, where to have climax, when to say what. All is organized and
-written for a reason. So as the code. It should be well-designed. Classes,interfaces should be extracted appropriately making code
-simple (... yes it is KISS).
-
-Poems are not written in a single run. May be 1 week for writing but few weeks for editing and fine-tuning. Mastering the art is
-tiresome. That's why great art works are rare. It takes time and sweat. Nothing special with code also. It also needs lots of rework.
-Hours of refactoring, war of opinions are truly behind the good code. No surprise. So once you write a code and executes, you are not yet done.
-You need to revisit, refactor and clean the mess, polish few more rounds and then you can make it to _done_.
-
-Again, **CODE is a POEM** written with passion and loads of love. You might still have different thoughts. We have a discussion
-at the end of this post. Love to hear your ideas.Shoot.
-
-As always, be safe. Happy Coding!.
+Stay safe and Happy Coding! 🎨
