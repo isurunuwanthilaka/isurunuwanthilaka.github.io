@@ -6,127 +6,86 @@ permalink: /about
 
 ## Hello World! 🌎
 
-I am Isuru Nuwanthilaka, a senior engineer from Sri Lanka 🇱🇰.
+Hey there! I'm Isuru, a code-loving Technical Lead from the beautiful island of Sri Lanka 🇱🇰.
 
-All thoughts are my very own!
+### What I Do 💻
+I'm passionate about building things that scale (except my coffee intake ☕, that's already at max scale). My tech toolbox includes Java, Spring Boot, and all things cloud-native. Currently leading teams remotely and loving every bit of it!
 
-Find me on [LinkedIn](https://www.linkedin.com/in/isurunuwanthilaka/) & [Twitter](https://twitter.com/isuuuru)
+### Fun Fact 🥋
+I once won a bronze medal in karate 🥋, which surprisingly helps with debugging - both require patience, focus, and knowing when to take a step back! 
 
----
-
-- **Email:** [isurunuwanthilaka@gmail.com](mailto:isurunuwanthilaka@gmail.com)
-- **Phone:** +94 77 387 1605
-- **Date of Birth:** February 19, 1995
-- **Location:** Sri Lanka
-
----
-
-## Experience
-
-- **Technical Lead**  
-  2024 Oct - Present (Remote)  
-  Cut+Dry Inc, San Francisco, US  
-  Lead the integration hub team  
-  _Technology:_ Java, PHP, React, Springboot, GraphQL
-
-- **Software Engineer II**  
-  2021 Oct - 2024 Sep (Remote)  
-  Cut+Dry Inc, San Francisco, US  
-  Develop and maintain cutanddry.com products - Pay, Integration Hub, Push notifications, and Data Projects  
-  _Technology:_ Java, PHP, React, Springboot, GraphQL
-
-- **Software Engineer**  
-  2020 Mar - 2021 Sep (On-site)  
-  MillenniumIT ESP, Sri Lanka  
-  Design and develop microservices for PeoTV Go project  
-  _Technology:_ Java 11, SpringBoot, Postgres, Docker, Python, Go, SOA, Jenkins
-
-- **Intern - Software Engineering**  
-  2018 Jun - 2018 Dec (On-site)  
-  MillenniumIT ESP, Sri Lanka  
-  Implemented and integrated MiWiFi Quota Management System  
-  _Technology:_ Java 8, Docker, Postgres, Scala, AAA server - Radiator, Python, Go
+### Let's Connect! 🤝
+- [LinkedIn](https://www.linkedin.com/in/isurunuwanthilaka/) (for the professional stuff)
+- [Twitter](https://twitter.com/isuuuru) (for the tech banter)
+- [Email](mailto:isurunuwanthilaka@gmail.com) (for everything else!)
 
 ---
 
-## Education
+## Professional Experience 👨‍💻
 
-- **MSc in Computer Science (Software Architecture Specialization)**  
-  2021 - 2023  
-  University of Moratuwa
+- **Technical Lead** @ Cut+Dry Inc, San Francisco (Remote)  
+  _Oct 2024 - Present_
+  - Leading the integration hub team
+  - Tech Stack: Java, Spring Boot, PHP, React, GraphQL
 
-- **BSc(Hons) in Engineering (Electronic and Telecommunication Engineering)**  
-  2015 - 2019  
-  University of Moratuwa
+- **Software Engineer II** @ Cut+Dry Inc, San Francisco (Remote)  
+  _Oct 2021 - Sep 2024_
+  - Led development of critical features for cutanddry.com products
+  - Implemented payment systems, integration hub, and notification services
+  - Tech Stack: Java, Spring Boot, PHP, React, GraphQL
 
-- **GCE Advanced Level**  
-  2014  
-  Ananda College, Colombo 10  
-  Ranked 36th in Sri Lanka, 4 A passes in Combined Mathematics, Physics, Chemistry, General English
+- **Software Engineer** @ MillenniumIT ESP, Sri Lanka  
+  _Mar 2020 - Sep 2021_
+  - Architected and developed microservices for PeoTV Go streaming platform
+  - Tech Stack: Java 11, Spring Boot, PostgreSQL, Docker, Python, Go
 
----
-
-## Projects
-
-- **Lead contributor of cutanddry.com**  
-  2021  
-  Cut+Dry Inc  
-  Contributed to the development of cutanddry.com products - Pay, Integration Hub, Push notifications, and Data Projects
-
-- **Contributor of PeoTVGo OTT Solution**  
-  2020-2021  
-  MillenniumIT ESP  
-  Developed PeoTVGo OTT Solution for SLTMobitel using Java 11 (Springboot), Python, Postgres, Linux, Jenkins, Ansible, Docker, Git, Postman
-
-- **Dialog Datathon - Smart City Planning based on CDR**  
-  2019  
-  Developed machine learning models for smart city planning tasks  
-  _Skills:_ Python, Pandas, Scikit-learn, Seaborn, Azure DSVM
+- **Software Engineering Intern** @ MillenniumIT ESP, Sri Lanka  
+  _Jun 2018 - Dec 2018_
+  - Developed MiWiFi Quota Management System
+  - Tech Stack: Java 8, Docker, PostgreSQL, Scala, Python, Go
 
 ---
 
-## Awards
+## Education 🎓
 
-- **IEEEXtreme 11.0 - World Rank: 324**  
-  2018, University of Moratuwa  
-  24 Hour International Programming Competition organized by IEEE. Member of the 3-member team CLIC
+- **MSc in Computer Science** (Software Architecture)  
+  University of Moratuwa, 2021 - 2023
 
-- **MoraExtreme Programming Competition**  
-  2016-2017, University of Moratuwa  
-  Member of Team CLIC, 6th place (2016), 2nd place (2017)
-
-- **Dialog Merit scholarship 2012**  
-  2012, Ananda College, Colombo 10  
-  Dialog Merit scholarship for Colombo district based on special achievements at G.C.E. Ordinary Level 2011
-
-- **Class First and Subject Prizes**  
-  2007-2014, Ananda College, Colombo 10  
-  General Proficiency Prize for 6 years, Subject Prizes in Chemistry, Health and Physical Education, Buddhism, Science, Tamil
-
-- **3rd SAARC-Bronze Medal and TIGSKC - Silver Medal**  
-  2007, Ananda College, Colombo 10  
-  3rd SAARC open karate-do championship 2007, Allahabad, India. TIGSKC - Silver Medal in Triangular and International Goodwill School karate championship, Sri Lanka 2007
+- **BSc(Hons) in Electronic and Telecommunication Engineering**  
+  University of Moratuwa, 2015 - 2019
 
 ---
 
-## Certifications
+## Key Projects 🚀
 
-- **Deep Learning Nanodegree**  
-  2020, Udacity  
-  NN, CNN, RNN, GAN, and hands-on AWS SageMaker deployment.  
-  Completion ID: [434M3LSP](https://graduation.udacity.com/confirm/434M3LSP)
+- **Cut+Dry Platform Development** (2021-Present)
+  - Led development of payment systems and integration hub
+  - Implemented real-time notification system
+  - Built data analytics pipelines
 
-- **Convolutional Neural Networks**  
-  2019, Coursera  
-  Offered by DeepLearning.ai  
-  Completion ID: [CK6PDQEX3S2M](https://www.coursera.org/account/accomplishments/verify/CK6PDQEX3S2M)
+- **PeoTVGo OTT Solution** (2020-2021)
+  - Developed streaming service backend for SLTMobitel
+  - Implemented CI/CD pipelines and containerization
+  - Tech Stack: Java 11, Spring Boot, PostgreSQL, Docker, Jenkins
 
-- **Core Database Concepts**  
-  2019, Coursera  
-  Offered by Arizona State University  
-  Completion ID: [CUGAGTPYMYCC](https://www.coursera.org/account/accomplishments/verify/CUGAGTPYMYCC)
+- **Smart City Planning (Dialog Datathon)** (2019)
+  - Developed ML models for urban planning using CDR data
+  - Tech Stack: Python, Pandas, Scikit-learn
 
-- **Machine Learning**  
-  2018, Coursera  
-  Offered by Stanford, Andrew Ng  
-  Completion ID: [LYJZCS8BPSLD](https://www.coursera.org/account/accomplishments/verify/LYJZCS8BPSLD)
+---
+
+## Certifications 📜
+
+- AWS Solutions Architect Associate (Dec 2024)
+- Deep Learning Nanodegree (Udacity, 2020)
+- Convolutional Neural Networks (DeepLearning.ai, 2019)
+- Machine Learning (Stanford University, 2018)
+
+---
+
+## Notable Achievements 🏆
+
+- IEEEXtreme 11.0 Programming Competition - World Rank: 324
+- MoraExtreme Programming Competition - 2nd Place (2017)
+- Dialog Merit Scholarship Recipient (2012)
+- SAARC Karate Championship - Bronze Medal (2007)
