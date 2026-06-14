@@ -24,7 +24,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jemoji
 
 minima:
   skin: classic
