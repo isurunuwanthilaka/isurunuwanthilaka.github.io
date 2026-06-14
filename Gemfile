@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 # Core Jekyll Setup
+gem "ffi", "~> 1.15.5"           # Pin for Ruby 2.6 compatibility
 gem "jekyll", "~> 3.9.0"         # Core Jekyll gem
 gem "minima", "~> 2.5"           # Default theme for Jekyll sites
 gem "github-pages", group: :jekyll_plugins
