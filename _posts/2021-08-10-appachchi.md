@@ -1,6 +1,9 @@
 ---
 layout: post
-title: To Appachchi
+title: "To Appachchi"
+tags: [Personal, Poetry]
+description: "පියෙකුට ලියූ කවියක් — a Sinhala poem written for my father."
+lang: si
 ---
 
 ඉස්සර

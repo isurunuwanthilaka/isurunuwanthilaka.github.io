@@ -1,6 +1,9 @@
 ---
 layout: post
-title: PySpark - Let's count products
+title: "PySpark - Let's count products"
+tags: [Big Data, Spark, Python]
+description: "Solving a simple product-count problem with PySpark, and where Spark improves on Hadoop MapReduce."
+image: /assets/img/pyspark.png
 ---
 
 Big Data field is growing day by day so as the technologies which supports big data. Spark is another interesting platform to

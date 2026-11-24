@@ -1,24 +1,18 @@
 ---
 layout: default
+title: Page not found
+permalink: /404.html
+sitemap: false
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<div class="wrapper wrapper--narrow">
+  <div class="notice">
+    <p class="notice__code">404</p>
+    <h1>This page wandered off</h1>
+    <p>The link may be broken, or the post may have moved. The archive has everything that still exists.</p>
+    <div class="hero__actions" style="justify-content: center;">
+      <a class="button" href="{{ '/' | relative_url }}">Back to the blog</a>
+      <a class="button button--ghost" href="{{ '/archive' | relative_url }}">Browse the archive</a>
+    </div>
+  </div>
 </div>

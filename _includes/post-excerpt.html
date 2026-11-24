@@ -1,0 +1,14 @@
+{%- comment -%}
+  Produces a plain-text summary for a post. Prefers an explicit `description`,
+  falls back to the Liquid excerpt, and finally to the body — older posts open
+  with a centred image, which leaves the excerpt empty once tags are stripped.
+{%- endcomment -%}
+{%- assign summary = include.post.description -%}
+{%- unless summary and summary != '' -%}
+  {%- assign summary = include.post.excerpt | strip_html | normalize_whitespace | strip -%}
+{%- endunless -%}
+{%- if summary == '' -%}
+  {%- assign summary = include.post.content | strip_html | normalize_whitespace | strip -%}
+{%- endif -%}
+{%- assign limit = include.length | default: 170 -%}
+{{- summary | truncate: limit -}}

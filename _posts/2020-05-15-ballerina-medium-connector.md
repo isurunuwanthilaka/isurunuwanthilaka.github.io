@@ -1,6 +1,9 @@
 ---
 layout: post
-title: Medium Connector for Ballerina
+title: "Medium Connector for Ballerina"
+tags: [Ballerina, Open Source, APIs]
+description: "Learning Ballerina by shipping something real: an open-source connector module for the Medium API."
+image: /assets/img/bal+medium.jpg
 ---
 
 I was thinking to learn Ballerina for a long time. So I thought to develop something and learn by doing. First I went through the list of modules developed by other ballerina developers. It is interesting that ballerina had already covered many areas, also I was reading some ballerina posts on Medium platform. So I got an idea what if I could write a connector for medium with ballerina. No one had tried for that. Therefore I started developing this `isurun/medium` module. There was a cool article about twitter module development in medium, so I referred it as the guide for this development.

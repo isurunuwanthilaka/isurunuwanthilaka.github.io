@@ -1,27 +1,79 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="wrapper wrapper--narrow">
+  <article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting">
+    <header class="post-header">
+      {% include post-meta.html post=page class="post-header__meta" show_author=true %}
+      <h1 class="post-header__title p-name" itemprop="headline">{{ page.title | escape }}</h1>
+      {%- if page.description -%}
+      <p class="lede" itemprop="description">{{ page.description }}</p>
+      {%- endif -%}
+      {%- if page.tags and page.tags.size > 0 -%}
+      <ul class="tag-list post-header__tags">
+        {%- for tag in page.tags -%}
+        <li><a class="tag" href="{{ '/topics' | relative_url }}#{{ tag | slugify }}">{{ tag }}</a></li>
+        {%- endfor -%}
+      </ul>
+      {%- endif -%}
+      <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
+      {%- if page.last_modified_at -%}
+      <meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">
+      {%- endif -%}
+      <span itemprop="author" itemscope itemtype="https://schema.org/Person" hidden>
+        <meta itemprop="name" content="{{ page.author | default: site.author.name }}">
+      </span>
+    </header>
 
-  <header class="post-header">
-    <h3 class="post-title" itemprop="name headline">{{ page.title | escape }}</h3>
-    <p class="post-meta">
-      {% if site.author.name %}
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.author.name
-          }}</span></span>
-      {% endif %}
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        |
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time>
+    <div class="prose e-content" itemprop="articleBody">
+      {{ content }}
+    </div>
 
-    </p>
-  </header>
+    <footer class="post-footer">
+      {%- assign share_url = page.url | absolute_url | uri_escape -%}
+      {%- assign share_title = page.title | escape | uri_escape -%}
+      <div class="share">
+        <span class="share__label">Share</span>
+        <a class="social-list__link" target="_blank" rel="noopener"
+           href="https://twitter.com/intent/tweet?url={{ share_url }}&text={{ share_title }}"
+           title="Share on X">{% include icon.html name="twitter" %}<span class="visually-hidden">Share on X</span></a>
+        <a class="social-list__link" target="_blank" rel="noopener"
+           href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}"
+           title="Share on LinkedIn">{% include icon.html name="linkedin" %}<span class="visually-hidden">Share on LinkedIn</span></a>
+        <button class="social-list__link" type="button" id="copy-link"
+                data-url="{{ page.url | absolute_url }}" title="Copy link">
+          {% include icon.html name="link" %}<span class="visually-hidden">Copy link to this post</span>
+        </button>
+      </div>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+      <div class="author-card">
+        {%- if site.author.avatar -%}
+        <img src="{{ site.author.avatar | relative_url }}" alt="" width="56" height="56" loading="lazy">
+        {%- endif -%}
+        <div>
+          <span class="author-card__name">{{ site.author.name }}</span>
+          <p>{{ site.author.bio | strip_newlines }}</p>
+        </div>
+      </div>
+    </footer>
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  </article>
+
+  {%- if page.previous or page.next -%}
+  <nav class="post-nav" aria-label="More posts">
+    {%- if page.next -%}
+    <a class="post-nav__link" href="{{ page.next.url | relative_url }}">
+      <span class="post-nav__dir">&larr; Newer post</span>
+      <span class="post-nav__title">{{ page.next.title | escape }}</span>
+    </a>
+    {%- else -%}<span></span>{%- endif -%}
+    {%- if page.previous -%}
+    <a class="post-nav__link post-nav__link--next" href="{{ page.previous.url | relative_url }}">
+      <span class="post-nav__dir">Older post &rarr;</span>
+      <span class="post-nav__title">{{ page.previous.title | escape }}</span>
+    </a>
+    {%- endif -%}
+  </nav>
+  {%- endif -%}
+</div>

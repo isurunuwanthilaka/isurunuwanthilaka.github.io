@@ -1,0 +1,39 @@
+---
+layout: page
+title: Archive
+permalink: /archive
+lede: Every post, newest first. Start typing to filter by title, year or topic.
+description: A complete, searchable index of everything published on this blog.
+image: /assets/img/profile-pic.png
+---
+
+<div class="search">
+  {% include icon.html name="search" %}
+  <input class="search__input" id="archive-search" type="search" autocomplete="off"
+         placeholder="Search {{ site.posts.size }} posts…" aria-label="Filter posts" aria-controls="archive">
+</div>
+
+<div id="archive" data-archive>
+  {%- assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
+  {%- for year in years -%}
+  <section class="archive-year" data-year-group>
+    <h2 class="archive-year__label">{{ year.name }}</h2>
+    <ul class="archive-list">
+      {%- for post in year.items -%}
+      {%- assign tag_text = post.tags | join: ' ' -%}
+      <li class="archive-item" data-search="{{ post.title | downcase | escape }} {{ tag_text | downcase | escape }} {{ year.name }}">
+        <a class="archive-item__link" href="{{ post.url | relative_url }}">
+          <span class="archive-item__date">{{ post.date | date: '%b %-d' }}</span>
+          <span class="archive-item__title">{{ post.title | escape }}</span>
+          {%- if post.tags and post.tags.size > 0 -%}
+          <span class="archive-item__tags">{{ post.tags | join: ' · ' }}</span>
+          {%- endif -%}
+        </a>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+  {%- endfor -%}
+</div>
+
+<p class="search__empty" id="archive-empty" hidden>No posts match that search.</p>

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Get into MQTT in 3 minutes (Python+Docker)  
+title: "Get into MQTT in 3 minutes (Python + Docker)"
 categories: Software-Engineering
-author : Isuru Nuwanthilaka
+tags: [MQTT, IoT, Python, Docker]
+description: "A three-minute introduction to MQTT, pub/sub and brokers, with a working example built on Python and Docker."
+image: /assets/img/pub-sub.png
 last_modified_at: '2021-04-11 21:05:20'
-tags: [Misc]
 ---
 
 In my second week of internship, I got a chance to involve in a IoT project. There, I had to quickly go through some concepts before writing codes for the application.So I thought to share some knowledge here, about MQTT by building a example app.

@@ -1,26 +1,25 @@
-{%- assign social = site.minima.social_links -%}
-
-<ul class="social-media-list">
-  {%- if social.github -%}<li><a rel="me" href="https://github.com/{{ social.github | cgi_escape | escape }}"
-      title="{{ social.github | escape }}"><svg class="svg-icon grey">
-        <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
-      </svg></a></li>{%- endif -%}
-  {%- if social.linkedin -%}<li><a rel="me"
-      href="https://www.linkedin.com/in/{{ social.linkedin | cgi_escape | escape }}"
-      title="{{ social.linkedin | escape }}"><svg class="svg-icon grey">
-        <use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use>
-      </svg></a></li>{%- endif -%}
-  {%- if social.twitter -%}<li><a rel="me" href="https://twitter.com/{{ social.twitter | cgi_escape | escape }}"
-      title="{{ social.twitter | escape }}"><svg class="svg-icon grey">
-        <use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use>
-      </svg></a></li>{%- endif -%}
-  {%- if social.youtube -%}<li><a rel="me" href="https://www.youtube.com/{{ social.youtube | cgi_escape | escape }}"
-      title="{{ social.youtube | escape }}"><svg class="svg-icon grey">
-        <use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use>
-      </svg></a></li>{%- endif -%}
-  {%- if social.youtube_channel -%}<li><a rel="me"
-      href="https://www.youtube.com/channel/{{ social.youtube_channel | cgi_escape | escape }}"
-      title="{{ social.youtube_channel_name | escape | default: 'YouTube' }}"><svg class="svg-icon grey">
-        <use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use>
-      </svg></a></li>{%- endif -%}
+{%- assign social = site.social_links -%}
+<ul class="social-list">
+  {%- if social.github -%}
+  <li><a class="social-list__link" rel="me noopener" target="_blank" href="https://github.com/{{ social.github }}" title="GitHub">
+    {% include icon.html name="github" %}<span class="visually-hidden">GitHub</span></a></li>
+  {%- endif -%}
+  {%- if social.linkedin -%}
+  <li><a class="social-list__link" rel="me noopener" target="_blank" href="https://www.linkedin.com/in/{{ social.linkedin }}/" title="LinkedIn">
+    {% include icon.html name="linkedin" %}<span class="visually-hidden">LinkedIn</span></a></li>
+  {%- endif -%}
+  {%- if social.twitter -%}
+  <li><a class="social-list__link" rel="me noopener" target="_blank" href="https://twitter.com/{{ social.twitter }}" title="X / Twitter">
+    {% include icon.html name="twitter" %}<span class="visually-hidden">X / Twitter</span></a></li>
+  {%- endif -%}
+  {%- if social.youtube -%}
+  <li><a class="social-list__link" rel="me noopener" target="_blank" href="https://www.youtube.com/@{{ social.youtube }}" title="YouTube">
+    {% include icon.html name="youtube" %}<span class="visually-hidden">YouTube</span></a></li>
+  {%- endif -%}
+  {%- if social.email -%}
+  <li><a class="social-list__link" href="mailto:{{ social.email }}" title="Email">
+    {% include icon.html name="email" %}<span class="visually-hidden">Email</span></a></li>
+  {%- endif -%}
+  <li><a class="social-list__link" href="{{ '/feed.xml' | relative_url }}" title="RSS feed">
+    {% include icon.html name="rss" %}<span class="visually-hidden">RSS feed</span></a></li>
 </ul>

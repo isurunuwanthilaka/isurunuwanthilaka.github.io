@@ -1,6 +1,9 @@
 ---
 layout: post
-title: Thoughts after 3 months into full-stack engineering
+title: "Thoughts after 3 months into full-stack engineering"
+tags: [Career, Full Stack, Essays]
+description: "What three months of full-stack engineering taught me after two years spent squarely on the backend."
+image: /assets/img/Full-Stack-Developer.jpeg
 ---
 
 > “Only those who dare to fail greatly can ever achieve greatly.”

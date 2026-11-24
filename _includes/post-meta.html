@@ -1,0 +1,11 @@
+{%- assign words = include.post.content | number_of_words -%}
+{%- assign minutes = words | divided_by: site.words_per_minute | plus: 1 -%}
+<p class="meta {{ include.class }}">
+  <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: '%b %-d, %Y' }}</time>
+  <span class="meta__sep" aria-hidden="true">&middot;</span>
+  <span>{{ minutes }} min read</span>
+  {%- if include.show_author -%}
+  <span class="meta__sep" aria-hidden="true">&middot;</span>
+  <span>{{ include.post.author | default: site.author.name }}</span>
+  {%- endif -%}
+</p>

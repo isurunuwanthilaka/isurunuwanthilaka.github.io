@@ -1,6 +1,9 @@
 ---
 layout: post
-title: MapReduce - Let's average numbers
+title: "MapReduce - Let's average numbers"
+tags: [Big Data, MapReduce, Hadoop, Java]
+description: "Averaging a huge dataset with MapReduce: why the obvious approach gives the wrong answer, and how to restructure the job so it doesn't."
+image: /assets/img/mapreduce.png
 ---
 
 In the big data context, MapReduce plays a significant role. It is the underlying techniques for most of the big data

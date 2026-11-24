@@ -1,6 +1,10 @@
 ---
 layout: post
-title: Tool Setup for Research
+title: "Tool Setup for Research"
+tags: [Research, Tooling, Productivity]
+description: "The tool stack I use for academic research — reference management with Mendeley, LaTeX, and a workflow that keeps notes findable."
+image: /assets/img/research.jpeg
+math: true
 ---
 
 Yeah, I am a bit excited about this `research thing` as this is the first time I am doing academic research alone. The best part is my supervisor guiding me through to simplify the things which I am not supposed to spend hours struggling with.

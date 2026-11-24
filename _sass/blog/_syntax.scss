@@ -1,0 +1,88 @@
+// ─── Rouge syntax highlighting ───────────────────────────────────────────────
+//
+// Token colours are CSS variables so the selector list below is written once
+// and simply re-points in dark mode.
+
+:root {
+  --hl-comment: #8a93a6;
+  --hl-keyword: #8250df;
+  --hl-name:    #1f2328;
+  --hl-func:    #6639ba;
+  --hl-class:   #953800;
+  --hl-string:  #0a7d54;
+  --hl-number:  #0550ae;
+  --hl-const:   #0550ae;
+  --hl-tag:     #116329;
+  --hl-attr:    #0550ae;
+  --hl-op:      #cf222e;
+  --hl-error:   #cf222e;
+  --hl-ins-bg:  #e6ffec;
+  --hl-del-bg:  #ffebe9;
+}
+
+@mixin hl-dark-tokens {
+  --hl-comment: #717a8c;
+  --hl-keyword: #d2a8ff;
+  --hl-name:    #e7e9f0;
+  --hl-func:    #d2a8ff;
+  --hl-class:   #ffa657;
+  --hl-string:  #7ee787;
+  --hl-number:  #79c0ff;
+  --hl-const:   #79c0ff;
+  --hl-tag:     #7ee787;
+  --hl-attr:    #79c0ff;
+  --hl-op:      #ff7b72;
+  --hl-error:   #ff7b72;
+  --hl-ins-bg:  #12261e;
+  --hl-del-bg:  #2a1416;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include hl-dark-tokens; }
+}
+
+:root[data-theme="dark"] { @include hl-dark-tokens; }
+
+.highlight,
+.highlighter-rouge .highlight {
+  background: transparent;
+  color: var(--code-text);
+}
+
+.highlight {
+  .c, .cd, .cm, .c1, .cs, .cp { color: var(--hl-comment); font-style: italic; }
+
+  .k, .kc, .kd, .kn, .kp, .kr, .kv { color: var(--hl-keyword); }
+  .kt { color: var(--hl-class); }
+
+  .o, .ow { color: var(--hl-op); }
+
+  .n, .nn, .nx, .py, .nl { color: var(--hl-name); }
+  .nf, .nd { color: var(--hl-func); }
+  .nc, .ne, .nt { color: var(--hl-class); }
+  .na { color: var(--hl-attr); }
+  .nb, .bp, .no, .nv, .vc, .vg, .vi { color: var(--hl-const); }
+
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss, .dl { color: var(--hl-string); }
+
+  .m, .mf, .mh, .mi, .mo, .mb, .mx, .il { color: var(--hl-number); }
+
+  .err { color: var(--hl-error); background: transparent; }
+
+  .gd { background: var(--hl-del-bg); }
+  .gi { background: var(--hl-ins-bg); }
+  .ge { font-style: italic; }
+  .gs { font-weight: 600; }
+  .gh, .gu { color: var(--hl-comment); font-weight: 600; }
+  .gp { color: var(--hl-comment); }
+  .gt, .gr { color: var(--hl-error); }
+
+  .w { color: var(--text-faint); }
+
+  // Line-number gutter, if ever enabled.
+  .lineno, .gl {
+    color: var(--text-faint);
+    padding-right: 0.9rem;
+    user-select: none;
+  }
+}

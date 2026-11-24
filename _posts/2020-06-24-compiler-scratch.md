@@ -1,6 +1,9 @@
 ---
 layout: post
-title: Understanding Compilers from scratch
+title: "Understanding Compilers from scratch"
+tags: [Compilers, Programming Languages, Low Level]
+description: "Lexing, parsing and code generation explained by building a tiny compiler that targets a processor designed on an Altera FPGA."
+image: /assets/img/compiler-1.png
 ---
 
 Technologies are evolving so fast. New programming languages rising up while legacy programming languages are improving and going deeper. Last year I came across with new language — Ballerina, a open source programming language — which grabbed my attention in the first sight. After testing few sample code I wanted to learn how it is built, so as the first step I tried learning its compiler design.

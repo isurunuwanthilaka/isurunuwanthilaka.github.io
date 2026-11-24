@@ -1,0 +1,79 @@
+// ─── Colour system ───────────────────────────────────────────────────────────
+//
+// The full light palette lives on bare :root. Dark mode only redefines the
+// tokens, twice: once for the system preference (unless the viewer explicitly
+// chose light) and once for the explicit toggle, so the toggle wins both ways.
+
+:root {
+  --bg:            #fbfbfc;
+  --bg-grad:       radial-gradient(1200px 600px at 12% -10%, #eef1ff 0%, rgba(238, 241, 255, 0) 60%),
+                   radial-gradient(900px 500px at 92% 0%, #fdf0ea 0%, rgba(253, 240, 234, 0) 55%);
+  --surface:       #ffffff;
+  --surface-2:     #f4f5f8;
+  --surface-3:     #eceef3;
+
+  --text:          #15181f;
+  --text-muted:    #5a6373;
+  --text-faint:    #8b93a3;
+
+  --border:        #e3e6ec;
+  --border-strong: #cdd2dc;
+
+  --accent:        #4338ca;
+  --accent-hover:  #342bab;
+  --accent-contrast: #ffffff;
+  --accent-soft:   #eeefff;
+  --accent-ring:   rgba(67, 56, 202, 0.32);
+
+  --code-bg:       #f6f7fa;
+  --code-text:     #2b3040;
+  --mark-bg:       #fff3c4;
+
+  --shadow-sm: 0 1px 2px rgba(15, 20, 35, 0.05);
+  --shadow:    0 2px 4px rgba(15, 20, 35, 0.04), 0 12px 28px -12px rgba(15, 20, 35, 0.14);
+  --shadow-lg: 0 4px 10px rgba(15, 20, 35, 0.05), 0 28px 56px -20px rgba(15, 20, 35, 0.22);
+
+  --header-bg: rgba(251, 251, 252, 0.78);
+
+  color-scheme: light;
+}
+
+@mixin dark-tokens {
+  --bg:            #0b0d12;
+  --bg-grad:       radial-gradient(1200px 600px at 12% -10%, #181c33 0%, rgba(24, 28, 51, 0) 60%),
+                   radial-gradient(900px 500px at 92% 0%, #231a20 0%, rgba(35, 26, 32, 0) 55%);
+  --surface:       #12151c;
+  --surface-2:     #171b24;
+  --surface-3:     #1e2330;
+
+  --text:          #e7e9f0;
+  --text-muted:    #9aa3b4;
+  --text-faint:    #6e7688;
+
+  --border:        #242936;
+  --border-strong: #333a4a;
+
+  --accent:        #a5b4fc;
+  --accent-hover:  #c3cdfe;
+  --accent-contrast: #141732;
+  --accent-soft:   #1a1e36;
+  --accent-ring:   rgba(165, 180, 252, 0.34);
+
+  --code-bg:       #14171f;
+  --code-text:     #ccd2e0;
+  --mark-bg:       #4a3f13;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow:    0 2px 4px rgba(0, 0, 0, 0.3), 0 12px 28px -12px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 4px 10px rgba(0, 0, 0, 0.35), 0 28px 56px -20px rgba(0, 0, 0, 0.8);
+
+  --header-bg: rgba(11, 13, 18, 0.76);
+
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include dark-tokens; }
+}
+
+:root[data-theme="dark"] { @include dark-tokens; }

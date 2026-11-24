@@ -1,0 +1,35 @@
+---
+layout: page
+title: Topics
+permalink: /topics
+lede: The subjects I keep coming back to.
+description: Browse posts by topic — Docker, Go, Java, big data, security, DevOps and more.
+image: /assets/img/profile-pic.png
+---
+
+{%- assign tags = site.tags | sort -%}
+
+<ul class="tag-list topic-cloud">
+  {%- for tag in tags -%}
+  <li><a class="tag tag--count" data-count="{{ tag[1].size }}" href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a></li>
+  {%- endfor -%}
+</ul>
+
+{%- for tag in tags -%}
+<section class="topic-block" id="{{ tag[0] | slugify }}">
+  <div class="topic-block__head">
+    <h2>{{ tag[0] }}</h2>
+    <span>{{ tag[1].size }} post{% if tag[1].size != 1 %}s{% endif %}</span>
+  </div>
+  <ul class="archive-list">
+    {%- for post in tag[1] -%}
+    <li class="archive-item">
+      <a class="archive-item__link" href="{{ post.url | relative_url }}">
+        <span class="archive-item__date">{{ post.date | date: '%Y' }}</span>
+        <span class="archive-item__title">{{ post.title | escape }}</span>
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+{%- endfor -%}

@@ -1,6 +1,10 @@
 #!/bin/sh
+# Install gems into vendor/bundle (see .bundle/config). Only installs bundler
+# itself if it isn't already on PATH — on macOS's system Ruby it always is,
+# and `gem install` there fails with a permissions error since it targets the
+# system gem directory.
 
 set -e
 
-gem install bundler
+command -v bundle >/dev/null 2>&1 || gem install bundler
 bundle install

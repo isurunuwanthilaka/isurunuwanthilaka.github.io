@@ -1,40 +1,130 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  Site
+# ─────────────────────────────────────────────────────────────────────────────
 title: Isuru Nuwanthilaka
-email: isurunuwanthilaka@gmail.com
-description: "Personal blog"
+tagline: Engineering notes on AI, distributed systems and the craft of code
+description: >-
+  Field notes and essays by Isuru Nuwanthilaka — an AI Solution Architect from
+  Sri Lanka writing about GenAI, distributed systems, Go, Java, Docker,
+  cloud-native infrastructure and the craft of software engineering.
 url: "https://isurunuwanthilaka.github.io"
 baseurl: ""
-github_username: isurunuwanthilaka
+lang: en
+timezone: Asia/Colombo
 
-#Author
+# ─────────────────────────────────────────────────────────────────────────────
+#  Author
+# ─────────────────────────────────────────────────────────────────────────────
 author:
   name: Isuru Nuwanthilaka
   email: isurunuwanthilaka@gmail.com
+  twitter: isuuuru
+  role: AI Solution Architect
+  location: Sri Lanka
+  avatar: /assets/img/profile-pic.png
+  bio: >-
+    AI Solution Architect from Sri Lanka. I build things that scale — GenAI
+    systems, distributed backends and the cloud-native plumbing underneath —
+    and write about what I learn along the way.
 
-#Social Media
-minima:
-  social_links:
-    github: isurunuwanthilaka
-    linkedin: isurunuwanthilaka
-    youtube: isurunuwanthilaka
+# Default sharing image used when a post does not define its own.
+image: /assets/img/profile-pic.png
+logo: /assets/img/android-chrome-512x512.png
 
-# Build settings
+# ─────────────────────────────────────────────────────────────────────────────
+#  Social
+# ─────────────────────────────────────────────────────────────────────────────
+social_links:
+  github: isurunuwanthilaka
+  linkedin: isurunuwanthilaka
+  twitter: isuuuru
+  youtube: isurunuwanthilaka
+  email: isurunuwanthilaka@gmail.com
+
+# Consumed by jekyll-seo-tag for schema.org `sameAs` links.
+social:
+  name: Isuru Nuwanthilaka
+  links:
+    - https://github.com/isurunuwanthilaka
+    - https://www.linkedin.com/in/isurunuwanthilaka/
+    - https://twitter.com/isuuuru
+
+twitter:
+  username: isuuuru
+  card: summary_large_image
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Navigation
+# ─────────────────────────────────────────────────────────────────────────────
+nav:
+  - title: Writing
+    url: /
+  - title: Archive
+    url: /archive
+  - title: Topics
+    url: /topics
+  - title: About
+    url: /about
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Build
+# ─────────────────────────────────────────────────────────────────────────────
 markdown: kramdown
-theme: minima
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+sass:
+  style: compressed
+
+# Keep the historical URL shape — changing it would break every existing link.
+permalink: /:categories/:year/:month/:day/:title:output_ext
+excerpt_separator: "\n\n"
+
+paginate: 8
+paginate_path: "/page:num/"
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
 
-minima:
-  skin: classic
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
 
-# Google Analytics
+# Reading-time estimate, in words per minute.
+words_per_minute: 200
+
+# Google Analytics 4 measurement ID
 google_analytics: G-13KD5X904R
 
-paginate: 10
+# Google AdSense publisher ID (leave blank to drop the script entirely)
+adsense_client: ca-pub-6484569055764987
 
 exclude:
   - Gemfile
   - Gemfile.lock
-  - vendor
   - README.md
+  - vendor
+  - script
+  - node_modules
+  - .bundle
+  - .editorconfig
+  - .vscode

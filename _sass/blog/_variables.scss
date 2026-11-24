@@ -1,0 +1,44 @@
+// ─── Design tokens that never change between themes ──────────────────────────
+
+$font-sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+             Helvetica, Arial, "Apple Color Emoji", sans-serif;
+$font-serif: "Newsreader", Iowan Old Style, Georgia, Cambria, "Times New Roman",
+             serif;
+$font-mono:  "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas,
+             "Liberation Mono", monospace;
+
+$text-xs:   0.75rem;
+$text-sm:   0.8125rem;
+$text-base: 0.9375rem;
+$text-md:   1.0625rem;
+$text-lg:   1.25rem;
+
+$space:     1rem;
+
+$radius-sm: 6px;
+$radius:    12px;
+$radius-lg: 18px;
+$radius-pill: 999px;
+
+$measure:      40rem;   // comfortable reading column
+$wrapper:      72rem;   // outer page width
+$gutter:       1.5rem;
+
+$ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+$bp-sm: 36rem;
+$bp-md: 48rem;
+$bp-lg: 64rem;
+
+@mixin sm  { @media (min-width: $bp-sm) { @content; } }
+@mixin md  { @media (min-width: $bp-md) { @content; } }
+@mixin lg  { @media (min-width: $bp-lg) { @content; } }
+
+// Applies @content in both ways a viewer can be in dark mode: the explicit
+// toggle, and the system preference when no explicit choice has been made.
+@mixin dark {
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) & { @content; }
+  }
+  :root[data-theme="dark"] & { @content; }
+}

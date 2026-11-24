@@ -1,6 +1,9 @@
 ---
 layout: post
-title: Jenkins - Zero to Somewhere
+title: "Jenkins - Zero to Somewhere"
+tags: [Jenkins, CI/CD, DevOps]
+description: "A practical first tour of Jenkins — installing it, wiring up a job and automating deployments so a bot handles CI/CD while you write code."
+image: /assets/img/jenkins-docker.png
 ---
 
 We are software engineers. Nowadays, the definition of SE is not limited to just writing codes. Sometimes, we have to set the applications up and running and give it to QA for testing. Doing continuous deployments (CD) being in the agile environment is tough and time consuming. What if there is a way to automate the deployments ??? and pay less supervision to CI/CD/CD. So we can save time to write codes while a bot handling devops. It is good for at least setting up the testing environment.

@@ -1,6 +1,6 @@
 #!/bin/sh
+# Build the site into _site/
 
 set -e
 
-echo "Building the example site..."
-bundle exec jekyll build
+bundle exec jekyll build "$@"

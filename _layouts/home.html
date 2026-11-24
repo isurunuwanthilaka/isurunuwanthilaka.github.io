@@ -2,57 +2,68 @@
 layout: default
 ---
 
-<div class="home">
+{%- assign is_first_page = true -%}
+{%- if paginator and paginator.page > 1 -%}{%- assign is_first_page = false -%}{%- endif -%}
+
+<div class="wrapper">
+  {%- if is_first_page -%}
+  <section class="hero">
+    <div>
+      <p class="eyebrow">{{ site.author.role }} &middot; {{ site.author.location }}</p>
+      <h1 class="hero__title">Hi, I&rsquo;m Isuru.<br><span class="hero__accent">I build and write about systems that scale.</span></h1>
+      <p class="hero__lede">{{ site.tagline }} &mdash; hands-on walkthroughs of GenAI, distributed systems, Go, Java and Docker, plus the occasional essay on the craft itself.</p>
+      <div class="hero__actions">
+        <a class="button" href="#writing">Read the latest {% include icon.html name="arrow-right" %}</a>
+        <a class="button button--ghost" href="{{ '/about' | relative_url }}">About me</a>
+      </div>
+    </div>
+    {%- if site.author.avatar -%}
+    <img class="hero__portrait" src="{{ site.author.avatar | relative_url }}"
+         alt="Portrait of {{ site.author.name }}" width="184" height="184">
+    {%- endif -%}
+  </section>
+  {%- endif -%}
 
   {{ content }}
 
-  {% if site.paginate %}
-  {% assign posts = paginator.posts %}
-  {% else %}
-  {% assign posts = site.posts %}
-  {% endif %}
-
-  {%- if posts.size > 0 -%}
-  
-  <ul class="post-list">
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    {%- for post in posts -%}
-    <li>
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      
-    </li>
-    {%- endfor -%}
-  </ul>
-
-  {% if site.paginate %}
-  <div class="pager">
-    <ul class="pagination">
-      {%- if paginator.previous_page %}
-      <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page
-          }}</a></li>
-      {%- else %}
-      <li>
-        <div class="pager-edge">•</div>
-      </li>
-      {%- endif %}
-      <li>
-        <div class="current-page">{{ paginator.page }}</div>
-      </li>
-      {%- if paginator.next_page %}
-      <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-      {%- else %}
-      <li>
-        <div class="pager-edge">•</div>
-      </li>
-      {%- endif %}
-    </ul>
-  </div>
-  {%- endif %}
-
+  {%- if paginator -%}
+    {%- assign posts = paginator.posts -%}
+  {%- else -%}
+    {%- assign posts = site.posts -%}
   {%- endif -%}
 
+  <section id="writing">
+    <div class="section-head">
+      <h2>{% if is_first_page %}Latest writing{% else %}Writing &middot; page {{ paginator.page }}{% endif %}</h2>
+      <a href="{{ '/archive' | relative_url }}">Browse all {{ site.posts.size }} posts {% include icon.html name="arrow-right" %}</a>
+    </div>
+
+    {%- if posts.size > 0 -%}
+    <ul class="post-grid">
+      {%- for post in posts -%}
+      {%- assign feature = false -%}
+      {%- if is_first_page and forloop.first -%}{%- assign feature = true -%}{%- endif -%}
+      {% include post-card.html post=post feature=feature %}
+      {%- endfor -%}
+    </ul>
+    {%- else -%}
+    <p class="search__empty">No posts yet — check back soon.</p>
+    {%- endif -%}
+
+    {%- if paginator and paginator.total_pages > 1 -%}
+    <nav class="pagination" aria-label="Pagination">
+      {%- if paginator.previous_page -%}
+      <a class="pagination__link" rel="prev" href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer</a>
+      {%- else -%}
+      <span class="pagination__link" aria-disabled="true">&larr; Newer</span>
+      {%- endif -%}
+      <span class="pagination__state">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {%- if paginator.next_page -%}
+      <a class="pagination__link" rel="next" href="{{ paginator.next_page_path | relative_url }}">Older &rarr;</a>
+      {%- else -%}
+      <span class="pagination__link" aria-disabled="true">Older &rarr;</span>
+      {%- endif -%}
+    </nav>
+    {%- endif -%}
+  </section>
 </div>

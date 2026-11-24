@@ -1,6 +1,9 @@
 ---
 layout: post
-title: The Art of Design Patterns
+title: "The Art of Design Patterns"
+tags: [Design Patterns, Software Architecture, Java]
+description: "Why battle-tested blueprints matter in software, and a tour of the creational, structural and behavioural families of design patterns."
+image: /assets/img/post-2.png
 ---
 
 <div align='justify'>

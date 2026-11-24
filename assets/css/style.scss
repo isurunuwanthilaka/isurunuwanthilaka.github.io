@@ -1,5 +1,14 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Front matter (even empty) tells Jekyll to run this file through Sass.
 ---
 
-@import "minima/skins/{{ site.minima.skin | default: 'classic' }}", "minima/initialize";
+@import
+  "blog/variables",
+  "blog/theme",
+  "blog/base",
+  "blog/layout",
+  "blog/components",
+  "blog/post",
+  "blog/syntax",
+  "blog/utilities"
+;

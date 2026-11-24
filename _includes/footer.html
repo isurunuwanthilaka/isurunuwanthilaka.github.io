@@ -1,7 +1,36 @@
-<footer class="site-footer h-card">
+<footer class="site-footer">
   <div class="wrapper">
-    <div class="social-links">
-      {%- include social.html -%}
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h2 class="footer-title">{{ site.title }}</h2>
+        <p>{{ site.author.bio | strip_newlines }}</p>
+        {%- include social.html -%}
+      </div>
+
+      <div>
+        <h2 class="footer-title">Explore</h2>
+        <ul class="footer-links">
+          {%- for item in site.nav -%}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-title">Elsewhere</h2>
+        <ul class="footer-links">
+          <li><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></li>
+          <li><a href="https://github.com/{{ site.social_links.github }}" rel="noopener" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/{{ site.social_links.linkedin }}/" rel="noopener" target="_blank">LinkedIn</a></li>
+          <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-copy">© Copyright 2026</div>
+
+    <div class="footer-bottom">
+      <span>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</span>
+      <span>Built with <a href="https://jekyllrb.com" rel="noopener" target="_blank">Jekyll</a> &middot;
+        Hosted on <a href="https://pages.github.com" rel="noopener" target="_blank">GitHub Pages</a></span>
+    </div>
+  </div>
 </footer>
