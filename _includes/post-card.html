@@ -1,6 +1,6 @@
 {%- assign post = include.post -%}
 <li class="post-grid__item{% if include.feature %} post-grid__item--feature{% endif %}">
-  <article class="card{% if include.feature %} card--feature{% endif %}">
+  <article class="card{% if include.feature %} card--feature{% endif %}{% if post.image %} card--has-media{% endif %}">
     {%- if post.image -%}
     <div class="card__media">
       <img src="{{ post.image | relative_url }}" alt="" loading="lazy" decoding="async">
