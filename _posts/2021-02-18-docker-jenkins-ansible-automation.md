@@ -3,7 +3,7 @@ layout: post
 title: "Docker container deployment with Jenkins and Ansible"
 tags: [Docker, Jenkins, Ansible, DevOps, CI/CD]
 description: "An end-to-end deployment pipeline — Jenkins builds the image, Ansible ships it to Dev, QA and UAT, and nobody deploys by hand again."
-image: /assets/img/deployment-arch.png
+image: /assets/img/cover-docker-jenkins-ansible.jpg
 ---
 
 We are software engineers, we write code. Surely (if you are in a small scale company) we have to setup the applications and release for Dev,QA and UAT environments. That is lots of work, out of scope. So how about having all those automated and we don't need to worry about CI/CD at all? Ehhhh interesting!

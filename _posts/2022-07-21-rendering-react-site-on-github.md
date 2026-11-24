@@ -3,6 +3,7 @@ layout: post
 title: "Rendering React client-side app on Github Pages"
 tags: [React, GitHub Pages, Deployment]
 description: "Deploying a client-side React app to GitHub Pages with gh-pages, plus a reusable template repository to start from."
+image: /assets/img/cover-react-github-pages.jpg
 ---
 
 I was keen about how we can deploy simple react app to Github Pages.

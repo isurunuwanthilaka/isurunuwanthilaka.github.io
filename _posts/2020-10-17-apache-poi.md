@@ -3,7 +3,7 @@ layout: post
 title: "Lets play with Apache POI"
 tags: [Java, Apache POI, Reporting]
 description: "Generating and styling Excel reports from Java with Apache POI — sheets, formulas, images and the gotchas in between."
-image: /assets/img/apache-poi.png
+image: /assets/img/cover-apache-poi.jpg
 ---
 
 Hey guys, hope everyone is safe and happy in this Covid-19 pandemic situation. After few months of silence, I am back with you for tackling some interesting issues we face in reporting software applications. Lets walk through!

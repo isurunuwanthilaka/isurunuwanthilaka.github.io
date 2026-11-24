@@ -3,7 +3,7 @@ layout: post
 title: "OAuth2/JWT/SSO with SpringBoot"
 tags: [Security, OAuth2, Spring Boot, Software Architecture]
 description: "A design overview of combining OAuth2, JWT and SSO in a Spring Boot architecture — and why the hybrid approach holds up."
-image: /assets/img/oauth2.png
+image: /assets/img/cover-oauth2-jwt.jpg
 ---
 
 _This is a design overview not a how-to guide!_

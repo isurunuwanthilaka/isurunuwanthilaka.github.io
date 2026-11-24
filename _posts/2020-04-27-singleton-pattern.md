@@ -3,7 +3,7 @@ layout: post
 title: "Singleton Pattern"
 tags: [Design Patterns, Java]
 description: "How the Singleton pattern guarantees a single instance with a global point of access — and the thread-safety traps worth knowing about."
-image: /assets/img/singleton.png
+image: /assets/img/cover-singleton-pattern.jpg
 ---
 
 <div align='justify' style = "font-style:italic;">

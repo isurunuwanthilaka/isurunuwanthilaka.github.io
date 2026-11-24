@@ -3,7 +3,7 @@ layout: post
 title: "Identification of Memory Leaks"
 tags: [Java, JVM, Performance, Debugging]
 description: "How to spot, reproduce and diagnose memory leaks in Java applications running on a VM or in a container, using heap dumps and VisualVM."
-image: /assets/img/memory-leaks.jpeg
+image: /assets/img/cover-memory-leaks.jpg
 ---
 
 Memory leaks are real headaches. As long as product is in development, everything is cool and smooth. Once we roll it to production we see the real face of the devil. With sufficient load testing or with a potion of actual traffic, we can identify this issues beforehand. So here I am going to talk about how to find memory leaks in `Java` applications - might be deployed in a VM or in a docker container.

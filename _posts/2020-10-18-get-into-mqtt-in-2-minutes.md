@@ -4,7 +4,7 @@ title: "Get into MQTT in 3 minutes (Python + Docker)"
 categories: Software-Engineering
 tags: [MQTT, IoT, Python, Docker]
 description: "A three-minute introduction to MQTT, pub/sub and brokers, with a working example built on Python and Docker."
-image: /assets/img/pub-sub.png
+image: /assets/img/cover-mqtt.jpg
 last_modified_at: '2021-04-11 21:05:20'
 ---
 

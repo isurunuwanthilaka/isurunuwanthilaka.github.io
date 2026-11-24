@@ -3,7 +3,7 @@ layout: post
 title: "Docker - Zero to Hero (with SpringBoot + PostgreSQL)"
 tags: [Docker, Spring Boot, PostgreSQL, DevOps]
 description: "Docker from first principles — images, containers, volumes and networks — demonstrated by containerising a Spring Boot app with PostgreSQL."
-image: /assets/img/docker-postgreSQL.jpeg
+image: /assets/img/cover-docker-zero-to-hero.jpg
 ---
 
 Nowadays,we hear the word docker everywhere in the software development industry. I first heard about docker at the tech event TensorFlow Dev Summit Colombo in 2018. I still hear it almost every tech event I go. Therefore I thought to share some facts about docker here.

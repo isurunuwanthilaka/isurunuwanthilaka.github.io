@@ -3,7 +3,7 @@ layout: post
 title: "The Art of Code"
 tags: [Essays, Craft]
 description: "Code is poetry written with passion. An essay on craft, readability, and why how we write matters as much as what we ship."
-image: /assets/img/codeisart.png
+image: /assets/img/cover-art-of-code.jpg
 ---
 
 > **Code is poetry written with passion and love.** If this resonates with you, we're kindred spirits. If not, read on to discover why.

@@ -3,6 +3,7 @@ layout: post
 title: "SoftEther on macOS"
 tags: [Networking, VPN, macOS]
 description: "Setting up a SoftEther VPN client on macOS when the only documented path is L2TP — the steps that actually worked."
+image: /assets/img/cover-softether-macos.jpg
 ---
 
 Recently, I wanted to connect to my university network to do some hacking on a raspberry pi cluster. Therefore I wanted to set up SoftEther on my MacBook. But unfortunately,There was no proper documentation for that rather than connecting through L2TP.I had to spend few days to figure out a way to setup,so just sharing hoping someone would find this helpful.😇

@@ -3,7 +3,7 @@ layout: post
 title: "Web-socket with React"
 tags: [React, WebSocket, Spring Boot, JavaScript]
 description: "Wiring a React front end to a Spring Boot backend over WebSockets for real-time, push-based updates."
-image: /assets/img/spring-react.jpg
+image: /assets/img/cover-websocket-react.jpg
 ---
 
 In this post we are going to talk about how to implement `websocket` with `react` client. REST is mostly used nowadays.
