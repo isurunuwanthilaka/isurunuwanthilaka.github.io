@@ -45,6 +45,18 @@ layout: default
       {%- if is_first_page and forloop.first -%}{%- assign feature = true -%}{%- endif -%}
       {% include post-card.html post=post feature=feature %}
       {%- endfor -%}
+      {%- comment -%}
+        The feature card spans the full row, so on page 1 an odd number of
+        remaining cards leaves a hole in the 2-column grid. Fill it with the
+        next post in line (it also opens page 2).
+      {%- endcomment -%}
+      {%- if is_first_page and paginator -%}
+        {%- assign rest = posts.size | minus: 1 | modulo: 2 -%}
+        {%- if rest == 1 and site.posts.size > posts.size -%}
+          {%- assign filler = site.posts[posts.size] -%}
+          {% include post-card.html post=filler %}
+        {%- endif -%}
+      {%- endif -%}
     </ul>
     {%- else -%}
     <p class="search__empty">No posts yet — check back soon.</p>
